@@ -1,0 +1,1786 @@
+{
+  "version": 3,
+  "targets": {
+    "Xamarin.iOS,Version=v1.0": {
+      "Naxam.KVOController.iOS/1.2.0": {
+        "type": "package",
+        "compile": {
+          "lib/Xamarin.iOS10/Naxam.KVOController.iOS.dll": {}
+        },
+        "runtime": {
+          "lib/Xamarin.iOS10/Naxam.KVOController.iOS.dll": {}
+        }
+      },
+      "Newtonsoft.Json/9.0.1": {
+        "type": "package",
+        "compile": {
+          "lib/portable-net45+wp80+win8+wpa81/Newtonsoft.Json.dll": {}
+        },
+        "runtime": {
+          "lib/portable-net45+wp80+win8+wpa81/Newtonsoft.Json.dll": {}
+        }
+      },
+      "sqlite-net-pcl/1.5.231": {
+        "type": "package",
+        "dependencies": {
+          "SQLitePCLRaw.bundle_green": "1.1.11"
+        },
+        "compile": {
+          "lib/netstandard1.1/SQLite-net.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard1.1/SQLite-net.dll": {}
+        }
+      },
+      "SQLiteNetExtensions/2.1.0": {
+        "type": "package",
+        "dependencies": {
+          "Newtonsoft.Json": "9.0.1",
+          "sqlite-net-pcl": "1.4.118"
+        },
+        "compile": {
+          "lib/netstandard1.1/SQLiteNetExtensions.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard1.1/SQLiteNetExtensions.dll": {}
+        }
+      },
+      "SQLitePCLRaw.bundle_green/1.1.11": {
+        "type": "package",
+        "dependencies": {
+          "SQLitePCLRaw.core": "1.1.11",
+          "SQLitePCLRaw.provider.sqlite3.ios_unified": "1.1.11"
+        },
+        "compile": {
+          "lib/Xamarin.iOS10/SQLitePCLRaw.batteries_green.dll": {},
+          "lib/Xamarin.iOS10/SQLitePCLRaw.batteries_v2.dll": {}
+        },
+        "runtime": {
+          "lib/Xamarin.iOS10/SQLitePCLRaw.batteries_green.dll": {},
+          "lib/Xamarin.iOS10/SQLitePCLRaw.batteries_v2.dll": {}
+        }
+      },
+      "SQLitePCLRaw.core/1.1.11": {
+        "type": "package",
+        "compile": {
+          "lib/Xamarin.iOS10/SQLitePCLRaw.core.dll": {}
+        },
+        "runtime": {
+          "lib/Xamarin.iOS10/SQLitePCLRaw.core.dll": {}
+        }
+      },
+      "SQLitePCLRaw.provider.sqlite3.ios_unified/1.1.11": {
+        "type": "package",
+        "dependencies": {
+          "SQLitePCLRaw.core": "1.1.11"
+        },
+        "compile": {
+          "lib/Xamarin.iOS10/SQLitePCLRaw.provider.sqlite3.dll": {}
+        },
+        "runtime": {
+          "lib/Xamarin.iOS10/SQLitePCLRaw.provider.sqlite3.dll": {}
+        }
+      },
+      "System.Numerics.Vectors/4.5.0": {
+        "type": "package",
+        "compile": {
+          "ref/xamarinios10/_._": {}
+        },
+        "runtime": {
+          "lib/xamarinios10/_._": {}
+        }
+      },
+      "Xamarin.Essentials/1.0.1": {
+        "type": "package",
+        "dependencies": {
+          "System.Numerics.Vectors": "4.5.0"
+        },
+        "compile": {
+          "lib/xamarinios10/Xamarin.Essentials.dll": {}
+        },
+        "runtime": {
+          "lib/xamarinios10/Xamarin.Essentials.dll": {}
+        }
+      },
+      "Xamarin.Forms/3.6.0.264807": {
+        "type": "package",
+        "compile": {
+          "lib/Xamarin.iOS10/Xamarin.Forms.Core.dll": {},
+          "lib/Xamarin.iOS10/Xamarin.Forms.Platform.dll": {},
+          "lib/Xamarin.iOS10/Xamarin.Forms.Platform.iOS.dll": {},
+          "lib/Xamarin.iOS10/Xamarin.Forms.Xaml.dll": {}
+        },
+        "runtime": {
+          "lib/Xamarin.iOS10/Xamarin.Forms.Core.dll": {},
+          "lib/Xamarin.iOS10/Xamarin.Forms.Platform.dll": {},
+          "lib/Xamarin.iOS10/Xamarin.Forms.Platform.iOS.dll": {},
+          "lib/Xamarin.iOS10/Xamarin.Forms.Xaml.dll": {}
+        },
+        "resource": {
+          "lib/Xamarin.iOS10/ar/Xamarin.Forms.Platform.iOS.resources.dll": {
+            "locale": "ar"
+          },
+          "lib/Xamarin.iOS10/ca/Xamarin.Forms.Platform.iOS.resources.dll": {
+            "locale": "ca"
+          },
+          "lib/Xamarin.iOS10/cs/Xamarin.Forms.Platform.iOS.resources.dll": {
+            "locale": "cs"
+          },
+          "lib/Xamarin.iOS10/da/Xamarin.Forms.Platform.iOS.resources.dll": {
+            "locale": "da"
+          },
+          "lib/Xamarin.iOS10/de/Xamarin.Forms.Platform.iOS.resources.dll": {
+            "locale": "de"
+          },
+          "lib/Xamarin.iOS10/el/Xamarin.Forms.Platform.iOS.resources.dll": {
+            "locale": "el"
+          },
+          "lib/Xamarin.iOS10/es/Xamarin.Forms.Platform.iOS.resources.dll": {
+            "locale": "es"
+          },
+          "lib/Xamarin.iOS10/fi/Xamarin.Forms.Platform.iOS.resources.dll": {
+            "locale": "fi"
+          },
+          "lib/Xamarin.iOS10/fr/Xamarin.Forms.Platform.iOS.resources.dll": {
+            "locale": "fr"
+          },
+          "lib/Xamarin.iOS10/he/Xamarin.Forms.Platform.iOS.resources.dll": {
+            "locale": "he"
+          },
+          "lib/Xamarin.iOS10/hi/Xamarin.Forms.Platform.iOS.resources.dll": {
+            "locale": "hi"
+          },
+          "lib/Xamarin.iOS10/hr/Xamarin.Forms.Platform.iOS.resources.dll": {
+            "locale": "hr"
+          },
+          "lib/Xamarin.iOS10/hu/Xamarin.Forms.Platform.iOS.resources.dll": {
+            "locale": "hu"
+          },
+          "lib/Xamarin.iOS10/id/Xamarin.Forms.Platform.iOS.resources.dll": {
+            "locale": "id"
+          },
+          "lib/Xamarin.iOS10/it/Xamarin.Forms.Platform.iOS.resources.dll": {
+            "locale": "it"
+          },
+          "lib/Xamarin.iOS10/ja/Xamarin.Forms.Platform.iOS.resources.dll": {
+            "locale": "ja"
+          },
+          "lib/Xamarin.iOS10/ko/Xamarin.Forms.Platform.iOS.resources.dll": {
+            "locale": "ko"
+          },
+          "lib/Xamarin.iOS10/ms/Xamarin.Forms.Platform.iOS.resources.dll": {
+            "locale": "ms"
+          },
+          "lib/Xamarin.iOS10/nb/Xamarin.Forms.Platform.iOS.resources.dll": {
+            "locale": "nb"
+          },
+          "lib/Xamarin.iOS10/nl/Xamarin.Forms.Platform.iOS.resources.dll": {
+            "locale": "nl"
+          },
+          "lib/Xamarin.iOS10/pl/Xamarin.Forms.Platform.iOS.resources.dll": {
+            "locale": "pl"
+          },
+          "lib/Xamarin.iOS10/pt-BR/Xamarin.Forms.Platform.iOS.resources.dll": {
+            "locale": "pt-BR"
+          },
+          "lib/Xamarin.iOS10/pt/Xamarin.Forms.Platform.iOS.resources.dll": {
+            "locale": "pt"
+          },
+          "lib/Xamarin.iOS10/ro/Xamarin.Forms.Platform.iOS.resources.dll": {
+            "locale": "ro"
+          },
+          "lib/Xamarin.iOS10/ru/Xamarin.Forms.Platform.iOS.resources.dll": {
+            "locale": "ru"
+          },
+          "lib/Xamarin.iOS10/sk/Xamarin.Forms.Platform.iOS.resources.dll": {
+            "locale": "sk"
+          },
+          "lib/Xamarin.iOS10/sv/Xamarin.Forms.Platform.iOS.resources.dll": {
+            "locale": "sv"
+          },
+          "lib/Xamarin.iOS10/th/Xamarin.Forms.Platform.iOS.resources.dll": {
+            "locale": "th"
+          },
+          "lib/Xamarin.iOS10/tr/Xamarin.Forms.Platform.iOS.resources.dll": {
+            "locale": "tr"
+          },
+          "lib/Xamarin.iOS10/uk/Xamarin.Forms.Platform.iOS.resources.dll": {
+            "locale": "uk"
+          },
+          "lib/Xamarin.iOS10/vi/Xamarin.Forms.Platform.iOS.resources.dll": {
+            "locale": "vi"
+          },
+          "lib/Xamarin.iOS10/zh-HK/Xamarin.Forms.Platform.iOS.resources.dll": {
+            "locale": "zh-HK"
+          },
+          "lib/Xamarin.iOS10/zh-Hans/Xamarin.Forms.Platform.iOS.resources.dll": {
+            "locale": "zh-Hans"
+          },
+          "lib/Xamarin.iOS10/zh-Hant/Xamarin.Forms.Platform.iOS.resources.dll": {
+            "locale": "zh-Hant"
+          }
+        },
+        "build": {
+          "build/Xamarin.Forms.props": {},
+          "build/Xamarin.Forms.targets": {}
+        }
+      },
+      "Xamarin.Forms.BackgroundKit/1.2.3": {
+        "type": "package",
+        "dependencies": {
+          "Naxam.KVOController.iOS": "1.2.0",
+          "Xamarin.Forms": "3.5.0.129452",
+          "Xamarin.Forms.Visual.Material": "3.5.0.129452"
+        },
+        "compile": {
+          "lib/Xamarin.iOS10/XamarinBackgroundKit.dll": {},
+          "lib/Xamarin.iOS10/XamarinBackgroundKit.iOS.dll": {}
+        },
+        "runtime": {
+          "lib/Xamarin.iOS10/XamarinBackgroundKit.dll": {},
+          "lib/Xamarin.iOS10/XamarinBackgroundKit.iOS.dll": {}
+        }
+      },
+      "Xamarin.Forms.Maps/3.6.0.264807": {
+        "type": "package",
+        "dependencies": {
+          "Xamarin.Forms": "3.6.0.264807"
+        },
+        "compile": {
+          "lib/Xamarin.iOS10/Xamarin.Forms.Maps.dll": {},
+          "lib/Xamarin.iOS10/Xamarin.Forms.Maps.iOS.dll": {}
+        },
+        "runtime": {
+          "lib/Xamarin.iOS10/Xamarin.Forms.Maps.dll": {},
+          "lib/Xamarin.iOS10/Xamarin.Forms.Maps.iOS.dll": {}
+        }
+      },
+      "Xamarin.Forms.Visual.Material/3.6.0.264807": {
+        "type": "package",
+        "dependencies": {
+          "Xamarin.iOS.MaterialComponents": "72.2.0.1"
+        },
+        "compile": {
+          "lib/Xamarin.iOS10/Xamarin.Forms.Material.dll": {}
+        },
+        "runtime": {
+          "lib/Xamarin.iOS10/Xamarin.Forms.Material.dll": {}
+        }
+      },
+      "Xamarin.iOS.MaterialComponents/72.2.0.1": {
+        "type": "package",
+        "compile": {
+          "lib/Xamarin.iOS/MaterialComponents.dll": {}
+        },
+        "runtime": {
+          "lib/Xamarin.iOS/MaterialComponents.dll": {}
+        }
+      },
+      "EcoHelper/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "dependencies": {
+          "SQLiteNetExtensions": "2.1.0",
+          "Xamarin.Essentials": "1.0.1",
+          "Xamarin.Forms": "3.6.0.264807",
+          "Xamarin.Forms.BackgroundKit": "1.2.3",
+          "Xamarin.Forms.Maps": "3.6.0.264807",
+          "Xamarin.Forms.Visual.Material": "3.6.0.264807",
+          "sqlite-net-pcl": "1.5.231"
+        },
+        "compile": {
+          "bin/placeholder/EcoHelper.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/EcoHelper.dll": {}
+        }
+      }
+    },
+    "Xamarin.iOS,Version=v1.0/win": {
+      "Naxam.KVOController.iOS/1.2.0": {
+        "type": "package",
+        "compile": {
+          "lib/Xamarin.iOS10/Naxam.KVOController.iOS.dll": {}
+        },
+        "runtime": {
+          "lib/Xamarin.iOS10/Naxam.KVOController.iOS.dll": {}
+        }
+      },
+      "Newtonsoft.Json/9.0.1": {
+        "type": "package",
+        "compile": {
+          "lib/portable-net45+wp80+win8+wpa81/Newtonsoft.Json.dll": {}
+        },
+        "runtime": {
+          "lib/portable-net45+wp80+win8+wpa81/Newtonsoft.Json.dll": {}
+        }
+      },
+      "sqlite-net-pcl/1.5.231": {
+        "type": "package",
+        "dependencies": {
+          "SQLitePCLRaw.bundle_green": "1.1.11"
+        },
+        "compile": {
+          "lib/netstandard1.1/SQLite-net.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard1.1/SQLite-net.dll": {}
+        }
+      },
+      "SQLiteNetExtensions/2.1.0": {
+        "type": "package",
+        "dependencies": {
+          "Newtonsoft.Json": "9.0.1",
+          "sqlite-net-pcl": "1.4.118"
+        },
+        "compile": {
+          "lib/netstandard1.1/SQLiteNetExtensions.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard1.1/SQLiteNetExtensions.dll": {}
+        }
+      },
+      "SQLitePCLRaw.bundle_green/1.1.11": {
+        "type": "package",
+        "dependencies": {
+          "SQLitePCLRaw.core": "1.1.11",
+          "SQLitePCLRaw.provider.sqlite3.ios_unified": "1.1.11"
+        },
+        "compile": {
+          "lib/Xamarin.iOS10/SQLitePCLRaw.batteries_green.dll": {},
+          "lib/Xamarin.iOS10/SQLitePCLRaw.batteries_v2.dll": {}
+        },
+        "runtime": {
+          "lib/Xamarin.iOS10/SQLitePCLRaw.batteries_green.dll": {},
+          "lib/Xamarin.iOS10/SQLitePCLRaw.batteries_v2.dll": {}
+        }
+      },
+      "SQLitePCLRaw.core/1.1.11": {
+        "type": "package",
+        "compile": {
+          "lib/Xamarin.iOS10/SQLitePCLRaw.core.dll": {}
+        },
+        "runtime": {
+          "lib/Xamarin.iOS10/SQLitePCLRaw.core.dll": {}
+        }
+      },
+      "SQLitePCLRaw.provider.sqlite3.ios_unified/1.1.11": {
+        "type": "package",
+        "dependencies": {
+          "SQLitePCLRaw.core": "1.1.11"
+        },
+        "compile": {
+          "lib/Xamarin.iOS10/SQLitePCLRaw.provider.sqlite3.dll": {}
+        },
+        "runtime": {
+          "lib/Xamarin.iOS10/SQLitePCLRaw.provider.sqlite3.dll": {}
+        }
+      },
+      "System.Numerics.Vectors/4.5.0": {
+        "type": "package",
+        "compile": {
+          "ref/xamarinios10/_._": {}
+        },
+        "runtime": {
+          "lib/xamarinios10/_._": {}
+        }
+      },
+      "Xamarin.Essentials/1.0.1": {
+        "type": "package",
+        "dependencies": {
+          "System.Numerics.Vectors": "4.5.0"
+        },
+        "compile": {
+          "lib/xamarinios10/Xamarin.Essentials.dll": {}
+        },
+        "runtime": {
+          "lib/xamarinios10/Xamarin.Essentials.dll": {}
+        }
+      },
+      "Xamarin.Forms/3.6.0.264807": {
+        "type": "package",
+        "compile": {
+          "lib/Xamarin.iOS10/Xamarin.Forms.Core.dll": {},
+          "lib/Xamarin.iOS10/Xamarin.Forms.Platform.dll": {},
+          "lib/Xamarin.iOS10/Xamarin.Forms.Platform.iOS.dll": {},
+          "lib/Xamarin.iOS10/Xamarin.Forms.Xaml.dll": {}
+        },
+        "runtime": {
+          "lib/Xamarin.iOS10/Xamarin.Forms.Core.dll": {},
+          "lib/Xamarin.iOS10/Xamarin.Forms.Platform.dll": {},
+          "lib/Xamarin.iOS10/Xamarin.Forms.Platform.iOS.dll": {},
+          "lib/Xamarin.iOS10/Xamarin.Forms.Xaml.dll": {}
+        },
+        "resource": {
+          "lib/Xamarin.iOS10/ar/Xamarin.Forms.Platform.iOS.resources.dll": {
+            "locale": "ar"
+          },
+          "lib/Xamarin.iOS10/ca/Xamarin.Forms.Platform.iOS.resources.dll": {
+            "locale": "ca"
+          },
+          "lib/Xamarin.iOS10/cs/Xamarin.Forms.Platform.iOS.resources.dll": {
+            "locale": "cs"
+          },
+          "lib/Xamarin.iOS10/da/Xamarin.Forms.Platform.iOS.resources.dll": {
+            "locale": "da"
+          },
+          "lib/Xamarin.iOS10/de/Xamarin.Forms.Platform.iOS.resources.dll": {
+            "locale": "de"
+          },
+          "lib/Xamarin.iOS10/el/Xamarin.Forms.Platform.iOS.resources.dll": {
+            "locale": "el"
+          },
+          "lib/Xamarin.iOS10/es/Xamarin.Forms.Platform.iOS.resources.dll": {
+            "locale": "es"
+          },
+          "lib/Xamarin.iOS10/fi/Xamarin.Forms.Platform.iOS.resources.dll": {
+            "locale": "fi"
+          },
+          "lib/Xamarin.iOS10/fr/Xamarin.Forms.Platform.iOS.resources.dll": {
+            "locale": "fr"
+          },
+          "lib/Xamarin.iOS10/he/Xamarin.Forms.Platform.iOS.resources.dll": {
+            "locale": "he"
+          },
+          "lib/Xamarin.iOS10/hi/Xamarin.Forms.Platform.iOS.resources.dll": {
+            "locale": "hi"
+          },
+          "lib/Xamarin.iOS10/hr/Xamarin.Forms.Platform.iOS.resources.dll": {
+            "locale": "hr"
+          },
+          "lib/Xamarin.iOS10/hu/Xamarin.Forms.Platform.iOS.resources.dll": {
+            "locale": "hu"
+          },
+          "lib/Xamarin.iOS10/id/Xamarin.Forms.Platform.iOS.resources.dll": {
+            "locale": "id"
+          },
+          "lib/Xamarin.iOS10/it/Xamarin.Forms.Platform.iOS.resources.dll": {
+            "locale": "it"
+          },
+          "lib/Xamarin.iOS10/ja/Xamarin.Forms.Platform.iOS.resources.dll": {
+            "locale": "ja"
+          },
+          "lib/Xamarin.iOS10/ko/Xamarin.Forms.Platform.iOS.resources.dll": {
+            "locale": "ko"
+          },
+          "lib/Xamarin.iOS10/ms/Xamarin.Forms.Platform.iOS.resources.dll": {
+            "locale": "ms"
+          },
+          "lib/Xamarin.iOS10/nb/Xamarin.Forms.Platform.iOS.resources.dll": {
+            "locale": "nb"
+          },
+          "lib/Xamarin.iOS10/nl/Xamarin.Forms.Platform.iOS.resources.dll": {
+            "locale": "nl"
+          },
+          "lib/Xamarin.iOS10/pl/Xamarin.Forms.Platform.iOS.resources.dll": {
+            "locale": "pl"
+          },
+          "lib/Xamarin.iOS10/pt-BR/Xamarin.Forms.Platform.iOS.resources.dll": {
+            "locale": "pt-BR"
+          },
+          "lib/Xamarin.iOS10/pt/Xamarin.Forms.Platform.iOS.resources.dll": {
+            "locale": "pt"
+          },
+          "lib/Xamarin.iOS10/ro/Xamarin.Forms.Platform.iOS.resources.dll": {
+            "locale": "ro"
+          },
+          "lib/Xamarin.iOS10/ru/Xamarin.Forms.Platform.iOS.resources.dll": {
+            "locale": "ru"
+          },
+          "lib/Xamarin.iOS10/sk/Xamarin.Forms.Platform.iOS.resources.dll": {
+            "locale": "sk"
+          },
+          "lib/Xamarin.iOS10/sv/Xamarin.Forms.Platform.iOS.resources.dll": {
+            "locale": "sv"
+          },
+          "lib/Xamarin.iOS10/th/Xamarin.Forms.Platform.iOS.resources.dll": {
+            "locale": "th"
+          },
+          "lib/Xamarin.iOS10/tr/Xamarin.Forms.Platform.iOS.resources.dll": {
+            "locale": "tr"
+          },
+          "lib/Xamarin.iOS10/uk/Xamarin.Forms.Platform.iOS.resources.dll": {
+            "locale": "uk"
+          },
+          "lib/Xamarin.iOS10/vi/Xamarin.Forms.Platform.iOS.resources.dll": {
+            "locale": "vi"
+          },
+          "lib/Xamarin.iOS10/zh-HK/Xamarin.Forms.Platform.iOS.resources.dll": {
+            "locale": "zh-HK"
+          },
+          "lib/Xamarin.iOS10/zh-Hans/Xamarin.Forms.Platform.iOS.resources.dll": {
+            "locale": "zh-Hans"
+          },
+          "lib/Xamarin.iOS10/zh-Hant/Xamarin.Forms.Platform.iOS.resources.dll": {
+            "locale": "zh-Hant"
+          }
+        },
+        "build": {
+          "build/Xamarin.Forms.props": {},
+          "build/Xamarin.Forms.targets": {}
+        }
+      },
+      "Xamarin.Forms.BackgroundKit/1.2.3": {
+        "type": "package",
+        "dependencies": {
+          "Naxam.KVOController.iOS": "1.2.0",
+          "Xamarin.Forms": "3.5.0.129452",
+          "Xamarin.Forms.Visual.Material": "3.5.0.129452"
+        },
+        "compile": {
+          "lib/Xamarin.iOS10/XamarinBackgroundKit.dll": {},
+          "lib/Xamarin.iOS10/XamarinBackgroundKit.iOS.dll": {}
+        },
+        "runtime": {
+          "lib/Xamarin.iOS10/XamarinBackgroundKit.dll": {},
+          "lib/Xamarin.iOS10/XamarinBackgroundKit.iOS.dll": {}
+        }
+      },
+      "Xamarin.Forms.Maps/3.6.0.264807": {
+        "type": "package",
+        "dependencies": {
+          "Xamarin.Forms": "3.6.0.264807"
+        },
+        "compile": {
+          "lib/Xamarin.iOS10/Xamarin.Forms.Maps.dll": {},
+          "lib/Xamarin.iOS10/Xamarin.Forms.Maps.iOS.dll": {}
+        },
+        "runtime": {
+          "lib/Xamarin.iOS10/Xamarin.Forms.Maps.dll": {},
+          "lib/Xamarin.iOS10/Xamarin.Forms.Maps.iOS.dll": {}
+        }
+      },
+      "Xamarin.Forms.Visual.Material/3.6.0.264807": {
+        "type": "package",
+        "dependencies": {
+          "Xamarin.iOS.MaterialComponents": "72.2.0.1"
+        },
+        "compile": {
+          "lib/Xamarin.iOS10/Xamarin.Forms.Material.dll": {}
+        },
+        "runtime": {
+          "lib/Xamarin.iOS10/Xamarin.Forms.Material.dll": {}
+        }
+      },
+      "Xamarin.iOS.MaterialComponents/72.2.0.1": {
+        "type": "package",
+        "compile": {
+          "lib/Xamarin.iOS/MaterialComponents.dll": {}
+        },
+        "runtime": {
+          "lib/Xamarin.iOS/MaterialComponents.dll": {}
+        }
+      },
+      "EcoHelper/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "dependencies": {
+          "SQLiteNetExtensions": "2.1.0",
+          "Xamarin.Essentials": "1.0.1",
+          "Xamarin.Forms": "3.6.0.264807",
+          "Xamarin.Forms.BackgroundKit": "1.2.3",
+          "Xamarin.Forms.Maps": "3.6.0.264807",
+          "Xamarin.Forms.Visual.Material": "3.6.0.264807",
+          "sqlite-net-pcl": "1.5.231"
+        },
+        "compile": {
+          "bin/placeholder/EcoHelper.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/EcoHelper.dll": {}
+        }
+      }
+    },
+    "Xamarin.iOS,Version=v1.0/win-x64": {
+      "Naxam.KVOController.iOS/1.2.0": {
+        "type": "package",
+        "compile": {
+          "lib/Xamarin.iOS10/Naxam.KVOController.iOS.dll": {}
+        },
+        "runtime": {
+          "lib/Xamarin.iOS10/Naxam.KVOController.iOS.dll": {}
+        }
+      },
+      "Newtonsoft.Json/9.0.1": {
+        "type": "package",
+        "compile": {
+          "lib/portable-net45+wp80+win8+wpa81/Newtonsoft.Json.dll": {}
+        },
+        "runtime": {
+          "lib/portable-net45+wp80+win8+wpa81/Newtonsoft.Json.dll": {}
+        }
+      },
+      "sqlite-net-pcl/1.5.231": {
+        "type": "package",
+        "dependencies": {
+          "SQLitePCLRaw.bundle_green": "1.1.11"
+        },
+        "compile": {
+          "lib/netstandard1.1/SQLite-net.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard1.1/SQLite-net.dll": {}
+        }
+      },
+      "SQLiteNetExtensions/2.1.0": {
+        "type": "package",
+        "dependencies": {
+          "Newtonsoft.Json": "9.0.1",
+          "sqlite-net-pcl": "1.4.118"
+        },
+        "compile": {
+          "lib/netstandard1.1/SQLiteNetExtensions.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard1.1/SQLiteNetExtensions.dll": {}
+        }
+      },
+      "SQLitePCLRaw.bundle_green/1.1.11": {
+        "type": "package",
+        "dependencies": {
+          "SQLitePCLRaw.core": "1.1.11",
+          "SQLitePCLRaw.provider.sqlite3.ios_unified": "1.1.11"
+        },
+        "compile": {
+          "lib/Xamarin.iOS10/SQLitePCLRaw.batteries_green.dll": {},
+          "lib/Xamarin.iOS10/SQLitePCLRaw.batteries_v2.dll": {}
+        },
+        "runtime": {
+          "lib/Xamarin.iOS10/SQLitePCLRaw.batteries_green.dll": {},
+          "lib/Xamarin.iOS10/SQLitePCLRaw.batteries_v2.dll": {}
+        }
+      },
+      "SQLitePCLRaw.core/1.1.11": {
+        "type": "package",
+        "compile": {
+          "lib/Xamarin.iOS10/SQLitePCLRaw.core.dll": {}
+        },
+        "runtime": {
+          "lib/Xamarin.iOS10/SQLitePCLRaw.core.dll": {}
+        }
+      },
+      "SQLitePCLRaw.provider.sqlite3.ios_unified/1.1.11": {
+        "type": "package",
+        "dependencies": {
+          "SQLitePCLRaw.core": "1.1.11"
+        },
+        "compile": {
+          "lib/Xamarin.iOS10/SQLitePCLRaw.provider.sqlite3.dll": {}
+        },
+        "runtime": {
+          "lib/Xamarin.iOS10/SQLitePCLRaw.provider.sqlite3.dll": {}
+        }
+      },
+      "System.Numerics.Vectors/4.5.0": {
+        "type": "package",
+        "compile": {
+          "ref/xamarinios10/_._": {}
+        },
+        "runtime": {
+          "lib/xamarinios10/_._": {}
+        }
+      },
+      "Xamarin.Essentials/1.0.1": {
+        "type": "package",
+        "dependencies": {
+          "System.Numerics.Vectors": "4.5.0"
+        },
+        "compile": {
+          "lib/xamarinios10/Xamarin.Essentials.dll": {}
+        },
+        "runtime": {
+          "lib/xamarinios10/Xamarin.Essentials.dll": {}
+        }
+      },
+      "Xamarin.Forms/3.6.0.264807": {
+        "type": "package",
+        "compile": {
+          "lib/Xamarin.iOS10/Xamarin.Forms.Core.dll": {},
+          "lib/Xamarin.iOS10/Xamarin.Forms.Platform.dll": {},
+          "lib/Xamarin.iOS10/Xamarin.Forms.Platform.iOS.dll": {},
+          "lib/Xamarin.iOS10/Xamarin.Forms.Xaml.dll": {}
+        },
+        "runtime": {
+          "lib/Xamarin.iOS10/Xamarin.Forms.Core.dll": {},
+          "lib/Xamarin.iOS10/Xamarin.Forms.Platform.dll": {},
+          "lib/Xamarin.iOS10/Xamarin.Forms.Platform.iOS.dll": {},
+          "lib/Xamarin.iOS10/Xamarin.Forms.Xaml.dll": {}
+        },
+        "resource": {
+          "lib/Xamarin.iOS10/ar/Xamarin.Forms.Platform.iOS.resources.dll": {
+            "locale": "ar"
+          },
+          "lib/Xamarin.iOS10/ca/Xamarin.Forms.Platform.iOS.resources.dll": {
+            "locale": "ca"
+          },
+          "lib/Xamarin.iOS10/cs/Xamarin.Forms.Platform.iOS.resources.dll": {
+            "locale": "cs"
+          },
+          "lib/Xamarin.iOS10/da/Xamarin.Forms.Platform.iOS.resources.dll": {
+            "locale": "da"
+          },
+          "lib/Xamarin.iOS10/de/Xamarin.Forms.Platform.iOS.resources.dll": {
+            "locale": "de"
+          },
+          "lib/Xamarin.iOS10/el/Xamarin.Forms.Platform.iOS.resources.dll": {
+            "locale": "el"
+          },
+          "lib/Xamarin.iOS10/es/Xamarin.Forms.Platform.iOS.resources.dll": {
+            "locale": "es"
+          },
+          "lib/Xamarin.iOS10/fi/Xamarin.Forms.Platform.iOS.resources.dll": {
+            "locale": "fi"
+          },
+          "lib/Xamarin.iOS10/fr/Xamarin.Forms.Platform.iOS.resources.dll": {
+            "locale": "fr"
+          },
+          "lib/Xamarin.iOS10/he/Xamarin.Forms.Platform.iOS.resources.dll": {
+            "locale": "he"
+          },
+          "lib/Xamarin.iOS10/hi/Xamarin.Forms.Platform.iOS.resources.dll": {
+            "locale": "hi"
+          },
+          "lib/Xamarin.iOS10/hr/Xamarin.Forms.Platform.iOS.resources.dll": {
+            "locale": "hr"
+          },
+          "lib/Xamarin.iOS10/hu/Xamarin.Forms.Platform.iOS.resources.dll": {
+            "locale": "hu"
+          },
+          "lib/Xamarin.iOS10/id/Xamarin.Forms.Platform.iOS.resources.dll": {
+            "locale": "id"
+          },
+          "lib/Xamarin.iOS10/it/Xamarin.Forms.Platform.iOS.resources.dll": {
+            "locale": "it"
+          },
+          "lib/Xamarin.iOS10/ja/Xamarin.Forms.Platform.iOS.resources.dll": {
+            "locale": "ja"
+          },
+          "lib/Xamarin.iOS10/ko/Xamarin.Forms.Platform.iOS.resources.dll": {
+            "locale": "ko"
+          },
+          "lib/Xamarin.iOS10/ms/Xamarin.Forms.Platform.iOS.resources.dll": {
+            "locale": "ms"
+          },
+          "lib/Xamarin.iOS10/nb/Xamarin.Forms.Platform.iOS.resources.dll": {
+            "locale": "nb"
+          },
+          "lib/Xamarin.iOS10/nl/Xamarin.Forms.Platform.iOS.resources.dll": {
+            "locale": "nl"
+          },
+          "lib/Xamarin.iOS10/pl/Xamarin.Forms.Platform.iOS.resources.dll": {
+            "locale": "pl"
+          },
+          "lib/Xamarin.iOS10/pt-BR/Xamarin.Forms.Platform.iOS.resources.dll": {
+            "locale": "pt-BR"
+          },
+          "lib/Xamarin.iOS10/pt/Xamarin.Forms.Platform.iOS.resources.dll": {
+            "locale": "pt"
+          },
+          "lib/Xamarin.iOS10/ro/Xamarin.Forms.Platform.iOS.resources.dll": {
+            "locale": "ro"
+          },
+          "lib/Xamarin.iOS10/ru/Xamarin.Forms.Platform.iOS.resources.dll": {
+            "locale": "ru"
+          },
+          "lib/Xamarin.iOS10/sk/Xamarin.Forms.Platform.iOS.resources.dll": {
+            "locale": "sk"
+          },
+          "lib/Xamarin.iOS10/sv/Xamarin.Forms.Platform.iOS.resources.dll": {
+            "locale": "sv"
+          },
+          "lib/Xamarin.iOS10/th/Xamarin.Forms.Platform.iOS.resources.dll": {
+            "locale": "th"
+          },
+          "lib/Xamarin.iOS10/tr/Xamarin.Forms.Platform.iOS.resources.dll": {
+            "locale": "tr"
+          },
+          "lib/Xamarin.iOS10/uk/Xamarin.Forms.Platform.iOS.resources.dll": {
+            "locale": "uk"
+          },
+          "lib/Xamarin.iOS10/vi/Xamarin.Forms.Platform.iOS.resources.dll": {
+            "locale": "vi"
+          },
+          "lib/Xamarin.iOS10/zh-HK/Xamarin.Forms.Platform.iOS.resources.dll": {
+            "locale": "zh-HK"
+          },
+          "lib/Xamarin.iOS10/zh-Hans/Xamarin.Forms.Platform.iOS.resources.dll": {
+            "locale": "zh-Hans"
+          },
+          "lib/Xamarin.iOS10/zh-Hant/Xamarin.Forms.Platform.iOS.resources.dll": {
+            "locale": "zh-Hant"
+          }
+        },
+        "build": {
+          "build/Xamarin.Forms.props": {},
+          "build/Xamarin.Forms.targets": {}
+        }
+      },
+      "Xamarin.Forms.BackgroundKit/1.2.3": {
+        "type": "package",
+        "dependencies": {
+          "Naxam.KVOController.iOS": "1.2.0",
+          "Xamarin.Forms": "3.5.0.129452",
+          "Xamarin.Forms.Visual.Material": "3.5.0.129452"
+        },
+        "compile": {
+          "lib/Xamarin.iOS10/XamarinBackgroundKit.dll": {},
+          "lib/Xamarin.iOS10/XamarinBackgroundKit.iOS.dll": {}
+        },
+        "runtime": {
+          "lib/Xamarin.iOS10/XamarinBackgroundKit.dll": {},
+          "lib/Xamarin.iOS10/XamarinBackgroundKit.iOS.dll": {}
+        }
+      },
+      "Xamarin.Forms.Maps/3.6.0.264807": {
+        "type": "package",
+        "dependencies": {
+          "Xamarin.Forms": "3.6.0.264807"
+        },
+        "compile": {
+          "lib/Xamarin.iOS10/Xamarin.Forms.Maps.dll": {},
+          "lib/Xamarin.iOS10/Xamarin.Forms.Maps.iOS.dll": {}
+        },
+        "runtime": {
+          "lib/Xamarin.iOS10/Xamarin.Forms.Maps.dll": {},
+          "lib/Xamarin.iOS10/Xamarin.Forms.Maps.iOS.dll": {}
+        }
+      },
+      "Xamarin.Forms.Visual.Material/3.6.0.264807": {
+        "type": "package",
+        "dependencies": {
+          "Xamarin.iOS.MaterialComponents": "72.2.0.1"
+        },
+        "compile": {
+          "lib/Xamarin.iOS10/Xamarin.Forms.Material.dll": {}
+        },
+        "runtime": {
+          "lib/Xamarin.iOS10/Xamarin.Forms.Material.dll": {}
+        }
+      },
+      "Xamarin.iOS.MaterialComponents/72.2.0.1": {
+        "type": "package",
+        "compile": {
+          "lib/Xamarin.iOS/MaterialComponents.dll": {}
+        },
+        "runtime": {
+          "lib/Xamarin.iOS/MaterialComponents.dll": {}
+        }
+      },
+      "EcoHelper/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "dependencies": {
+          "SQLiteNetExtensions": "2.1.0",
+          "Xamarin.Essentials": "1.0.1",
+          "Xamarin.Forms": "3.6.0.264807",
+          "Xamarin.Forms.BackgroundKit": "1.2.3",
+          "Xamarin.Forms.Maps": "3.6.0.264807",
+          "Xamarin.Forms.Visual.Material": "3.6.0.264807",
+          "sqlite-net-pcl": "1.5.231"
+        },
+        "compile": {
+          "bin/placeholder/EcoHelper.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/EcoHelper.dll": {}
+        }
+      }
+    },
+    "Xamarin.iOS,Version=v1.0/win-x86": {
+      "Naxam.KVOController.iOS/1.2.0": {
+        "type": "package",
+        "compile": {
+          "lib/Xamarin.iOS10/Naxam.KVOController.iOS.dll": {}
+        },
+        "runtime": {
+          "lib/Xamarin.iOS10/Naxam.KVOController.iOS.dll": {}
+        }
+      },
+      "Newtonsoft.Json/9.0.1": {
+        "type": "package",
+        "compile": {
+          "lib/portable-net45+wp80+win8+wpa81/Newtonsoft.Json.dll": {}
+        },
+        "runtime": {
+          "lib/portable-net45+wp80+win8+wpa81/Newtonsoft.Json.dll": {}
+        }
+      },
+      "sqlite-net-pcl/1.5.231": {
+        "type": "package",
+        "dependencies": {
+          "SQLitePCLRaw.bundle_green": "1.1.11"
+        },
+        "compile": {
+          "lib/netstandard1.1/SQLite-net.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard1.1/SQLite-net.dll": {}
+        }
+      },
+      "SQLiteNetExtensions/2.1.0": {
+        "type": "package",
+        "dependencies": {
+          "Newtonsoft.Json": "9.0.1",
+          "sqlite-net-pcl": "1.4.118"
+        },
+        "compile": {
+          "lib/netstandard1.1/SQLiteNetExtensions.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard1.1/SQLiteNetExtensions.dll": {}
+        }
+      },
+      "SQLitePCLRaw.bundle_green/1.1.11": {
+        "type": "package",
+        "dependencies": {
+          "SQLitePCLRaw.core": "1.1.11",
+          "SQLitePCLRaw.provider.sqlite3.ios_unified": "1.1.11"
+        },
+        "compile": {
+          "lib/Xamarin.iOS10/SQLitePCLRaw.batteries_green.dll": {},
+          "lib/Xamarin.iOS10/SQLitePCLRaw.batteries_v2.dll": {}
+        },
+        "runtime": {
+          "lib/Xamarin.iOS10/SQLitePCLRaw.batteries_green.dll": {},
+          "lib/Xamarin.iOS10/SQLitePCLRaw.batteries_v2.dll": {}
+        }
+      },
+      "SQLitePCLRaw.core/1.1.11": {
+        "type": "package",
+        "compile": {
+          "lib/Xamarin.iOS10/SQLitePCLRaw.core.dll": {}
+        },
+        "runtime": {
+          "lib/Xamarin.iOS10/SQLitePCLRaw.core.dll": {}
+        }
+      },
+      "SQLitePCLRaw.provider.sqlite3.ios_unified/1.1.11": {
+        "type": "package",
+        "dependencies": {
+          "SQLitePCLRaw.core": "1.1.11"
+        },
+        "compile": {
+          "lib/Xamarin.iOS10/SQLitePCLRaw.provider.sqlite3.dll": {}
+        },
+        "runtime": {
+          "lib/Xamarin.iOS10/SQLitePCLRaw.provider.sqlite3.dll": {}
+        }
+      },
+      "System.Numerics.Vectors/4.5.0": {
+        "type": "package",
+        "compile": {
+          "ref/xamarinios10/_._": {}
+        },
+        "runtime": {
+          "lib/xamarinios10/_._": {}
+        }
+      },
+      "Xamarin.Essentials/1.0.1": {
+        "type": "package",
+        "dependencies": {
+          "System.Numerics.Vectors": "4.5.0"
+        },
+        "compile": {
+          "lib/xamarinios10/Xamarin.Essentials.dll": {}
+        },
+        "runtime": {
+          "lib/xamarinios10/Xamarin.Essentials.dll": {}
+        }
+      },
+      "Xamarin.Forms/3.6.0.264807": {
+        "type": "package",
+        "compile": {
+          "lib/Xamarin.iOS10/Xamarin.Forms.Core.dll": {},
+          "lib/Xamarin.iOS10/Xamarin.Forms.Platform.dll": {},
+          "lib/Xamarin.iOS10/Xamarin.Forms.Platform.iOS.dll": {},
+          "lib/Xamarin.iOS10/Xamarin.Forms.Xaml.dll": {}
+        },
+        "runtime": {
+          "lib/Xamarin.iOS10/Xamarin.Forms.Core.dll": {},
+          "lib/Xamarin.iOS10/Xamarin.Forms.Platform.dll": {},
+          "lib/Xamarin.iOS10/Xamarin.Forms.Platform.iOS.dll": {},
+          "lib/Xamarin.iOS10/Xamarin.Forms.Xaml.dll": {}
+        },
+        "resource": {
+          "lib/Xamarin.iOS10/ar/Xamarin.Forms.Platform.iOS.resources.dll": {
+            "locale": "ar"
+          },
+          "lib/Xamarin.iOS10/ca/Xamarin.Forms.Platform.iOS.resources.dll": {
+            "locale": "ca"
+          },
+          "lib/Xamarin.iOS10/cs/Xamarin.Forms.Platform.iOS.resources.dll": {
+            "locale": "cs"
+          },
+          "lib/Xamarin.iOS10/da/Xamarin.Forms.Platform.iOS.resources.dll": {
+            "locale": "da"
+          },
+          "lib/Xamarin.iOS10/de/Xamarin.Forms.Platform.iOS.resources.dll": {
+            "locale": "de"
+          },
+          "lib/Xamarin.iOS10/el/Xamarin.Forms.Platform.iOS.resources.dll": {
+            "locale": "el"
+          },
+          "lib/Xamarin.iOS10/es/Xamarin.Forms.Platform.iOS.resources.dll": {
+            "locale": "es"
+          },
+          "lib/Xamarin.iOS10/fi/Xamarin.Forms.Platform.iOS.resources.dll": {
+            "locale": "fi"
+          },
+          "lib/Xamarin.iOS10/fr/Xamarin.Forms.Platform.iOS.resources.dll": {
+            "locale": "fr"
+          },
+          "lib/Xamarin.iOS10/he/Xamarin.Forms.Platform.iOS.resources.dll": {
+            "locale": "he"
+          },
+          "lib/Xamarin.iOS10/hi/Xamarin.Forms.Platform.iOS.resources.dll": {
+            "locale": "hi"
+          },
+          "lib/Xamarin.iOS10/hr/Xamarin.Forms.Platform.iOS.resources.dll": {
+            "locale": "hr"
+          },
+          "lib/Xamarin.iOS10/hu/Xamarin.Forms.Platform.iOS.resources.dll": {
+            "locale": "hu"
+          },
+          "lib/Xamarin.iOS10/id/Xamarin.Forms.Platform.iOS.resources.dll": {
+            "locale": "id"
+          },
+          "lib/Xamarin.iOS10/it/Xamarin.Forms.Platform.iOS.resources.dll": {
+            "locale": "it"
+          },
+          "lib/Xamarin.iOS10/ja/Xamarin.Forms.Platform.iOS.resources.dll": {
+            "locale": "ja"
+          },
+          "lib/Xamarin.iOS10/ko/Xamarin.Forms.Platform.iOS.resources.dll": {
+            "locale": "ko"
+          },
+          "lib/Xamarin.iOS10/ms/Xamarin.Forms.Platform.iOS.resources.dll": {
+            "locale": "ms"
+          },
+          "lib/Xamarin.iOS10/nb/Xamarin.Forms.Platform.iOS.resources.dll": {
+            "locale": "nb"
+          },
+          "lib/Xamarin.iOS10/nl/Xamarin.Forms.Platform.iOS.resources.dll": {
+            "locale": "nl"
+          },
+          "lib/Xamarin.iOS10/pl/Xamarin.Forms.Platform.iOS.resources.dll": {
+            "locale": "pl"
+          },
+          "lib/Xamarin.iOS10/pt-BR/Xamarin.Forms.Platform.iOS.resources.dll": {
+            "locale": "pt-BR"
+          },
+          "lib/Xamarin.iOS10/pt/Xamarin.Forms.Platform.iOS.resources.dll": {
+            "locale": "pt"
+          },
+          "lib/Xamarin.iOS10/ro/Xamarin.Forms.Platform.iOS.resources.dll": {
+            "locale": "ro"
+          },
+          "lib/Xamarin.iOS10/ru/Xamarin.Forms.Platform.iOS.resources.dll": {
+            "locale": "ru"
+          },
+          "lib/Xamarin.iOS10/sk/Xamarin.Forms.Platform.iOS.resources.dll": {
+            "locale": "sk"
+          },
+          "lib/Xamarin.iOS10/sv/Xamarin.Forms.Platform.iOS.resources.dll": {
+            "locale": "sv"
+          },
+          "lib/Xamarin.iOS10/th/Xamarin.Forms.Platform.iOS.resources.dll": {
+            "locale": "th"
+          },
+          "lib/Xamarin.iOS10/tr/Xamarin.Forms.Platform.iOS.resources.dll": {
+            "locale": "tr"
+          },
+          "lib/Xamarin.iOS10/uk/Xamarin.Forms.Platform.iOS.resources.dll": {
+            "locale": "uk"
+          },
+          "lib/Xamarin.iOS10/vi/Xamarin.Forms.Platform.iOS.resources.dll": {
+            "locale": "vi"
+          },
+          "lib/Xamarin.iOS10/zh-HK/Xamarin.Forms.Platform.iOS.resources.dll": {
+            "locale": "zh-HK"
+          },
+          "lib/Xamarin.iOS10/zh-Hans/Xamarin.Forms.Platform.iOS.resources.dll": {
+            "locale": "zh-Hans"
+          },
+          "lib/Xamarin.iOS10/zh-Hant/Xamarin.Forms.Platform.iOS.resources.dll": {
+            "locale": "zh-Hant"
+          }
+        },
+        "build": {
+          "build/Xamarin.Forms.props": {},
+          "build/Xamarin.Forms.targets": {}
+        }
+      },
+      "Xamarin.Forms.BackgroundKit/1.2.3": {
+        "type": "package",
+        "dependencies": {
+          "Naxam.KVOController.iOS": "1.2.0",
+          "Xamarin.Forms": "3.5.0.129452",
+          "Xamarin.Forms.Visual.Material": "3.5.0.129452"
+        },
+        "compile": {
+          "lib/Xamarin.iOS10/XamarinBackgroundKit.dll": {},
+          "lib/Xamarin.iOS10/XamarinBackgroundKit.iOS.dll": {}
+        },
+        "runtime": {
+          "lib/Xamarin.iOS10/XamarinBackgroundKit.dll": {},
+          "lib/Xamarin.iOS10/XamarinBackgroundKit.iOS.dll": {}
+        }
+      },
+      "Xamarin.Forms.Maps/3.6.0.264807": {
+        "type": "package",
+        "dependencies": {
+          "Xamarin.Forms": "3.6.0.264807"
+        },
+        "compile": {
+          "lib/Xamarin.iOS10/Xamarin.Forms.Maps.dll": {},
+          "lib/Xamarin.iOS10/Xamarin.Forms.Maps.iOS.dll": {}
+        },
+        "runtime": {
+          "lib/Xamarin.iOS10/Xamarin.Forms.Maps.dll": {},
+          "lib/Xamarin.iOS10/Xamarin.Forms.Maps.iOS.dll": {}
+        }
+      },
+      "Xamarin.Forms.Visual.Material/3.6.0.264807": {
+        "type": "package",
+        "dependencies": {
+          "Xamarin.iOS.MaterialComponents": "72.2.0.1"
+        },
+        "compile": {
+          "lib/Xamarin.iOS10/Xamarin.Forms.Material.dll": {}
+        },
+        "runtime": {
+          "lib/Xamarin.iOS10/Xamarin.Forms.Material.dll": {}
+        }
+      },
+      "Xamarin.iOS.MaterialComponents/72.2.0.1": {
+        "type": "package",
+        "compile": {
+          "lib/Xamarin.iOS/MaterialComponents.dll": {}
+        },
+        "runtime": {
+          "lib/Xamarin.iOS/MaterialComponents.dll": {}
+        }
+      },
+      "EcoHelper/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "dependencies": {
+          "SQLiteNetExtensions": "2.1.0",
+          "Xamarin.Essentials": "1.0.1",
+          "Xamarin.Forms": "3.6.0.264807",
+          "Xamarin.Forms.BackgroundKit": "1.2.3",
+          "Xamarin.Forms.Maps": "3.6.0.264807",
+          "Xamarin.Forms.Visual.Material": "3.6.0.264807",
+          "sqlite-net-pcl": "1.5.231"
+        },
+        "compile": {
+          "bin/placeholder/EcoHelper.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/EcoHelper.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Naxam.KVOController.iOS/1.2.0": {
+      "sha512": "Lnm+TUnkviMR03xq7meNiEpsF6kjEMyeNBBth/DPsJlh4Jtae8+xjmZ8lEbTndCgi9Hr43inbRuelrIWLqljyA==",
+      "type": "package",
+      "path": "naxam.kvocontroller.ios/1.2.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/Xamarin.iOS10/Naxam.KVOController.iOS.dll",
+        "naxam.kvocontroller.ios.1.2.0.nupkg.sha512",
+        "naxam.kvocontroller.ios.nuspec"
+      ]
+    },
+    "Newtonsoft.Json/9.0.1": {
+      "sha512": "U82mHQSKaIk+lpSVCbWYKNavmNH1i5xrExDEquU1i6I5pV6UMOqRnJRSlKO3cMPfcpp0RgDY+8jUXHdQ4IfXvw==",
+      "type": "package",
+      "path": "newtonsoft.json/9.0.1",
+      "hasTools": true,
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net20/Newtonsoft.Json.dll",
+        "lib/net20/Newtonsoft.Json.xml",
+        "lib/net35/Newtonsoft.Json.dll",
+        "lib/net35/Newtonsoft.Json.xml",
+        "lib/net40/Newtonsoft.Json.dll",
+        "lib/net40/Newtonsoft.Json.xml",
+        "lib/net45/Newtonsoft.Json.dll",
+        "lib/net45/Newtonsoft.Json.xml",
+        "lib/netstandard1.0/Newtonsoft.Json.dll",
+        "lib/netstandard1.0/Newtonsoft.Json.xml",
+        "lib/portable-net40+sl5+wp80+win8+wpa81/Newtonsoft.Json.dll",
+        "lib/portable-net40+sl5+wp80+win8+wpa81/Newtonsoft.Json.xml",
+        "lib/portable-net45+wp80+win8+wpa81/Newtonsoft.Json.dll",
+        "lib/portable-net45+wp80+win8+wpa81/Newtonsoft.Json.xml",
+        "newtonsoft.json.9.0.1.nupkg.sha512",
+        "newtonsoft.json.nuspec",
+        "tools/install.ps1"
+      ]
+    },
+    "sqlite-net-pcl/1.5.231": {
+      "sha512": "B9jScvqkishSMkpa9Mc4Q85LTHxRTzcUXZx9EQqgrvdz7MFEDHfpiPcKdjy1qXHdmHttEXfY4h6gu4FlgWP2Sw==",
+      "type": "package",
+      "path": "sqlite-net-pcl/1.5.231",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/netstandard1.1/SQLite-net.deps.json",
+        "lib/netstandard1.1/SQLite-net.dll",
+        "lib/netstandard1.1/SQLite-net.xml",
+        "lib/portable-net45+netcore45+wpa81+wp8+MonoAndroid10+MonoTouch10+Xamarin.iOS10/SQLite-net.dll",
+        "lib/portable-net45+netcore45+wpa81+wp8+MonoAndroid10+MonoTouch10+Xamarin.iOS10/SQLite-net.xml",
+        "sqlite-net-pcl.1.5.231.nupkg.sha512",
+        "sqlite-net-pcl.nuspec"
+      ]
+    },
+    "SQLiteNetExtensions/2.1.0": {
+      "sha512": "oiyhVxCi7M2nr3tI6h05jdHGT0HKW6GxMNKUiO04zWAxv42MHtX12c4tW67w6VqGwcnXj1bwyTpq9P0W8QoGYQ==",
+      "type": "package",
+      "path": "sqlitenetextensions/2.1.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/netstandard1.1/SQLiteNetExtensions.dll",
+        "lib/netstandard1.1/SQLiteNetExtensions.pdb",
+        "sqlitenetextensions.2.1.0.nupkg.sha512",
+        "sqlitenetextensions.nuspec",
+        "src/SQLiteNetExtensions/Attributes/CascadeOperation.cs",
+        "src/SQLiteNetExtensions/Attributes/ForeignKeyAttribute.cs",
+        "src/SQLiteNetExtensions/Attributes/ManyToManyAttribute.cs",
+        "src/SQLiteNetExtensions/Attributes/ManyToOneAttribute.cs",
+        "src/SQLiteNetExtensions/Attributes/OneToManyAttribute.cs",
+        "src/SQLiteNetExtensions/Attributes/OneToOneAttribute.cs",
+        "src/SQLiteNetExtensions/Attributes/RelationshipAttribute.cs",
+        "src/SQLiteNetExtensions/Attributes/TextBlobAttribute.cs",
+        "src/SQLiteNetExtensions/Exceptions/IncorrectRelationshipException.cs",
+        "src/SQLiteNetExtensions/Extensions/ReadOperations.cs",
+        "src/SQLiteNetExtensions/Extensions/ReflectionExtensions.cs",
+        "src/SQLiteNetExtensions/Extensions/TextBlob/ITextBlobSerializer.cs",
+        "src/SQLiteNetExtensions/Extensions/TextBlob/Serializers/JsonBlobSerializer.cs",
+        "src/SQLiteNetExtensions/Extensions/TextBlob/TextBlobOperations.cs",
+        "src/SQLiteNetExtensions/Extensions/WriteOperations.cs",
+        "src/SQLiteNetExtensions/Properties/AssemblyInfo.cs"
+      ]
+    },
+    "SQLitePCLRaw.bundle_green/1.1.11": {
+      "sha512": "Hqp8IF/RLjbypkLm+t+1RqAX8EKuWEkj7wkLXplfENQoPnE127cvTmaDvaQKtt7a5QsD/HNjFDr1z5f9q2wdPg==",
+      "type": "package",
+      "path": "sqlitepclraw.bundle_green/1.1.11",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "build/wp8/SQLitePCLRaw.bundle_green.targets",
+        "build/wp80/arm/SQLitePCLRaw.batteries_green.dll",
+        "build/wp80/arm/SQLitePCLRaw.batteries_v2.dll",
+        "build/wp80/x86/SQLitePCLRaw.batteries_green.dll",
+        "build/wp80/x86/SQLitePCLRaw.batteries_v2.dll",
+        "lib/MonoAndroid/SQLitePCLRaw.batteries_green.dll",
+        "lib/MonoAndroid/SQLitePCLRaw.batteries_v2.dll",
+        "lib/Xamarin.Mac20/SQLitePCLRaw.batteries_green.dll",
+        "lib/Xamarin.Mac20/SQLitePCLRaw.batteries_v2.dll",
+        "lib/Xamarin.iOS10/SQLitePCLRaw.batteries_green.dll",
+        "lib/Xamarin.iOS10/SQLitePCLRaw.batteries_v2.dll",
+        "lib/net35/SQLitePCLRaw.batteries_green.dll",
+        "lib/net35/SQLitePCLRaw.batteries_v2.dll",
+        "lib/net40/SQLitePCLRaw.batteries_green.dll",
+        "lib/net40/SQLitePCLRaw.batteries_v2.dll",
+        "lib/net45/SQLitePCLRaw.batteries_green.dll",
+        "lib/net45/SQLitePCLRaw.batteries_v2.dll",
+        "lib/netcoreapp/SQLitePCLRaw.batteries_green.dll",
+        "lib/netcoreapp/SQLitePCLRaw.batteries_v2.dll",
+        "lib/netstandard1.1/SQLitePCLRaw.batteries_green.dll",
+        "lib/netstandard1.1/SQLitePCLRaw.batteries_v2.dll",
+        "lib/portable-net40+sl5+netcore45+wp8+MonoAndroid10+MonoTouch10+Xamarin.iOS10/SQLitePCLRaw.batteries_green.dll",
+        "lib/portable-net40+sl5+netcore45+wp8+MonoAndroid10+MonoTouch10+Xamarin.iOS10/SQLitePCLRaw.batteries_v2.dll",
+        "lib/portable-net45+netcore45+wpa81+MonoAndroid10+MonoTouch10+Xamarin.iOS10/SQLitePCLRaw.batteries_green.dll",
+        "lib/portable-net45+netcore45+wpa81+MonoAndroid10+MonoTouch10+Xamarin.iOS10/SQLitePCLRaw.batteries_v2.dll",
+        "lib/portable-net45+netcore45+wpa81+wp8+MonoAndroid10+MonoTouch10+Xamarin.iOS10/SQLitePCLRaw.batteries_green.dll",
+        "lib/portable-net45+netcore45+wpa81+wp8+MonoAndroid10+MonoTouch10+Xamarin.iOS10/SQLitePCLRaw.batteries_v2.dll",
+        "lib/uap10.0/SQLitePCLRaw.batteries_green.dll",
+        "lib/uap10.0/SQLitePCLRaw.batteries_v2.dll",
+        "lib/win8/SQLitePCLRaw.batteries_green.dll",
+        "lib/win8/SQLitePCLRaw.batteries_v2.dll",
+        "lib/win81/SQLitePCLRaw.batteries_green.dll",
+        "lib/win81/SQLitePCLRaw.batteries_v2.dll",
+        "lib/wp8/_._",
+        "lib/wpa81/SQLitePCLRaw.batteries_green.dll",
+        "lib/wpa81/SQLitePCLRaw.batteries_v2.dll",
+        "sqlitepclraw.bundle_green.1.1.11.nupkg.sha512",
+        "sqlitepclraw.bundle_green.nuspec"
+      ]
+    },
+    "SQLitePCLRaw.core/1.1.11": {
+      "sha512": "QT17CyQAQIbTCu6pW5+uVA8BXqRzquiDI1tr5Un6c1YZcQydPmGPuYYng9xMs2UHUDYHbTu+JDkp55WR+qo9bQ==",
+      "type": "package",
+      "path": "sqlitepclraw.core/1.1.11",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/MonoAndroid/SQLitePCLRaw.core.dll",
+        "lib/Xamarin.Mac20/SQLitePCLRaw.core.dll",
+        "lib/Xamarin.iOS10/SQLitePCLRaw.core.dll",
+        "lib/net35/SQLitePCLRaw.core.dll",
+        "lib/net40/SQLitePCLRaw.core.dll",
+        "lib/net45/SQLitePCLRaw.core.dll",
+        "lib/netstandard1.0/SQLitePCLRaw.core.dll",
+        "lib/netstandard1.1/SQLitePCLRaw.core.dll",
+        "lib/portable-net40+sl5+netcore45+wp8+MonoAndroid10+MonoTouch10+Xamarin.iOS10/SQLitePCLRaw.core.dll",
+        "lib/portable-net45+netcore45+wpa81+MonoAndroid10+MonoTouch10+Xamarin.iOS10/SQLitePCLRaw.core.dll",
+        "lib/portable-net45+netcore45+wpa81+wp8+MonoAndroid10+MonoTouch10+Xamarin.iOS10/SQLitePCLRaw.core.dll",
+        "lib/uap10.0/SQLitePCLRaw.core.dll",
+        "lib/win8/SQLitePCLRaw.core.dll",
+        "lib/win81/SQLitePCLRaw.core.dll",
+        "lib/wpa81/SQLitePCLRaw.core.dll",
+        "sqlitepclraw.core.1.1.11.nupkg.sha512",
+        "sqlitepclraw.core.nuspec"
+      ]
+    },
+    "SQLitePCLRaw.provider.sqlite3.ios_unified/1.1.11": {
+      "sha512": "hWk/vgFthsTedjorVFNErd5xk0x0UtlYr/ndmDUYhAcA9Y9g0IJXBMn1Z2QYsLMlvE6Qj5yVvjfkUOARhXezQw==",
+      "type": "package",
+      "path": "sqlitepclraw.provider.sqlite3.ios_unified/1.1.11",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/Xamarin.iOS10/SQLitePCLRaw.provider.sqlite3.dll",
+        "sqlitepclraw.provider.sqlite3.ios_unified.1.1.11.nupkg.sha512",
+        "sqlitepclraw.provider.sqlite3.ios_unified.nuspec"
+      ]
+    },
+    "System.Numerics.Vectors/4.5.0": {
+      "sha512": "QQTlPTl06J/iiDbJCiepZ4H//BVraReU4O4EoRw1U02H5TLUIT7xn3GnDp9AXPSlJUDyFs4uWjWafNX6WrAojQ==",
+      "type": "package",
+      "path": "system.numerics.vectors/4.5.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/MonoAndroid10/_._",
+        "lib/MonoTouch10/_._",
+        "lib/net46/System.Numerics.Vectors.dll",
+        "lib/net46/System.Numerics.Vectors.xml",
+        "lib/netcoreapp2.0/_._",
+        "lib/netstandard1.0/System.Numerics.Vectors.dll",
+        "lib/netstandard1.0/System.Numerics.Vectors.xml",
+        "lib/netstandard2.0/System.Numerics.Vectors.dll",
+        "lib/netstandard2.0/System.Numerics.Vectors.xml",
+        "lib/portable-net45+win8+wp8+wpa81/System.Numerics.Vectors.dll",
+        "lib/portable-net45+win8+wp8+wpa81/System.Numerics.Vectors.xml",
+        "lib/uap10.0.16299/_._",
+        "lib/xamarinios10/_._",
+        "lib/xamarinmac20/_._",
+        "lib/xamarintvos10/_._",
+        "lib/xamarinwatchos10/_._",
+        "ref/MonoAndroid10/_._",
+        "ref/MonoTouch10/_._",
+        "ref/net45/System.Numerics.Vectors.dll",
+        "ref/net45/System.Numerics.Vectors.xml",
+        "ref/net46/System.Numerics.Vectors.dll",
+        "ref/net46/System.Numerics.Vectors.xml",
+        "ref/netcoreapp2.0/_._",
+        "ref/netstandard1.0/System.Numerics.Vectors.dll",
+        "ref/netstandard1.0/System.Numerics.Vectors.xml",
+        "ref/netstandard2.0/System.Numerics.Vectors.dll",
+        "ref/netstandard2.0/System.Numerics.Vectors.xml",
+        "ref/uap10.0.16299/_._",
+        "ref/xamarinios10/_._",
+        "ref/xamarinmac20/_._",
+        "ref/xamarintvos10/_._",
+        "ref/xamarinwatchos10/_._",
+        "system.numerics.vectors.4.5.0.nupkg.sha512",
+        "system.numerics.vectors.nuspec",
+        "useSharedDesignerContext.txt",
+        "version.txt"
+      ]
+    },
+    "Xamarin.Essentials/1.0.1": {
+      "sha512": "cGSje2LlYsCdscPt2zAG4e0Zzr08zc21Cj4DAMub3GR37lc/vzAVwGxco8NeCSzcZs147wYbXkFCXwOr4LUO9A==",
+      "type": "package",
+      "path": "xamarin.essentials/1.0.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/monoandroid71/Xamarin.Essentials.dll",
+        "lib/monoandroid71/Xamarin.Essentials.pdb",
+        "lib/monoandroid71/Xamarin.Essentials.xml",
+        "lib/monoandroid80/Xamarin.Essentials.dll",
+        "lib/monoandroid80/Xamarin.Essentials.pdb",
+        "lib/monoandroid80/Xamarin.Essentials.xml",
+        "lib/monoandroid81/Xamarin.Essentials.dll",
+        "lib/monoandroid81/Xamarin.Essentials.pdb",
+        "lib/monoandroid81/Xamarin.Essentials.xml",
+        "lib/netstandard1.0/Xamarin.Essentials.dll",
+        "lib/netstandard1.0/Xamarin.Essentials.pdb",
+        "lib/netstandard1.0/Xamarin.Essentials.xml",
+        "lib/netstandard2.0/Xamarin.Essentials.dll",
+        "lib/netstandard2.0/Xamarin.Essentials.pdb",
+        "lib/netstandard2.0/Xamarin.Essentials.xml",
+        "lib/uap10.0.16299/Xamarin.Essentials.dll",
+        "lib/uap10.0.16299/Xamarin.Essentials.pdb",
+        "lib/uap10.0.16299/Xamarin.Essentials.pri",
+        "lib/uap10.0.16299/Xamarin.Essentials.xml",
+        "lib/xamarinios10/Xamarin.Essentials.dll",
+        "lib/xamarinios10/Xamarin.Essentials.pdb",
+        "lib/xamarinios10/Xamarin.Essentials.xml",
+        "readme.txt",
+        "xamarin.essentials.1.0.1.nupkg.sha512",
+        "xamarin.essentials.nuspec"
+      ]
+    },
+    "Xamarin.Forms/3.6.0.264807": {
+      "sha512": "PbnXpStyxNYJzPrXXMW17F4YeMsFAs6YT9LL2vxObDWCGtaKkLia4UyBPF3Qbhy+lQPeap/ijV1Rlvasp4DFiA==",
+      "type": "package",
+      "path": "xamarin.forms/3.6.0.264807",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "build/MonoAndroid10/proguard.cfg",
+        "build/Xamarin.Forms.DefaultItems.props",
+        "build/Xamarin.Forms.DefaultItems.targets",
+        "build/Xamarin.Forms.props",
+        "build/Xamarin.Forms.targets",
+        "build/net46/Mono.Cecil.Mdb.dll",
+        "build/net46/Mono.Cecil.Pdb.dll",
+        "build/net46/Mono.Cecil.Rocks.dll",
+        "build/net46/Mono.Cecil.dll",
+        "build/net46/System.ValueTuple.dll",
+        "build/net46/Xamarin.Forms.Build.Tasks.dll",
+        "build/net46/Xamarin.Forms.Core.dll",
+        "build/net46/Xamarin.Forms.Xaml.dll",
+        "build/netstandard2.0/Mono.Cecil.Mdb.dll",
+        "build/netstandard2.0/Mono.Cecil.Pdb.dll",
+        "build/netstandard2.0/Mono.Cecil.Rocks.dll",
+        "build/netstandard2.0/Mono.Cecil.dll",
+        "build/netstandard2.0/System.CodeDom.dll",
+        "build/netstandard2.0/Xamarin.Forms.Build.Tasks.dll",
+        "build/netstandard2.0/Xamarin.Forms.Core.dll",
+        "build/netstandard2.0/Xamarin.Forms.Xaml.dll",
+        "lib/MonoAndroid81/Design/Xamarin.Forms.Core.Design.dll",
+        "lib/MonoAndroid81/Design/Xamarin.Forms.Xaml.Design.dll",
+        "lib/MonoAndroid81/FormsViewGroup.dll",
+        "lib/MonoAndroid81/FormsViewGroup.pdb",
+        "lib/MonoAndroid81/Xamarin.Forms.Core.dll",
+        "lib/MonoAndroid81/Xamarin.Forms.Core.pdb",
+        "lib/MonoAndroid81/Xamarin.Forms.Core.xml",
+        "lib/MonoAndroid81/Xamarin.Forms.Platform.Android.dll",
+        "lib/MonoAndroid81/Xamarin.Forms.Platform.Android.pdb",
+        "lib/MonoAndroid81/Xamarin.Forms.Platform.dll",
+        "lib/MonoAndroid81/Xamarin.Forms.Xaml.dll",
+        "lib/MonoAndroid81/Xamarin.Forms.Xaml.pdb",
+        "lib/MonoAndroid81/Xamarin.Forms.Xaml.xml",
+        "lib/MonoAndroid90/Design/Xamarin.Forms.Core.Design.dll",
+        "lib/MonoAndroid90/Design/Xamarin.Forms.Xaml.Design.dll",
+        "lib/MonoAndroid90/FormsViewGroup.dll",
+        "lib/MonoAndroid90/FormsViewGroup.pdb",
+        "lib/MonoAndroid90/Xamarin.Forms.Core.dll",
+        "lib/MonoAndroid90/Xamarin.Forms.Core.pdb",
+        "lib/MonoAndroid90/Xamarin.Forms.Core.xml",
+        "lib/MonoAndroid90/Xamarin.Forms.Platform.Android.dll",
+        "lib/MonoAndroid90/Xamarin.Forms.Platform.Android.pdb",
+        "lib/MonoAndroid90/Xamarin.Forms.Platform.dll",
+        "lib/MonoAndroid90/Xamarin.Forms.Xaml.dll",
+        "lib/MonoAndroid90/Xamarin.Forms.Xaml.pdb",
+        "lib/MonoAndroid90/Xamarin.Forms.Xaml.xml",
+        "lib/Xamarin.Mac/Design/Xamarin.Forms.Core.Design.dll",
+        "lib/Xamarin.Mac/Design/Xamarin.Forms.Xaml.Design.dll",
+        "lib/Xamarin.Mac/Xamarin.Forms.Core.dll",
+        "lib/Xamarin.Mac/Xamarin.Forms.Platform.dll",
+        "lib/Xamarin.Mac/Xamarin.Forms.Platform.macOS.dll",
+        "lib/Xamarin.Mac/Xamarin.Forms.Xaml.dll",
+        "lib/Xamarin.iOS10/Design/Xamarin.Forms.Core.Design.dll",
+        "lib/Xamarin.iOS10/Design/Xamarin.Forms.Xaml.Design.dll",
+        "lib/Xamarin.iOS10/Xamarin.Forms.Core.dll",
+        "lib/Xamarin.iOS10/Xamarin.Forms.Core.pdb",
+        "lib/Xamarin.iOS10/Xamarin.Forms.Core.xml",
+        "lib/Xamarin.iOS10/Xamarin.Forms.Platform.dll",
+        "lib/Xamarin.iOS10/Xamarin.Forms.Platform.iOS.dll",
+        "lib/Xamarin.iOS10/Xamarin.Forms.Platform.iOS.pdb",
+        "lib/Xamarin.iOS10/Xamarin.Forms.Xaml.dll",
+        "lib/Xamarin.iOS10/Xamarin.Forms.Xaml.pdb",
+        "lib/Xamarin.iOS10/Xamarin.Forms.Xaml.xml",
+        "lib/Xamarin.iOS10/ar/Xamarin.Forms.Platform.iOS.resources.dll",
+        "lib/Xamarin.iOS10/ca/Xamarin.Forms.Platform.iOS.resources.dll",
+        "lib/Xamarin.iOS10/cs/Xamarin.Forms.Platform.iOS.resources.dll",
+        "lib/Xamarin.iOS10/da/Xamarin.Forms.Platform.iOS.resources.dll",
+        "lib/Xamarin.iOS10/de/Xamarin.Forms.Platform.iOS.resources.dll",
+        "lib/Xamarin.iOS10/el/Xamarin.Forms.Platform.iOS.resources.dll",
+        "lib/Xamarin.iOS10/es/Xamarin.Forms.Platform.iOS.resources.dll",
+        "lib/Xamarin.iOS10/fi/Xamarin.Forms.Platform.iOS.resources.dll",
+        "lib/Xamarin.iOS10/fr/Xamarin.Forms.Platform.iOS.resources.dll",
+        "lib/Xamarin.iOS10/he/Xamarin.Forms.Platform.iOS.resources.dll",
+        "lib/Xamarin.iOS10/hi/Xamarin.Forms.Platform.iOS.resources.dll",
+        "lib/Xamarin.iOS10/hr/Xamarin.Forms.Platform.iOS.resources.dll",
+        "lib/Xamarin.iOS10/hu/Xamarin.Forms.Platform.iOS.resources.dll",
+        "lib/Xamarin.iOS10/id/Xamarin.Forms.Platform.iOS.resources.dll",
+        "lib/Xamarin.iOS10/it/Xamarin.Forms.Platform.iOS.resources.dll",
+        "lib/Xamarin.iOS10/ja/Xamarin.Forms.Platform.iOS.resources.dll",
+        "lib/Xamarin.iOS10/ko/Xamarin.Forms.Platform.iOS.resources.dll",
+        "lib/Xamarin.iOS10/ms/Xamarin.Forms.Platform.iOS.resources.dll",
+        "lib/Xamarin.iOS10/nb/Xamarin.Forms.Platform.iOS.resources.dll",
+        "lib/Xamarin.iOS10/nl/Xamarin.Forms.Platform.iOS.resources.dll",
+        "lib/Xamarin.iOS10/pl/Xamarin.Forms.Platform.iOS.resources.dll",
+        "lib/Xamarin.iOS10/pt-BR/Xamarin.Forms.Platform.iOS.resources.dll",
+        "lib/Xamarin.iOS10/pt/Xamarin.Forms.Platform.iOS.resources.dll",
+        "lib/Xamarin.iOS10/ro/Xamarin.Forms.Platform.iOS.resources.dll",
+        "lib/Xamarin.iOS10/ru/Xamarin.Forms.Platform.iOS.resources.dll",
+        "lib/Xamarin.iOS10/sk/Xamarin.Forms.Platform.iOS.resources.dll",
+        "lib/Xamarin.iOS10/sv/Xamarin.Forms.Platform.iOS.resources.dll",
+        "lib/Xamarin.iOS10/th/Xamarin.Forms.Platform.iOS.resources.dll",
+        "lib/Xamarin.iOS10/tr/Xamarin.Forms.Platform.iOS.resources.dll",
+        "lib/Xamarin.iOS10/uk/Xamarin.Forms.Platform.iOS.resources.dll",
+        "lib/Xamarin.iOS10/vi/Xamarin.Forms.Platform.iOS.resources.dll",
+        "lib/Xamarin.iOS10/zh-HK/Xamarin.Forms.Platform.iOS.resources.dll",
+        "lib/Xamarin.iOS10/zh-Hans/Xamarin.Forms.Platform.iOS.resources.dll",
+        "lib/Xamarin.iOS10/zh-Hant/Xamarin.Forms.Platform.iOS.resources.dll",
+        "lib/netstandard1.0/Design/Xamarin.Forms.Core.Design.dll",
+        "lib/netstandard1.0/Design/Xamarin.Forms.Xaml.Design.dll",
+        "lib/netstandard1.0/Xamarin.Forms.Core.dll",
+        "lib/netstandard1.0/Xamarin.Forms.Core.pdb",
+        "lib/netstandard1.0/Xamarin.Forms.Core.xml",
+        "lib/netstandard1.0/Xamarin.Forms.Platform.dll",
+        "lib/netstandard1.0/Xamarin.Forms.Xaml.dll",
+        "lib/netstandard1.0/Xamarin.Forms.Xaml.pdb",
+        "lib/netstandard1.0/Xamarin.Forms.Xaml.xml",
+        "lib/netstandard2.0/Design/Xamarin.Forms.Core.Design.dll",
+        "lib/netstandard2.0/Design/Xamarin.Forms.Xaml.Design.dll",
+        "lib/netstandard2.0/Xamarin.Forms.Core.dll",
+        "lib/netstandard2.0/Xamarin.Forms.Core.pdb",
+        "lib/netstandard2.0/Xamarin.Forms.Core.xml",
+        "lib/netstandard2.0/Xamarin.Forms.Platform.dll",
+        "lib/netstandard2.0/Xamarin.Forms.Xaml.dll",
+        "lib/netstandard2.0/Xamarin.Forms.Xaml.pdb",
+        "lib/netstandard2.0/Xamarin.Forms.Xaml.xml",
+        "lib/tizen40/Design/Xamarin.Forms.Core.Design.dll",
+        "lib/tizen40/Design/Xamarin.Forms.Xaml.Design.dll",
+        "lib/tizen40/Xamarin.Forms.Core.dll",
+        "lib/tizen40/Xamarin.Forms.Core.pdb",
+        "lib/tizen40/Xamarin.Forms.Core.xml",
+        "lib/tizen40/Xamarin.Forms.Platform.Tizen.dll",
+        "lib/tizen40/Xamarin.Forms.Platform.Tizen.pdb",
+        "lib/tizen40/Xamarin.Forms.Platform.dll",
+        "lib/tizen40/Xamarin.Forms.Xaml.dll",
+        "lib/tizen40/Xamarin.Forms.Xaml.pdb",
+        "lib/tizen40/Xamarin.Forms.Xaml.xml",
+        "lib/uap10.0/Design/Xamarin.Forms.Core.Design.dll",
+        "lib/uap10.0/Design/Xamarin.Forms.Xaml.Design.dll",
+        "lib/uap10.0/Xamarin.Forms.Core.dll",
+        "lib/uap10.0/Xamarin.Forms.Core.pdb",
+        "lib/uap10.0/Xamarin.Forms.Core.xml",
+        "lib/uap10.0/Xamarin.Forms.Platform.UAP.dll",
+        "lib/uap10.0/Xamarin.Forms.Platform.UAP.pdb",
+        "lib/uap10.0/Xamarin.Forms.Platform.UAP.pri",
+        "lib/uap10.0/Xamarin.Forms.Platform.UAP/AutoSuggestStyle.xbf",
+        "lib/uap10.0/Xamarin.Forms.Platform.UAP/FormsCommandBarStyle.xbf",
+        "lib/uap10.0/Xamarin.Forms.Platform.UAP/FormsEmbeddedPageWrapper.xbf",
+        "lib/uap10.0/Xamarin.Forms.Platform.UAP/FormsFlyout.xbf",
+        "lib/uap10.0/Xamarin.Forms.Platform.UAP/FormsProgressBarStyle.xbf",
+        "lib/uap10.0/Xamarin.Forms.Platform.UAP/FormsTextBoxStyle.xbf",
+        "lib/uap10.0/Xamarin.Forms.Platform.UAP/Items/ItemsViewStyles.xbf",
+        "lib/uap10.0/Xamarin.Forms.Platform.UAP/MasterDetailControlStyle.xbf",
+        "lib/uap10.0/Xamarin.Forms.Platform.UAP/PageControlStyle.xbf",
+        "lib/uap10.0/Xamarin.Forms.Platform.UAP/Properties/Xamarin.Forms.Platform.UAP.rd.xml",
+        "lib/uap10.0/Xamarin.Forms.Platform.UAP/Resources.xbf",
+        "lib/uap10.0/Xamarin.Forms.Platform.UAP/SliderStyle.xbf",
+        "lib/uap10.0/Xamarin.Forms.Platform.UAP/StepperControl.xbf",
+        "lib/uap10.0/Xamarin.Forms.Platform.UAP/TabbedPageStyle.xbf",
+        "lib/uap10.0/Xamarin.Forms.Platform.UAP/Xamarin.Forms.Platform.UAP.xr.xml",
+        "lib/uap10.0/Xamarin.Forms.Platform.dll",
+        "lib/uap10.0/Xamarin.Forms.Xaml.dll",
+        "lib/uap10.0/Xamarin.Forms.Xaml.pdb",
+        "lib/uap10.0/Xamarin.Forms.Xaml.xml",
+        "xamarin.forms.3.6.0.264807.nupkg.sha512",
+        "xamarin.forms.nuspec"
+      ]
+    },
+    "Xamarin.Forms.BackgroundKit/1.2.3": {
+      "sha512": "nTwe0zXkha4y39WwC67Tv2Gec++0FlTmBxf2yzQevTZ+iPIQL28Q0QDwTg3EG7s/EN5GlrCOiVuP8WEOwexPzQ==",
+      "type": "package",
+      "path": "xamarin.forms.backgroundkit/1.2.3",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.md",
+        "lib/MonoAndroid90/XamarinBackgroundKit.Android.dll",
+        "lib/MonoAndroid90/XamarinBackgroundKit.Android.pdb",
+        "lib/MonoAndroid90/XamarinBackgroundKit.dll",
+        "lib/MonoAndroid90/XamarinBackgroundKit.pdb",
+        "lib/Xamarin.iOS10/XamarinBackgroundKit.dll",
+        "lib/Xamarin.iOS10/XamarinBackgroundKit.iOS.dll",
+        "lib/Xamarin.iOS10/XamarinBackgroundKit.iOS.pdb",
+        "lib/Xamarin.iOS10/XamarinBackgroundKit.pdb",
+        "lib/netstandard2.0/XamarinBackgroundKit.dll",
+        "lib/netstandard2.0/XamarinBackgroundKit.pdb",
+        "xamarin.forms.backgroundkit.1.2.3.nupkg.sha512",
+        "xamarin.forms.backgroundkit.nuspec"
+      ]
+    },
+    "Xamarin.Forms.Maps/3.6.0.264807": {
+      "sha512": "AYJQ+kMFntWwZ2C5A0IfFW1utwSuoSc5R9Ek/ML3fePoVxMpuK6vPwwWTnf5FiLQ9BQadq2Cqg3wZj7gfbE5wQ==",
+      "type": "package",
+      "path": "xamarin.forms.maps/3.6.0.264807",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/MonoAndroid81/Xamarin.Forms.Maps.Android.dll",
+        "lib/MonoAndroid81/Xamarin.Forms.Maps.dll",
+        "lib/MonoAndroid81/Xamarin.Forms.Maps.xml",
+        "lib/MonoAndroid90/Xamarin.Forms.Maps.Android.dll",
+        "lib/MonoAndroid90/Xamarin.Forms.Maps.dll",
+        "lib/MonoAndroid90/Xamarin.Forms.Maps.xml",
+        "lib/Xamarin.Mac/Xamarin.Forms.Maps.dll",
+        "lib/Xamarin.Mac/Xamarin.Forms.Maps.macOS.dll",
+        "lib/Xamarin.Mac/Xamarin.Forms.Maps.xml",
+        "lib/Xamarin.iOS10/Xamarin.Forms.Maps.dll",
+        "lib/Xamarin.iOS10/Xamarin.Forms.Maps.iOS.dll",
+        "lib/Xamarin.iOS10/Xamarin.Forms.Maps.xml",
+        "lib/netstandard1.0/Xamarin.Forms.Maps.dll",
+        "lib/netstandard1.0/Xamarin.Forms.Maps.xml",
+        "lib/netstandard2.0/Xamarin.Forms.Maps.dll",
+        "lib/netstandard2.0/Xamarin.Forms.Maps.xml",
+        "lib/tizen40/Xamarin.Forms.Maps.Tizen.dll",
+        "lib/tizen40/Xamarin.Forms.Maps.dll",
+        "lib/tizen40/Xamarin.Forms.Maps.xml",
+        "lib/uap10.0/Xamarin.Forms.Maps.UWP.dll",
+        "lib/uap10.0/Xamarin.Forms.Maps.UWP.pri",
+        "lib/uap10.0/Xamarin.Forms.Maps.dll",
+        "xamarin.forms.maps.3.6.0.264807.nupkg.sha512",
+        "xamarin.forms.maps.nuspec"
+      ]
+    },
+    "Xamarin.Forms.Visual.Material/3.6.0.264807": {
+      "sha512": "VI+T8Wl6BN9UQZjbTOR8DhsP8aIOW84m+PxaOguyY6FmUVCMWR0da97np/88dBTolkTIvZv1xFP4YJ3uN1LnEg==",
+      "type": "package",
+      "path": "xamarin.forms.visual.material/3.6.0.264807",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "build/MonoAndroid10/Xamarin.Forms.Visual.Material.targets",
+        "lib/MonoAndroid10/_._",
+        "lib/MonoAndroid90/Xamarin.Forms.Material.dll",
+        "lib/MonoAndroid90/Xamarin.Forms.Material.dll.mdb",
+        "lib/MonoAndroid90/Xamarin.Forms.Material.pdb",
+        "lib/Xamarin.iOS10/Xamarin.Forms.Material.dll",
+        "lib/Xamarin.iOS10/Xamarin.Forms.Material.pdb",
+        "lib/netstandard1.0/_._",
+        "xamarin.forms.visual.material.3.6.0.264807.nupkg.sha512",
+        "xamarin.forms.visual.material.nuspec"
+      ]
+    },
+    "Xamarin.iOS.MaterialComponents/72.2.0.1": {
+      "sha512": "EbQRS4an2f8O6TscQyhzqtbajCOZRjVgWO9gsIsieukJrAzAXDrXuk4FKT5enjjlZUsmVqBcxKCCw+PPzr4GAw==",
+      "type": "package",
+      "path": "xamarin.ios.materialcomponents/72.2.0.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "THIRD-PARTY-NOTICES.txt",
+        "lib/Xamarin.iOS/MaterialComponents.dll",
+        "xamarin.ios.materialcomponents.72.2.0.1.nupkg.sha512",
+        "xamarin.ios.materialcomponents.nuspec"
+      ]
+    },
+    "EcoHelper/1.0.0": {
+      "type": "project",
+      "path": "../EcoHelper/EcoHelper.csproj",
+      "msbuildProject": "../EcoHelper/EcoHelper.csproj"
+    }
+  },
+  "projectFileDependencyGroups": {
+    "Xamarin.iOS,Version=v1.0": [
+      "EcoHelper >= 1.0.0",
+      "SQLiteNetExtensions >= 2.1.0",
+      "Xamarin.Essentials >= 1.0.1",
+      "Xamarin.Forms >= 3.6.0.264807",
+      "Xamarin.Forms.BackgroundKit >= 1.2.3",
+      "Xamarin.Forms.Maps >= 3.6.0.264807",
+      "sqlite-net-pcl >= 1.5.231"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\m.kalisz\\.nuget\\packages\\": {},
+    "C:\\Microsoft\\Xamarin\\NuGet\\": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "C:\\Git\\EcoHelperr-master\\EcoHelper\\EcoHelper.iOS\\EcoHelper.iOS.csproj",
+      "projectName": "EcoHelper.iOS",
+      "projectPath": "C:\\Git\\EcoHelperr-master\\EcoHelper\\EcoHelper.iOS\\EcoHelper.iOS.csproj",
+      "packagesPath": "C:\\Users\\m.kalisz\\.nuget\\packages\\",
+      "outputPath": "C:\\Git\\EcoHelperr-master\\EcoHelper\\EcoHelper.iOS\\obj\\",
+      "projectStyle": "PackageReference",
+      "skipContentFileWrite": true,
+      "fallbackFolders": [
+        "C:\\Microsoft\\Xamarin\\NuGet\\"
+      ],
+      "configFilePaths": [
+        "C:\\Users\\m.kalisz\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+      ],
+      "originalTargetFrameworks": [
+        "xamarinios10"
+      ],
+      "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "xamarinios10": {
+          "projectReferences": {
+            "C:\\Git\\EcoHelperr-master\\EcoHelper\\EcoHelper\\EcoHelper.csproj": {
+              "projectPath": "C:\\Git\\EcoHelperr-master\\EcoHelper\\EcoHelper\\EcoHelper.csproj"
+            }
+          }
+        }
+      }
+    },
+    "frameworks": {
+      "xamarinios10": {
+        "dependencies": {
+          "SQLiteNetExtensions": {
+            "target": "Package",
+            "version": "[2.1.0, )"
+          },
+          "Xamarin.Essentials": {
+            "target": "Package",
+            "version": "[1.0.1, )"
+          },
+          "Xamarin.Forms": {
+            "target": "Package",
+            "version": "[3.6.0.264807, )"
+          },
+          "Xamarin.Forms.BackgroundKit": {
+            "target": "Package",
+            "version": "[1.2.3, )"
+          },
+          "Xamarin.Forms.Maps": {
+            "target": "Package",
+            "version": "[3.6.0.264807, )"
+          },
+          "sqlite-net-pcl": {
+            "target": "Package",
+            "version": "[1.5.231, )"
+          }
+        }
+      }
+    },
+    "runtimes": {
+      "win": {
+        "#import": []
+      },
+      "win-x64": {
+        "#import": []
+      },
+      "win-x86": {
+        "#import": []
+      }
+    }
+  }
+}

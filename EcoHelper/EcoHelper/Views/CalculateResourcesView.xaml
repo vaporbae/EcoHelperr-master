@@ -1,0 +1,111 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="EcoHelper.Views.CalculateResourcesView">
+  <ContentPage.Content>
+        <ScrollView>
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="auto"></RowDefinition>
+                    <RowDefinition Height="auto"></RowDefinition>
+                    <RowDefinition Height="auto"></RowDefinition>
+                    <RowDefinition Height="auto"></RowDefinition>
+                    
+                </Grid.RowDefinitions>
+                <Grid Grid.Row="0">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="80"></RowDefinition>
+                    </Grid.RowDefinitions>
+                    <BoxView Color="#E47C7E" Grid.Row="0" />
+                    <Label Text="Przelicz zużytą energię na ilość&#10;wymaganego paliwa" TextColor="White" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" FontSize="16" >
+                        <Label.FontFamily>
+                            <OnPlatform x:TypeArguments="x:String" Android="Domine-Regular.ttf#Domine Regular" iOS="Domine-Regular"/>
+                        </Label.FontFamily>
+                    </Label>
+                </Grid>
+                <Grid Grid.Row="1" Margin="0,20">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="auto"></RowDefinition>
+                        <RowDefinition Height="auto"></RowDefinition>
+                        <RowDefinition Height="auto"></RowDefinition>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="2*"></ColumnDefinition>
+                        <ColumnDefinition Width="5*"></ColumnDefinition>
+                    </Grid.ColumnDefinitions>
+                    <Label Margin="0,15" Grid.Row="0" Grid.Column="0" Text="Energia:" HorizontalTextAlignment="End" VerticalTextAlignment="Center" FontSize="16">
+                        <Label.FontFamily>
+                            <OnPlatform x:TypeArguments="x:String" Android="Domine-Regular.ttf#Domine Regular" iOS="Domine-Regular"/>
+                        </Label.FontFamily>
+                    </Label>
+                    <Label Margin="0,15" Grid.Row="1" Grid.Column="0" Text="Jednostka:" HorizontalTextAlignment="End" VerticalTextAlignment="Center" FontSize="16" >
+                        <Label.FontFamily>
+                            <OnPlatform x:TypeArguments="x:String" Android="Domine-Regular.ttf#Domine Regular" iOS="Domine-Regular"/>
+                        </Label.FontFamily>
+                    </Label>
+                    <Label Margin="0,15" Grid.Row="2" Grid.Column="0" Text="Wynik:" HorizontalTextAlignment="End" VerticalTextAlignment="Center" FontSize="16" >
+                        <Label.FontFamily>
+                            <OnPlatform x:TypeArguments="x:String" Android="Domine-Regular.ttf#Domine Regular" iOS="Domine-Regular"/>
+                        </Label.FontFamily>
+                    </Label>
+                    <Entry x:Name="EnergyText" Keyboard="Numeric" Margin="10,0" Grid.Row="0" Grid.Column="1" Text="100" TextColor="Gray">
+                        <Entry.FontFamily>
+                            <OnPlatform x:TypeArguments="x:String" Android="Domine-Regular.ttf#Domine Regular" iOS="Domine-Regular"/>
+                        </Entry.FontFamily>
+                    </Entry>
+                    <StackLayout Margin="10,0" Grid.Row="1" Grid.Column="1" Orientation="Horizontal">
+                        <Switch x:Name="KwhSwitch" OnColor="#E47C7E" Toggled="KwhSwitch_Toggled" ></Switch>
+                        <Label Margin="0,15" Text="[kWh]" HorizontalTextAlignment="End" VerticalTextAlignment="Center" FontSize="16" >
+                            <Label.FontFamily>
+                                <OnPlatform x:TypeArguments="x:String" Android="Domine-Regular.ttf#Domine Regular" iOS="Domine-Regular"/>
+                            </Label.FontFamily>
+                        </Label>
+                        <Switch x:Name="GjSwitch" OnColor="#E47C7E" Toggled="GjSwitch_Toggled"></Switch>
+                        <Label Margin="0,15" Text="[GJ]" HorizontalTextAlignment="End" VerticalTextAlignment="Center" FontSize="16" >
+                            <Label.FontFamily>
+                                <OnPlatform x:TypeArguments="x:String" Android="Domine-Regular.ttf#Domine Regular" iOS="Domine-Regular"/>
+                            </Label.FontFamily>
+                        </Label>
+                    </StackLayout>
+                    <Entry x:Name="ResultText" Margin="10,0" Grid.Row="2" Grid.Column="1" Text="" TextColor="Black" IsEnabled="False">
+                        <Entry.FontFamily>
+                            <OnPlatform x:TypeArguments="x:String" Android="Domine-Regular.ttf#Domine Regular" iOS="Domine-Regular"/>
+                        </Entry.FontFamily>
+                    </Entry>
+                </Grid>
+                <StackLayout Grid.Row="2" VerticalOptions="FillAndExpand">
+                    <ListView x:Name="ListViewMenu"
+                    HasUnevenRows="True"
+                  >
+                        <ListView.ItemTemplate>
+                            <DataTemplate>
+                                <ViewCell>
+                                    <Grid >
+                                        <Grid.ColumnDefinitions>
+                                            <ColumnDefinition Width="1*" />
+                                            <ColumnDefinition Width="5*" />
+                                            <ColumnDefinition Width="1*" />
+                                        </Grid.ColumnDefinitions>
+                                        <Grid.RowDefinitions>
+                                            <RowDefinition Height="60"></RowDefinition>
+                                        </Grid.RowDefinitions>
+                                        <Image Source="{Binding IconName}" Grid.Column="0" Scale="0.8"></Image>
+                                        <Label Text="{Binding Title}" Grid.Column="1" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" FontSize="16" >
+                                            <Label.FontFamily>
+                                                <OnPlatform x:TypeArguments="x:String" Android="Domine-Regular.ttf#Domine Regular" iOS="Domine-Regular"/>
+                                            </Label.FontFamily>
+                                        </Label>
+                                        <Image Source="{Binding IconName}" Grid.Column="2" Scale="0.8"></Image>
+                                    </Grid>
+                                </ViewCell>
+                            </DataTemplate>
+                        </ListView.ItemTemplate>
+                    </ListView>
+                </StackLayout>
+            </Grid>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

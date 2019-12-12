@@ -1,0 +1,286 @@
+{
+  "runtimeTarget": {
+    "name": ".NETStandard,Version=v2.0/",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETStandard,Version=v2.0": {},
+    ".NETStandard,Version=v2.0/": {
+      "EcoHelper/1.0.0": {
+        "dependencies": {
+          "DurianCode.PlacesSearchBar": "2.0.1",
+          "NETStandard.Library": "2.0.3",
+          "SQLiteNetExtensions": "2.1.0",
+          "Xamarin.Essentials": "1.0.1",
+          "Xamarin.Forms": "3.6.0.264807",
+          "Xamarin.Forms.BackgroundKit": "1.2.3",
+          "Xamarin.Forms.Maps": "3.6.0.264807",
+          "Xamarin.Forms.Visual.Material": "3.6.0.264807",
+          "sqlite-net-pcl": "1.5.231",
+          "Mono.Android": "0.0.0.0"
+        },
+        "runtime": {
+          "EcoHelper.dll": {}
+        }
+      },
+      "DurianCode.PlacesSearchBar/2.0.1": {
+        "dependencies": {
+          "Newtonsoft.Json": "11.0.1",
+          "Xamarin.Forms": "3.6.0.264807"
+        },
+        "runtime": {
+          "lib/netstandard2.0/PlacesSearchBar.dll": {
+            "assemblyVersion": "2.0.1.0",
+            "fileVersion": "2.0.1.0"
+          }
+        }
+      },
+      "Microsoft.NETCore.Platforms/1.1.0": {},
+      "NETStandard.Library/2.0.3": {
+        "dependencies": {
+          "Microsoft.NETCore.Platforms": "1.1.0"
+        }
+      },
+      "Newtonsoft.Json/11.0.1": {
+        "runtime": {
+          "lib/netstandard2.0/Newtonsoft.Json.dll": {
+            "assemblyVersion": "11.0.0.0",
+            "fileVersion": "11.0.1.21818"
+          }
+        }
+      },
+      "sqlite-net-pcl/1.5.231": {
+        "dependencies": {
+          "NETStandard.Library": "2.0.3",
+          "SQLitePCLRaw.bundle_green": "1.1.11"
+        },
+        "runtime": {
+          "lib/netstandard1.1/SQLite-net.dll": {
+            "assemblyVersion": "1.5.231.0",
+            "fileVersion": "1.5.231.0"
+          }
+        }
+      },
+      "SQLiteNetExtensions/2.1.0": {
+        "dependencies": {
+          "Newtonsoft.Json": "11.0.1",
+          "sqlite-net-pcl": "1.5.231"
+        },
+        "runtime": {
+          "lib/netstandard1.1/SQLiteNetExtensions.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "SQLitePCLRaw.bundle_green/1.1.11": {
+        "dependencies": {
+          "NETStandard.Library": "2.0.3",
+          "SQLitePCLRaw.core": "1.1.11"
+        },
+        "runtime": {
+          "lib/netstandard1.1/SQLitePCLRaw.batteries_green.dll": {
+            "assemblyVersion": "1.1.11.121",
+            "fileVersion": "1.0.0.0"
+          },
+          "lib/netstandard1.1/SQLitePCLRaw.batteries_v2.dll": {
+            "assemblyVersion": "1.1.11.121",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "SQLitePCLRaw.core/1.1.11": {
+        "dependencies": {
+          "NETStandard.Library": "2.0.3"
+        },
+        "runtime": {
+          "lib/netstandard1.1/SQLitePCLRaw.core.dll": {
+            "assemblyVersion": "1.1.11.121",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "System.Numerics.Vectors/4.5.0": {
+        "runtime": {
+          "lib/netstandard2.0/System.Numerics.Vectors.dll": {
+            "assemblyVersion": "4.1.4.0",
+            "fileVersion": "4.6.26515.6"
+          }
+        }
+      },
+      "Xamarin.Essentials/1.0.1": {
+        "dependencies": {
+          "System.Numerics.Vectors": "4.5.0"
+        },
+        "runtime": {
+          "lib/netstandard2.0/Xamarin.Essentials.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "Xamarin.Forms/3.6.0.264807": {
+        "runtime": {
+          "lib/netstandard2.0/Xamarin.Forms.Core.dll": {
+            "assemblyVersion": "2.0.0.0",
+            "fileVersion": "2.0.0.0"
+          },
+          "lib/netstandard2.0/Xamarin.Forms.Platform.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          },
+          "lib/netstandard2.0/Xamarin.Forms.Xaml.dll": {
+            "assemblyVersion": "2.0.0.0",
+            "fileVersion": "2.0.0.0"
+          }
+        }
+      },
+      "Xamarin.Forms.BackgroundKit/1.2.3": {
+        "dependencies": {
+          "Xamarin.Forms": "3.6.0.264807"
+        },
+        "runtime": {
+          "lib/netstandard2.0/XamarinBackgroundKit.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "Xamarin.Forms.Maps/3.6.0.264807": {
+        "dependencies": {
+          "Xamarin.Forms": "3.6.0.264807"
+        },
+        "runtime": {
+          "lib/netstandard2.0/Xamarin.Forms.Maps.dll": {
+            "assemblyVersion": "2.0.0.0",
+            "fileVersion": "2.0.0.0"
+          }
+        }
+      },
+      "Xamarin.Forms.Visual.Material/3.6.0.264807": {
+        "dependencies": {
+          "Xamarin.Forms": "3.6.0.264807"
+        }
+      },
+      "Mono.Android/0.0.0.0": {
+        "runtime": {
+          "Mono.Android.dll": {
+            "assemblyVersion": "0.0.0.0",
+            "fileVersion": "0.0.0.0"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "EcoHelper/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "DurianCode.PlacesSearchBar/2.0.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-9uVfUxIV6fnI8JxTtXGY3AY9qg2NRfklXhI5ojZrQMhLRpyixLrmA0GxvzHKRvBoVJbkzDdTo971l8zUY8LfoQ==",
+      "path": "duriancode.placessearchbar/2.0.1",
+      "hashPath": "duriancode.placessearchbar.2.0.1.nupkg.sha512"
+    },
+    "Microsoft.NETCore.Platforms/1.1.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-kz0PEW2lhqygehI/d6XsPCQzD7ff7gUJaVGPVETX611eadGsA3A877GdSlU0LRVMCTH/+P3o2iDTak+S08V2+A==",
+      "path": "microsoft.netcore.platforms/1.1.0",
+      "hashPath": "microsoft.netcore.platforms.1.1.0.nupkg.sha512"
+    },
+    "NETStandard.Library/2.0.3": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-st47PosZSHrjECdjeIzZQbzivYBJFv6P2nv4cj2ypdI204DO+vZ7l5raGMiX4eXMJ53RfOIg+/s4DHVZ54Nu2A==",
+      "path": "netstandard.library/2.0.3",
+      "hashPath": "netstandard.library.2.0.3.nupkg.sha512"
+    },
+    "Newtonsoft.Json/11.0.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-pNN4l+J6LlpIvHOeNdXlwxv39NPJ2B5klz+Rd2UQZIx30Squ5oND1Yy3wEAUoKn0GPUj6Yxt9lxlYWQqfZcvKg==",
+      "path": "newtonsoft.json/11.0.1",
+      "hashPath": "newtonsoft.json.11.0.1.nupkg.sha512"
+    },
+    "sqlite-net-pcl/1.5.231": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-B9jScvqkishSMkpa9Mc4Q85LTHxRTzcUXZx9EQqgrvdz7MFEDHfpiPcKdjy1qXHdmHttEXfY4h6gu4FlgWP2Sw==",
+      "path": "sqlite-net-pcl/1.5.231",
+      "hashPath": "sqlite-net-pcl.1.5.231.nupkg.sha512"
+    },
+    "SQLiteNetExtensions/2.1.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-oiyhVxCi7M2nr3tI6h05jdHGT0HKW6GxMNKUiO04zWAxv42MHtX12c4tW67w6VqGwcnXj1bwyTpq9P0W8QoGYQ==",
+      "path": "sqlitenetextensions/2.1.0",
+      "hashPath": "sqlitenetextensions.2.1.0.nupkg.sha512"
+    },
+    "SQLitePCLRaw.bundle_green/1.1.11": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-Hqp8IF/RLjbypkLm+t+1RqAX8EKuWEkj7wkLXplfENQoPnE127cvTmaDvaQKtt7a5QsD/HNjFDr1z5f9q2wdPg==",
+      "path": "sqlitepclraw.bundle_green/1.1.11",
+      "hashPath": "sqlitepclraw.bundle_green.1.1.11.nupkg.sha512"
+    },
+    "SQLitePCLRaw.core/1.1.11": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-QT17CyQAQIbTCu6pW5+uVA8BXqRzquiDI1tr5Un6c1YZcQydPmGPuYYng9xMs2UHUDYHbTu+JDkp55WR+qo9bQ==",
+      "path": "sqlitepclraw.core/1.1.11",
+      "hashPath": "sqlitepclraw.core.1.1.11.nupkg.sha512"
+    },
+    "System.Numerics.Vectors/4.5.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-QQTlPTl06J/iiDbJCiepZ4H//BVraReU4O4EoRw1U02H5TLUIT7xn3GnDp9AXPSlJUDyFs4uWjWafNX6WrAojQ==",
+      "path": "system.numerics.vectors/4.5.0",
+      "hashPath": "system.numerics.vectors.4.5.0.nupkg.sha512"
+    },
+    "Xamarin.Essentials/1.0.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-cGSje2LlYsCdscPt2zAG4e0Zzr08zc21Cj4DAMub3GR37lc/vzAVwGxco8NeCSzcZs147wYbXkFCXwOr4LUO9A==",
+      "path": "xamarin.essentials/1.0.1",
+      "hashPath": "xamarin.essentials.1.0.1.nupkg.sha512"
+    },
+    "Xamarin.Forms/3.6.0.264807": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-PbnXpStyxNYJzPrXXMW17F4YeMsFAs6YT9LL2vxObDWCGtaKkLia4UyBPF3Qbhy+lQPeap/ijV1Rlvasp4DFiA==",
+      "path": "xamarin.forms/3.6.0.264807",
+      "hashPath": "xamarin.forms.3.6.0.264807.nupkg.sha512"
+    },
+    "Xamarin.Forms.BackgroundKit/1.2.3": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-nTwe0zXkha4y39WwC67Tv2Gec++0FlTmBxf2yzQevTZ+iPIQL28Q0QDwTg3EG7s/EN5GlrCOiVuP8WEOwexPzQ==",
+      "path": "xamarin.forms.backgroundkit/1.2.3",
+      "hashPath": "xamarin.forms.backgroundkit.1.2.3.nupkg.sha512"
+    },
+    "Xamarin.Forms.Maps/3.6.0.264807": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-AYJQ+kMFntWwZ2C5A0IfFW1utwSuoSc5R9Ek/ML3fePoVxMpuK6vPwwWTnf5FiLQ9BQadq2Cqg3wZj7gfbE5wQ==",
+      "path": "xamarin.forms.maps/3.6.0.264807",
+      "hashPath": "xamarin.forms.maps.3.6.0.264807.nupkg.sha512"
+    },
+    "Xamarin.Forms.Visual.Material/3.6.0.264807": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-VI+T8Wl6BN9UQZjbTOR8DhsP8aIOW84m+PxaOguyY6FmUVCMWR0da97np/88dBTolkTIvZv1xFP4YJ3uN1LnEg==",
+      "path": "xamarin.forms.visual.material/3.6.0.264807",
+      "hashPath": "xamarin.forms.visual.material.3.6.0.264807.nupkg.sha512"
+    },
+    "Mono.Android/0.0.0.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
