@@ -30,7 +30,7 @@ namespace EcoHelper.Views
             var database = new UpdateDatabase();
 
             BindingContext = viewModel = new ItemsViewModel();
-            bool answer=true;
+            bool answer = true;
 
             Device.BeginInvokeOnMainThread(async () =>
             {
@@ -45,7 +45,7 @@ namespace EcoHelper.Views
                 }
             });
 
-           
+
         }
 
 
