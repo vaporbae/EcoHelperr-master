@@ -1,5 +1,6 @@
 ﻿using EcoHelper.Models;
 using SQLite;
+using SQLiteNetExtensions.Extensions;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -57,9 +58,10 @@ namespace EcoHelper.Data
                 if (database.Table<Test>().Count() == 0) return;
                 else
                 {
-                    var questions = database.Table<Question>().OrderBy(x => Guid.NewGuid()).Take(15).ToList();
-                    var test = database.Table<Test>().First(x => x.Id == id);
+                    var questions = database.GetAllWithChildren<Question>().OrderBy(x => Guid.NewGuid()).Take(15).ToList();
+                    var test = database.GetWithChildren<Test>(id);
                     test.Questions = questions;
+                    database.UpdateWithChildren(test);
                 }
             }
         }

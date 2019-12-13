@@ -12,14 +12,22 @@ namespace EcoHelper.Services
     public class UpdateDatabase
     {
         public const string BasicURL = "http://eco-helper.azurewebsites.net";
+
         DumpsterDatabaseController dbDumpster;
         GarbageDatabaseController dbGarbage;
+        QuestionDatabaseController dbQuestion;
+        AnswerDatabaseController dbAnswer;
+
         WebInterface webInterface;
         public UpdateDatabase() { }
         public Task<bool> UpdateAsync()
         {
             dbDumpster = new DumpsterDatabaseController();
             dbGarbage = new GarbageDatabaseController();
+
+            dbQuestion = new QuestionDatabaseController();
+            dbAnswer = new AnswerDatabaseController();
+
             webInterface = new WebInterface(new System.Net.Http.HttpClient());
 
             var dumpsterReqString = webInterface.MakeGetRequest(BasicURL + "/dumpsters").ToString();
@@ -37,6 +45,23 @@ namespace EcoHelper.Services
             {
                 var g = dbGarbage.CreateGarbage(garbage.Name, garbage.DumpsterId);
                 dbDumpster.AddGarbage(g,g.DumpsterId);
+            }
+
+            var questionReqString = webInterface.MakeGetRequest(BasicURL + "/questions").ToString();
+            var answerReqString = webInterface.MakeGetRequest(BasicURL + "/answers").ToString();
+
+            var questions = JsonConvert.DeserializeObject<QuestionsList>(questionReqString);
+            var answers = JsonConvert.DeserializeObject<AnswersList>(answerReqString);
+
+            foreach (Question question in questions.Questions)
+            {
+                dbQuestion.CreateQuestion(question.QuestionText);
+            }
+
+            foreach (Answer answer in answers.Answers)
+            {
+                var g = dbAnswer.CreateAnswer(answer.AnswerText, answer.IsCorrect, answer.QuestionId);
+                dbQuestion.AddAnswer(g, g.QuestionId);
             }
 
 
