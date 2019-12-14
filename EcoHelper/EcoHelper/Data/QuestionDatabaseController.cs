@@ -3,6 +3,7 @@ using SQLite;
 using SQLiteNetExtensions.Extensions;
 using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Text;
 using Xamarin.Forms;
 
@@ -40,8 +41,7 @@ namespace EcoHelper.Data
         {
             lock (locker)
             {
-                if (database.Table<Question>().Count() == 0) return null;
-                else return database.GetWithChildren<Question>(id);
+                return database.GetWithChildren<Question>(id);
             }
         }
 
@@ -49,8 +49,7 @@ namespace EcoHelper.Data
         {
             lock (locker)
             {
-                if (database.Table<Question>().Count() == 0) return null;
-                else return database.GetAllWithChildren<Question>();
+                return database.GetAllWithChildren<Question>();
             }
         }
 
@@ -60,7 +59,7 @@ namespace EcoHelper.Data
             {
                 database.Insert(new Question(questionText));
             }
-            return database.GetWithChildren<Question>(database.Table<Question>().Count() - 1);
+            return database.Table<Question>().Last();
         }
     }
 }

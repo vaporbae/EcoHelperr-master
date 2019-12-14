@@ -18,6 +18,7 @@ namespace EcoHelper.Data
         {
             database = DependencyService.Get<ISQLite>().GetConnection();
             database.CreateTable<Test>();
+            database.CreateTable<TestQuestion>();
         }
 
         public void ResetTable()

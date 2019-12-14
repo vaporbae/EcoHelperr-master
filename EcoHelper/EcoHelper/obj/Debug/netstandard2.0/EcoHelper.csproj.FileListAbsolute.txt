@@ -44,3 +44,15 @@ C:\Git\EcoHelperr-master\EcoHelper\EcoHelper\obj\Debug\netstandard2.0\EcoHelper.
 C:\Git\EcoHelperr-master\EcoHelper\EcoHelper\obj\Debug\netstandard2.0\Views\DumpsterDetails\PharmacyPage.xaml.g.cs
 C:\Git\EcoHelperr-master\EcoHelper\EcoHelper\obj\Debug\netstandard2.0\Views\DumpsterDetails\PharmacyPages\PharmaciesAddressPage.xaml.g.cs
 C:\Git\EcoHelperr-master\EcoHelper\EcoHelper\obj\Debug\netstandard2.0\Views\ItemsPage.xaml.g.cs
+C:\Git\EcoHelperr-master\EcoHelper\EcoHelper\bin\Debug\netstandard2.0\EcoHelper.deps.json
+C:\Git\EcoHelperr-master\EcoHelper\EcoHelper\bin\Debug\netstandard2.0\EcoHelper.dll
+C:\Git\EcoHelperr-master\EcoHelper\EcoHelper\bin\Debug\netstandard2.0\EcoHelper.pdb
+C:\Git\EcoHelperr-master\EcoHelper\EcoHelper\bin\Debug\netstandard2.0\Mono.Android.dll
+C:\Git\EcoHelperr-master\EcoHelper\EcoHelper\bin\Debug\netstandard2.0\Mono.Android.pdb
+C:\Git\EcoHelperr-master\EcoHelper\EcoHelper\bin\Debug\netstandard2.0\Mono.Android.xml
+C:\Git\EcoHelperr-master\EcoHelper\EcoHelper\obj\Debug\netstandard2.0\Views\MainPageDetail.xaml.g.cs
+C:\Git\EcoHelperr-master\EcoHelper\EcoHelper\obj\Debug\netstandard2.0\Views\MainPageMaster.xaml.g.cs
+C:\Git\EcoHelperr-master\EcoHelper\EcoHelper\obj\Debug\netstandard2.0\Views\WhereToThrow\WhereToThrowResult.xaml.g.cs
+C:\Git\EcoHelperr-master\EcoHelper\EcoHelper\obj\Debug\netstandard2.0\XamlC.stamp
+C:\Git\EcoHelperr-master\EcoHelper\EcoHelper\obj\Debug\netstandard2.0\EcoHelper.csproj.CopyComplete
+C:\Git\EcoHelperr-master\EcoHelper\EcoHelper\obj\Debug\netstandard2.0\EcoHelper.pdb

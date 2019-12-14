@@ -11,24 +11,32 @@ namespace EcoHelper.Services
 {
     public class UpdateDatabase
     {
-        public const string BasicURL = "http://eco-helper.azurewebsites.net";
+        public const string BasicURL = "https://eco-helper.azurewebsites.net/api";
 
         DumpsterDatabaseController dbDumpster;
         GarbageDatabaseController dbGarbage;
         QuestionDatabaseController dbQuestion;
         AnswerDatabaseController dbAnswer;
+        InterestingFactDatabaseController dbInterestingFacts;
+        TestDatabaseController dbTests;
 
         WebInterface webInterface;
         public UpdateDatabase() { }
-        public Task<bool> UpdateAsync()
+        public async Task<bool> UpdateAsync()
         {
             try
             {
                 dbDumpster = new DumpsterDatabaseController();
                 dbGarbage = new GarbageDatabaseController();
 
+                dbTests = new TestDatabaseController();
+
                 dbQuestion = new QuestionDatabaseController();
                 dbAnswer = new AnswerDatabaseController();
+
+                dbInterestingFacts = new InterestingFactDatabaseController();
+
+                
 
                 dbGarbage.ResetTable();
                 dbDumpster.ResetTable();
@@ -37,10 +45,10 @@ namespace EcoHelper.Services
 
                 webInterface = new WebInterface(new System.Net.Http.HttpClient());
 
-                var dumpsterReqString = webInterface.MakeGetRequest(BasicURL + "/dumpsters").ToString();
-                var garbageReqString = webInterface.MakeGetRequest(BasicURL + "/garbages").ToString();
+                var dumpsterReqString = await webInterface.MakeGetRequest(BasicURL + "/dumpsters");
+                var garbageReqString = await webInterface.MakeGetRequest(BasicURL + "/garbages");
 
-                var dumpsters = JsonConvert.DeserializeObject<DumpstersList>(dumpsterReqString);
+                var dumpsters = JsonConvert.DeserializeObject<DumpstersList>(dumpsterReqString.ToString()) ;
                 var garbages = JsonConvert.DeserializeObject<GarbageList>(garbageReqString);
 
                 foreach (Dumpster dumpster in dumpsters.Dumpsters)
@@ -54,8 +62,8 @@ namespace EcoHelper.Services
                     dbDumpster.AddGarbage(g, g.DumpsterId);
                 }
 
-                var questionReqString = webInterface.MakeGetRequest(BasicURL + "/questions").ToString();
-                var answerReqString = webInterface.MakeGetRequest(BasicURL + "/answers").ToString();
+                var questionReqString = await webInterface.MakeGetRequest(BasicURL + "/questions");
+                var answerReqString = await webInterface.MakeGetRequest(BasicURL + "/answers");
 
                 var questions = JsonConvert.DeserializeObject<QuestionsList>(questionReqString);
                 var answers = JsonConvert.DeserializeObject<AnswersList>(answerReqString);
@@ -65,10 +73,12 @@ namespace EcoHelper.Services
                     dbQuestion.CreateQuestion(question.QuestionText);
                 }
 
+                var q = dbQuestion.GetQuestions();
+
                 foreach (Answer answer in answers.Answers)
                 {
                     var g = dbAnswer.CreateAnswer(answer.AnswerText, answer.IsCorrect, answer.QuestionId);
-                    dbQuestion.AddAnswer(g, g.QuestionId);
+                    dbQuestion.AddAnswer(g, g.QuestionId-1);
                 }
 
 
@@ -79,11 +89,12 @@ namespace EcoHelper.Services
                 //pobrac grupe dumpsterow
                 //pobrac grupe garbage
                 //w kazdym garbage dodac do dumpstera o odpowiednim id
-                return Task.FromResult(true);
+                return true;
             }
-            catch (Exception)
+            catch (Exception e)
             {
-                return Task.FromResult(false);
+                var b = e.Message;
+                return false;
             }
         }
     }

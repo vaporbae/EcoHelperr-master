@@ -37,7 +37,13 @@ namespace EcoHelper.Views
                 answer = await Application.Current.MainPage.DisplayAlert("Aktualizacja bazy", "Czy chcesz zaktualizować bazę danych?", "Tak", "Nie");
                 if (answer == true)
                 {
+                    bool answerx=false;
                     var b = await database.UpdateAsync();
+                    while (b == false || answerx == true)
+                    {
+                        answerx = await Application.Current.MainPage.DisplayAlert("Aktualizacja bazy", "Nie udało się zaktualizować bazy. Czy chcesz spróbować ponownie?", "Tak", "Nie");
+                        b = await database.UpdateAsync();
+                    }
                     Device.BeginInvokeOnMainThread(async () =>
                     {
                         await Application.Current.MainPage.DisplayAlert("Aktualizacja bazy", "Baza danych została zaktualizowana z powodzeniem", "Ok");

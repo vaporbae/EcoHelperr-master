@@ -3,6 +3,7 @@ using SQLite;
 using SQLiteNetExtensions.Extensions;
 using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Text;
 using Xamarin.Forms;
 
@@ -70,7 +71,7 @@ namespace EcoHelper.Data
             {
                 database.Insert(new Dumpster(name));
             }
-            return database.GetWithChildren<Dumpster>(database.Table<Dumpster>().Count() - 1);
+            return database.Table<Dumpster>().Last();
         }
     }
 }
