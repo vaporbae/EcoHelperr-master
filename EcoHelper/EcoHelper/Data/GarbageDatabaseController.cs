@@ -19,6 +19,12 @@ namespace EcoHelper.Data
             database.CreateTable<Garbage>();
         }
 
+        public void ResetTable()
+        {
+            database.DropTable<Garbage>();
+            database.CreateTable<Garbage>();
+        }
+
         public void DeleteGarbageTable()
         {
             database.DropTable<Garbage>();

@@ -19,6 +19,12 @@ namespace EcoHelper.Data
             database.CreateTable<User>();
         }
 
+        public void ResetTable()
+        {
+            database.DropTable<User>();
+            database.CreateTable<User>();
+        }
+
         public User GetUser(int id)
         {
             lock (locker)

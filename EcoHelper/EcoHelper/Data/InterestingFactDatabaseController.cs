@@ -19,6 +19,12 @@ namespace EcoHelper.Data
             database.CreateTable<InterestingFact>();
         }
 
+        public void ResetTable()
+        {
+            database.DropTable<InterestingFact>();
+            database.CreateTable<InterestingFact>();
+        }
+
         public InterestingFact GetInterestingFact(int id)
         {
             lock (locker)

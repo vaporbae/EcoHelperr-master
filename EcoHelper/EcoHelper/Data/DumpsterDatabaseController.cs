@@ -20,6 +20,12 @@ namespace EcoHelper.Data
             database.CreateTable<Dumpster>();
         }
 
+        public void ResetTable()
+        {
+            database.DropTable<Dumpster>();
+            database.CreateTable<Dumpster>();
+        }
+
         public void AddGarbage(Garbage garbage, int id)
         {
             lock (locker)

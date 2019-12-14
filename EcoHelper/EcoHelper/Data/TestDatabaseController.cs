@@ -20,6 +20,12 @@ namespace EcoHelper.Data
             database.CreateTable<Test>();
         }
 
+        public void ResetTable()
+        {
+            database.DropTable<Test>();
+            database.CreateTable<Test>();
+        }
+
         public Test GetTest(int id)
         {
             lock (locker)
