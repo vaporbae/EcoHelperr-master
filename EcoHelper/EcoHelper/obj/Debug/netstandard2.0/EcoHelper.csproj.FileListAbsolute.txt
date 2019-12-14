@@ -41,3 +41,6 @@ C:\Git\EcoHelperr-master\EcoHelper\EcoHelper\obj\Debug\netstandard2.0\Views\NewI
 C:\Git\EcoHelperr-master\EcoHelper\EcoHelper\obj\Debug\netstandard2.0\Views\WhereToThrow\WhereToThrowSearch.xaml.g.cs
 C:\Git\EcoHelperr-master\EcoHelper\EcoHelper\obj\Debug\netstandard2.0\EcoHelper.AssemblyInfoInputs.cache
 C:\Git\EcoHelperr-master\EcoHelper\EcoHelper\obj\Debug\netstandard2.0\EcoHelper.AssemblyInfo.cs
+C:\Git\EcoHelperr-master\EcoHelper\EcoHelper\obj\Debug\netstandard2.0\Views\DumpsterDetails\PharmacyPage.xaml.g.cs
+C:\Git\EcoHelperr-master\EcoHelper\EcoHelper\obj\Debug\netstandard2.0\Views\DumpsterDetails\PharmacyPages\PharmaciesAddressPage.xaml.g.cs
+C:\Git\EcoHelperr-master\EcoHelper\EcoHelper\obj\Debug\netstandard2.0\Views\ItemsPage.xaml.g.cs
