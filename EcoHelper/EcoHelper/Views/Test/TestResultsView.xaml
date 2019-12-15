@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="EcoHelper.Views.Test.TestResultsView">
+    <ContentPage.Content>
+        <StackLayout>
+            <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="2584*"></RowDefinition>
+                <RowDefinition Height="377*"></RowDefinition>
+            </Grid.RowDefinitions>
+
+                <BoxView Grid.Row="0" HeightRequest="1" Color="White"></BoxView>
+                <Grid Grid.Row="0">
+                    <ListView x:Name="ScoresListView"
+                    HasUnevenRows="True"
+                  >
+                        <ListView.ItemTemplate>
+                            <DataTemplate>
+                                <ViewCell>
+                                    <!--<Frame BorderColor="{Binding Color}" Padding="5, -10" Margin="15">-->
+                                    <Grid >
+                                        <Grid.ColumnDefinitions>
+                                            <ColumnDefinition Width="1*" />
+                                            <ColumnDefinition Width="5*" />
+                                            <ColumnDefinition Width="1*" />
+                                        </Grid.ColumnDefinitions>
+                                        <Grid.RowDefinitions>
+                                            <RowDefinition Height="60"></RowDefinition>
+                                        </Grid.RowDefinitions>
+                                        <Image Source="icons8testpassed64.png" Grid.Column="0" Scale="0.8"></Image>
+                                        <Label Text="{Binding Text}" Grid.Column="1" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" FontSize="16" >
+                                            <Label.FontFamily>
+                                                <OnPlatform x:TypeArguments="x:String" Android="Domine-Regular.ttf#Domine Regular" iOS="Domine-Regular"/>
+                                            </Label.FontFamily>
+                                        </Label>
+                                        <Image Source="icons8testpassed64.png" Grid.Column="2" Scale="0.8"></Image>
+                                    </Grid>
+                                    <!--</Frame>-->
+                                </ViewCell>
+                            </DataTemplate>
+                        </ListView.ItemTemplate>
+                    </ListView>
+                </Grid>
+                <Grid Grid.Row="1" Margin="10">
+                    <Button Clicked="onStartTestClicked" BackgroundColor="MediumSlateBlue" TextColor="White" Text="Rozpocznij test" FontSize="22">
+                        <Button.FontFamily>
+                            <OnPlatform x:TypeArguments="x:String" Android="Domine-Regular.ttf#Domine Regular" iOS="Domine-Regular" />
+                        </Button.FontFamily>
+                    </Button>
+                </Grid>
+            </Grid>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

@@ -58,6 +58,18 @@ namespace EcoHelper.Data
             }
         }
 
+        public List<Test> Get10BestScores()
+        {
+            lock (locker)
+            {
+                if (database.Table<Test>().Count() == 0) return null;
+                else
+                {
+                    return database.GetAllWithChildren<Test>().OrderBy(x=>x.Score).Take(10).ToList();
+                }
+            }
+        }
+
         public void Generate10RandomQuestions(int id)
         {
             lock (locker)

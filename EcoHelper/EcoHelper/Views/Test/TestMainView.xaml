@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="EcoHelper.Views.Test.TestMainView">
+    <ContentPage.Content>
+        <StackLayout>
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="610*"></RowDefinition>
+                    <RowDefinition Height="377*"></RowDefinition>
+                </Grid.RowDefinitions>
+                <BoxView Grid.Row="0" HeightRequest="1" Color="White"></BoxView>
+                <Grid Grid.Row="0">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="610*"></RowDefinition>
+                        <RowDefinition Height="377*"></RowDefinition>
+                    </Grid.RowDefinitions>
+                    <Image Scale="1.3" Grid.Row="0" Margin="0,50,0,0" Source="icons8passfail96.png"></Image>
+                    <Label Grid.Row="1" Text="Sprawdź swoją wiedzę" TextColor="Black" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" FontSize="22" >
+                        <Label.FontFamily>
+                            <OnPlatform x:TypeArguments="x:String" Android="Domine-Regular.ttf#Domine Regular" iOS="Domine-Regular"/>
+                        </Label.FontFamily>
+                    </Label>
+                </Grid>
+
+                <Grid Grid.Row="1" Margin="10">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="8*"></RowDefinition>
+                        <RowDefinition Height="5*"></RowDefinition>
+                    </Grid.RowDefinitions>
+                    <Button Clicked="onStartTestClicked" Grid.Row="0"  BackgroundColor="MediumPurple" TextColor="White" Text="Rozpocznij test" FontSize="22">
+                        <Button.FontFamily>
+                            <OnPlatform x:TypeArguments="x:String" Android="Domine-Regular.ttf#Domine Regular" iOS="Domine-Regular" />
+                        </Button.FontFamily>
+                    </Button>
+                    <Button Clicked="onResultsClicked" Grid.Row="1"  BackgroundColor="MediumSlateBlue" TextColor="White" Text="Tabela wyników" FontSize="22">
+                        <Button.FontFamily>
+                            <OnPlatform x:TypeArguments="x:String" Android="Domine-Regular.ttf#Domine Regular" iOS="Domine-Regular" />
+                        </Button.FontFamily>
+                    </Button>
+                </Grid>
+            </Grid>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

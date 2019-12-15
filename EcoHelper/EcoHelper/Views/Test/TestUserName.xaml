@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="EcoHelper.Views.Test.TestUserName">
+    <ContentPage.Content>
+        <StackLayout>
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="610*"></RowDefinition>
+                    <RowDefinition Height="377*"></RowDefinition>
+                </Grid.RowDefinitions>
+                <BoxView Grid.Row="0" HeightRequest="1" Color="White"></BoxView>
+                <Grid Grid.Row="0">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="610*"></RowDefinition>
+                        <RowDefinition Height="377*"></RowDefinition>
+                    </Grid.RowDefinitions>
+                    <Grid Margin="20">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"></ColumnDefinition>
+                            <ColumnDefinition Width="*"></ColumnDefinition>
+                        </Grid.ColumnDefinitions>
+                        <Image Grid.Row="0" Grid.Column="0" VerticalOptions="EndAndExpand" Source="icons8femaleuser144.png"></Image>
+                        <Image Grid.Row="0" Grid.Column="1" VerticalOptions="EndAndExpand" Source="icons8usermale144.png"></Image>
+                    </Grid>
+                    <Label Grid.Row="1" Text="Podaj nazwę użytkownika" TextColor="Black" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" FontSize="22" >
+                        <Label.FontFamily>
+                            <OnPlatform x:TypeArguments="x:String" Android="Domine-Regular.ttf#Domine Regular" iOS="Domine-Regular"/>
+                        </Label.FontFamily>
+                    </Label>
+                </Grid>
+                <Grid Grid.Row="1" Margin="10">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="1*"></RowDefinition>
+                        <RowDefinition Height="2*"></RowDefinition>
+                    </Grid.RowDefinitions>
+                    <Entry x:Name="UsernameText" Grid.Row="0" />
+                    <Button Margin="0,40,0,0" Grid.Row="1"  BackgroundColor="MediumPurple" TextColor="White" Text="Rozpocznij" FontSize="22">
+                        <Button.FontFamily>
+                            <OnPlatform x:TypeArguments="x:String" Android="Domine-Regular.ttf#Domine Regular" iOS="Domine-Regular" />
+                        </Button.FontFamily>
+                    </Button>
+                </Grid>
+            </Grid>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
