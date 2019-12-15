@@ -8,12 +8,10 @@
     <ContentPage.Content>
         <StackLayout>
             <Grid>
-            <Grid.RowDefinitions>
-                <RowDefinition Height="2584*"></RowDefinition>
-                <RowDefinition Height="377*"></RowDefinition>
-            </Grid.RowDefinitions>
-
-                <BoxView Grid.Row="0" HeightRequest="1" Color="White"></BoxView>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="2584*"></RowDefinition>
+                    <RowDefinition Height="377*"></RowDefinition>
+                </Grid.RowDefinitions>
                 <Grid Grid.Row="0">
                     <ListView x:Name="ScoresListView"
                     HasUnevenRows="True"

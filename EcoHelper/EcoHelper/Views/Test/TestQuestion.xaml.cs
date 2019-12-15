@@ -19,6 +19,8 @@ namespace EcoHelper.Views.Test
         List<Models.Question> questions;
         List<Models.Answer> answers;
         int score;
+        Models.User user;
+        Models.Test test;
 
         int id;
         public TestQuestion(Models.User user)
@@ -26,18 +28,28 @@ namespace EcoHelper.Views.Test
             dbTest = new TestDatabaseController();
             dbQuestion = new QuestionDatabaseController();
 
-            var t = dbTest.CreateTest(0, user.Id);
-            dbTest.Generate10RandomQuestions(t.Id);
-            var id = t.Id;
-            t = dbTest.GetTest(id);
-            questions = t.Questions;
+            this.user = user;
 
-            answers = questions[0].Answers;
+            var t = dbTest.CreateTest(0, user.Id);
+            dbTest.Generate7RandomQuestions(t.Id);
+            var id = t.Id;
+            test = dbTest.GetTest(id);
+            questions = test.Questions.ToList();
+
+            answers = dbQuestion.GetQuestion(questions[0].Id).Answers.ToList();
 
             score = 0;
             id = 0;
             InitializeComponent();
+            UpdateStrings();
+
         }
+
+        public static async Task Sleep(int ms)
+        {
+            await Task.Delay(ms);
+        }
+
 
         private void onAnswer1Clicked(object sender, EventArgs e)
         {
@@ -92,7 +104,16 @@ namespace EcoHelper.Views.Test
                 answer1Button.BackgroundColor = Color.MediumPurple;
             }
 
-            answers = questions[id].Answers;
+            if (id == 7)
+            {
+                onEndTestClicked();
+            }
+            else
+            {
+                answers = dbQuestion.GetQuestion(questions[id].Id).Answers.ToList();
+                UpdateStrings();
+            }
+
         }
 
         private void onAnswer2Clicked(object sender, EventArgs e)
@@ -148,7 +169,16 @@ namespace EcoHelper.Views.Test
                 answer2Button.BackgroundColor = Color.MediumPurple;
             }
 
-            answers = questions[id].Answers;
+            if (id == 7)
+            {
+                onEndTestClicked();
+            }
+            else
+            {
+                answers = dbQuestion.GetQuestion(questions[id].Id).Answers.ToList();
+                UpdateStrings();
+            }
+
 
         }
 
@@ -205,7 +235,16 @@ namespace EcoHelper.Views.Test
                 answer3Button.BackgroundColor = Color.MediumPurple;
             }
 
-            answers = questions[id].Answers;
+            if (id == 7)
+            {
+                onEndTestClicked();
+            }
+            else
+            {
+                answers = dbQuestion.GetQuestion(questions[id].Id).Answers.ToList();
+                UpdateStrings();
+            }
+
         }
 
         private void onAnswer4Clicked(object sender, EventArgs e)
@@ -261,7 +300,37 @@ namespace EcoHelper.Views.Test
                 answer4Button.BackgroundColor = Color.MediumPurple;
             }
 
-            answers = questions[id].Answers;
+            if (id == 7)
+            {
+                onEndTestClicked();
+            }
+            else
+            {
+                answers = dbQuestion.GetQuestion(questions[id].Id).Answers.ToList();
+                UpdateStrings();
+            }
+        }
+
+        public void UpdateStrings()
+        {
+            QuestionTextt.Text = questions[id].QuestionText;
+            answer1Button.Text = answers[0].AnswerText;
+            answer2Button.Text = answers[1].AnswerText;
+            answer3Button.Text = answers[2].AnswerText;
+            answer4Button.Text = answers[3].AnswerText;
+
+        }
+
+        private void onEndTestClicked()
+        {
+
+            dbTest.SetScore(test.Id, score);
+
+            var tId = test.Id;
+
+            test = dbTest.GetTest(tId);
+
+            Navigation.PushAsync(new TestEndResult(test,user));
         }
     }
 }

@@ -38,7 +38,7 @@
                         <RowDefinition Height="2*"></RowDefinition>
                     </Grid.RowDefinitions>
                     <Entry x:Name="UsernameText" Grid.Row="0" />
-                    <Button Margin="0,40,0,0" Grid.Row="1"  BackgroundColor="MediumPurple" TextColor="White" Text="Rozpocznij" FontSize="22">
+                    <Button Clicked="onStartTestClicked" Margin="0,40,0,0" Grid.Row="1"  BackgroundColor="MediumPurple" TextColor="White" Text="Rozpocznij" FontSize="22">
                         <Button.FontFamily>
                             <OnPlatform x:TypeArguments="x:String" Android="Domine-Regular.ttf#Domine Regular" iOS="Domine-Regular" />
                         </Button.FontFamily>

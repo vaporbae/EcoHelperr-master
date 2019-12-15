@@ -21,8 +21,10 @@ namespace EcoHelper.Views.Test
         {
             dbTest = new TestDatabaseController();
             dbUser = new UserDatabaseController();
-            Scores = dbTest.Get10BestScores();
+            Scores = new List<Models.Test>();
             ScoresList = new List<ResultItem>();
+            var d = dbTest.Get10BestScores();
+            if (d != null) Scores = d;
 
             int i = 0;
             foreach(Models.Test test in Scores)
@@ -32,9 +34,11 @@ namespace EcoHelper.Views.Test
                 ScoresList.Add(new ResultItem { Text = i + ". " + user.Name + " - " + test.Score });
             }
 
+            if(d!=null)
+                InitializeComponent();
+
             ScoresListView.ItemsSource = ScoresList;
 
-            InitializeComponent();
         }
 
         private void onStartTestClicked(object sender, EventArgs e)

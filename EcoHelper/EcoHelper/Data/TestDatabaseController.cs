@@ -32,7 +32,7 @@ namespace EcoHelper.Data
             lock (locker)
             {
                 if (database.Table<Test>().Count() == 0) return null;
-                else return database.Table<Test>().FirstOrDefault(x => x.Id == id);
+                return database.GetWithChildren<Test>(id);
             }
         }
 
@@ -41,7 +41,7 @@ namespace EcoHelper.Data
             lock (locker)
             {
                 if (database.Table<Test>().Count() == 0) return null;
-                else return database.Table<Test>().ToList();
+                return database.GetAllWithChildren<Test>();
             }
         }
 
@@ -65,21 +65,35 @@ namespace EcoHelper.Data
                 if (database.Table<Test>().Count() == 0) return null;
                 else
                 {
-                    return database.GetAllWithChildren<Test>().OrderBy(x=>x.Score).Take(10).ToList();
+                    return database.GetAllWithChildren<Test>().OrderByDescending(x=>x.Score).Take(10).ToList();
                 }
             }
         }
 
-        public void Generate10RandomQuestions(int id)
+        public void Generate7RandomQuestions(int id)
         {
             lock (locker)
             {
                 if (database.Table<Test>().Count() == 0) return;
                 else
                 {
-                    var questions = database.GetAllWithChildren<Question>().OrderBy(x => Guid.NewGuid()).Take(15).ToList();
+                    var questions = database.GetAllWithChildren<Question>().OrderBy(x => Guid.NewGuid()).Take(7);
                     var test = database.GetWithChildren<Test>(id);
-                    test.Questions = questions;
+                    test.Questions.AddRange(questions);
+                    database.UpdateWithChildren(test);
+                }
+            }
+        }
+
+        public void SetScore(int id, int score)
+        {
+            lock (locker)
+            {
+                if (database.Table<Test>().Count() == 0) return;
+                else
+                {
+                    var test = database.GetWithChildren<Test>(id);
+                    test.Score = score;
                     database.UpdateWithChildren(test);
                 }
             }

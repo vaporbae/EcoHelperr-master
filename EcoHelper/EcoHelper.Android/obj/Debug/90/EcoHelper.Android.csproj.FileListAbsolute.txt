@@ -1332,3 +1332,6 @@ C:\Git\EcoHelperr-master\EcoHelper\EcoHelper.Android\obj\Debug\90\stamp\_Generat
 C:\Git\EcoHelperr-master\EcoHelper\EcoHelper.Android\obj\Debug\90\stamp\_GeneratePackageManagerJava.stamp
 C:\Git\EcoHelperr-master\EcoHelper\EcoHelper.Android\obj\Debug\90\stamp\_ResolveLibraryProjectImports.stamp
 C:\Git\EcoHelperr-master\EcoHelper\EcoHelper.Android\bin\Debug\EcoHelper.dll.mdb
+C:\Git\EcoHelperr-master\EcoHelper\EcoHelper.Android\obj\Debug\90\res\drawable\icons8testpassed64.png
+C:\Git\EcoHelperr-master\EcoHelper\EcoHelper.Android\obj\Debug\90\res\drawable\icons8femaleuser144.png
+C:\Git\EcoHelperr-master\EcoHelper\EcoHelper.Android\obj\Debug\90\res\drawable\icons8usermale144.png

@@ -13,6 +13,7 @@ using EcoHelper.Views;
 using EcoHelper.ViewModels;
 using EcoHelper.Services;
 using EcoHelper.Views.WhereToThrow;
+using EcoHelper.Views.Test;
 
 namespace EcoHelper.Views
 {
@@ -80,9 +81,9 @@ namespace EcoHelper.Views
                 viewModel.LoadItemsCommand.Execute(null);
         }
 
-        private void onWhySegregateClicked(object sender, EventArgs e)
+        private void onTestClicked(object sender, EventArgs e)
         {
-
+            Navigation.PushAsync(new TestMainView());
         }
 
         private void onWhereToThrowAwayClicked(object sender, EventArgs e)

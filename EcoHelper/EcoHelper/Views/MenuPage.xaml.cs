@@ -21,10 +21,11 @@ namespace EcoHelper.Views
 
             menuItems = new List<HomeMenuItem>
             {
+                new HomeMenuItem {Id = MenuItemType.CalculateResources, Title="Po co segregować?", IconName="icons8recycle96" },
+                new HomeMenuItem {Id = MenuItemType.CalculateResources, Title="Wskazówki", IconName="icons8questionmark100" },
                 new HomeMenuItem {Id = MenuItemType.CalculateResources, Title="Dlaczego nie palimy śmieci", IconName="icons8matches96" },
                 new HomeMenuItem {Id = MenuItemType.CalculateResources, Title="Przelicznik energii na surowce", IconName="icons8solarenergy96" },
                 new HomeMenuItem {Id = MenuItemType.CalculateResources, Title="Ciekawostki", IconName="icons8hint96" },
-                new HomeMenuItem {Id = MenuItemType.CalculateResources, Title="Sprawdź swoją wiedzę", IconName="icons8passfail96" }
             };
 
             ListViewMenu.ItemsSource = menuItems;
