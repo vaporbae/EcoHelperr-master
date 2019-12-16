@@ -7,7 +7,11 @@ namespace EcoHelper.Models
     public enum MenuItemType
     {
         Browse,
-        CalculateResources
+        CalculateResources,
+        DoNotBurnWaste,
+        InterestingFacts,
+        Tips,
+        WhySegregate
     }
     public class HomeMenuItem
     {

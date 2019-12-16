@@ -16,5 +16,9 @@ namespace EcoHelper.Views.Tips
         {
             InitializeComponent();
         }
+
+        private void onNextTextClicked(object sender, EventArgs e)
+        {
+        }
     }
 }

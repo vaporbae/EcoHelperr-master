@@ -61,3 +61,7 @@ C:\Git\EcoHelperr-master\EcoHelper\EcoHelper\obj\Debug\netstandard2.0\Views\Test
 C:\Git\EcoHelperr-master\EcoHelper\EcoHelper\obj\Debug\netstandard2.0\Views\Test\TestResultsView.xaml.g.cs
 C:\Git\EcoHelperr-master\EcoHelper\EcoHelper\obj\Debug\netstandard2.0\Views\Test\TestUserName.xaml.g.cs
 C:\Git\EcoHelperr-master\EcoHelper\EcoHelper\obj\Debug\netstandard2.0\Views\Test\TestEndResult.xaml.g.cs
+C:\Git\EcoHelperr-master\EcoHelper\EcoHelper\obj\Debug\netstandard2.0\Views\DoNotBurnWaste\DoNotBurnWasteView.xaml.g.cs
+C:\Git\EcoHelperr-master\EcoHelper\EcoHelper\obj\Debug\netstandard2.0\Views\InterestingFacts\InterestingFactsView.xaml.g.cs
+C:\Git\EcoHelperr-master\EcoHelper\EcoHelper\obj\Debug\netstandard2.0\Views\Tips\TipsView.xaml.g.cs
+C:\Git\EcoHelperr-master\EcoHelper\EcoHelper\obj\Debug\netstandard2.0\Views\WhySegregate\WhySegregateView.xaml.g.cs

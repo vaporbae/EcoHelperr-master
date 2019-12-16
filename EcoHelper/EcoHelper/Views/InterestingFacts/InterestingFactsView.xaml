@@ -20,7 +20,7 @@
                 <Grid Grid.Row="1" Margin="10">
                     <Grid.RowDefinitions>
                         <RowDefinition Height="8*"></RowDefinition>
-                        <RowDefinition Height="3*"></RowDefinition>
+                        <RowDefinition Height="5*"></RowDefinition>
                     </Grid.RowDefinitions>
                     <Label x:Name="LabelText" Grid.Row="0" Text="Z 35 butelek PET (powszechnie stosowane opakowanie np. napojów) wymieszanych z wełną można wyprodukować bluzę polarową, a z 450 plastikowych butelek - trzyosobową parkową ławkę." TextColor="Black" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" FontSize="22" >
                         <Label.FontFamily>

@@ -278,4 +278,16 @@
   <ItemGroup>
     <BundleResource Include="Resources\icons8usermale144.png" />
   </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\icons8widelongleftarrow64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\icons8widelongrightarrow64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\icons8questionmark100.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\icons8squirrel96.png" />
+  </ItemGroup>
 </Project>

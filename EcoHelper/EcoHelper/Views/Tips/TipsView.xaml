@@ -20,7 +20,7 @@
                 <Grid Grid.Row="1" Margin="10">
                     <Grid.RowDefinitions>
                         <RowDefinition Height="8*"></RowDefinition>
-                        <RowDefinition Height="3*"></RowDefinition>
+                        <RowDefinition Height="5*"></RowDefinition>
                     </Grid.RowDefinitions>
                     <Label x:Name="LabelText" Grid.Row="0" Text="Pamiętaj więc, aby opróżnioną butelkę odkręcić, dobrze zgnieść i wrzucić do przeznaczonego na odpady plastikowe osiedlowego pojemnika albo przynieść bezpośrednio do stacji recyklingu." TextColor="Black" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" FontSize="22" >
                         <Label.FontFamily>

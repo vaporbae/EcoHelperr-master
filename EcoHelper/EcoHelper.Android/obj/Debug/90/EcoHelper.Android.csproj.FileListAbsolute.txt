@@ -1335,3 +1335,7 @@ C:\Git\EcoHelperr-master\EcoHelper\EcoHelper.Android\bin\Debug\EcoHelper.dll.mdb
 C:\Git\EcoHelperr-master\EcoHelper\EcoHelper.Android\obj\Debug\90\res\drawable\icons8testpassed64.png
 C:\Git\EcoHelperr-master\EcoHelper\EcoHelper.Android\obj\Debug\90\res\drawable\icons8femaleuser144.png
 C:\Git\EcoHelperr-master\EcoHelper\EcoHelper.Android\obj\Debug\90\res\drawable\icons8usermale144.png
+C:\Git\EcoHelperr-master\EcoHelper\EcoHelper.Android\obj\Debug\90\res\drawable\icons8widelongleftarrow64.png
+C:\Git\EcoHelperr-master\EcoHelper\EcoHelper.Android\obj\Debug\90\res\drawable\icons8widelongrightarrow64.png
+C:\Git\EcoHelperr-master\EcoHelper\EcoHelper.Android\obj\Debug\90\res\drawable\icons8questionmark100.png
+C:\Git\EcoHelperr-master\EcoHelper\EcoHelper.Android\obj\Debug\90\res\drawable\icons8squirrel96.png

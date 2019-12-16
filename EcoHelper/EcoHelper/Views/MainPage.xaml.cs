@@ -6,6 +6,10 @@ using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
 using EcoHelper.Models;
+using EcoHelper.Views.DoNotBurnWaste;
+using EcoHelper.Views.WhySegregate;
+using EcoHelper.Views.InterestingFacts;
+using EcoHelper.Views.Tips;
 
 namespace EcoHelper.Views
 {
@@ -35,6 +39,18 @@ namespace EcoHelper.Views
                         break;
                     case (int)MenuItemType.CalculateResources:
                         MenuPages.Add(id, new NavigationPage(new CalculateResourcesView()));
+                        break;
+                    case (int)MenuItemType.DoNotBurnWaste:
+                        MenuPages.Add(id, new NavigationPage(new DoNotBurnWasteView()));
+                        break;
+                    case (int)MenuItemType.WhySegregate:
+                        MenuPages.Add(id, new NavigationPage(new WhySegregateView()));
+                        break;
+                    case (int)MenuItemType.InterestingFacts:
+                        MenuPages.Add(id, new NavigationPage(new InterestingFactsView()));
+                        break;
+                    case (int)MenuItemType.Tips:
+                        MenuPages.Add(id, new NavigationPage(new TipsView()));
                         break;
                 }
             }
