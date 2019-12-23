@@ -1,0 +1,182 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="EcoHelper.Views.DumpsterDetails.YellowDumpsterPage">
+    <ContentPage.Content>
+        <ScrollView>
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="300"></RowDefinition>
+                    <RowDefinition Height="auto"></RowDefinition>
+                    <RowDefinition Height="auto"></RowDefinition>
+                    <RowDefinition Height="auto"></RowDefinition>
+                    <RowDefinition Height="auto"></RowDefinition>
+                    <RowDefinition Height="auto"></RowDefinition>
+                    <RowDefinition Height="auto"></RowDefinition>
+                    <RowDefinition Height="auto"></RowDefinition>
+                    <RowDefinition Height="auto"></RowDefinition>
+                    <RowDefinition Height="auto"></RowDefinition>
+                    <RowDefinition Height="auto"></RowDefinition>
+                </Grid.RowDefinitions>
+                <Grid Grid.Row="0">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="2*"></RowDefinition>
+                        <RowDefinition Height="1*"></RowDefinition>
+                        <RowDefinition Height="3*"></RowDefinition>
+                        <RowDefinition Height="1*"></RowDefinition>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="3*"></ColumnDefinition>
+                        <ColumnDefinition Width="8*"></ColumnDefinition>
+                        <ColumnDefinition Width="3*"></ColumnDefinition>
+                    </Grid.ColumnDefinitions>
+                    <BoxView Color="#FFD185" Grid.Row="0" Grid.ColumnSpan="3"/>
+                    <Label Text="Żółty kontener" TextColor="White" Grid.Column="1" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" FontSize="16" >
+                        <Label.FontFamily>
+                            <OnPlatform x:TypeArguments="x:String" Android="Domine-Regular.ttf#Domine Regular" iOS="Domine-Regular"/>
+                        </Label.FontFamily>
+                    </Label>
+                    <Image Source="icons8plastic96.png" Grid.Column="0" Grid.Row="1" Scale="1.3" ></Image>
+                    <Image Source="icons8shoppingbag96.png" Grid.Column="2" Grid.Row="1" Scale="1.3"></Image>
+                    <Image Source="yellowcontainerr.png" Grid.Column="1" Grid.Row="2" Scale="1.2"></Image>
+                    <Image Source="icons8waterbottle96.png" Grid.Column="2" Grid.Row="3" Scale="1.3"></Image>
+                    <Image Source="icons8kawaiisoda96.png" Grid.Column="0" Grid.Row="3" Scale="1.3"></Image>
+                </Grid>
+                <Grid Grid.Row="1">
+                    <Label Text="Szkło" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" FontSize="18" >
+                        <Label.FontFamily>
+                            <OnPlatform x:TypeArguments="x:String" Android="Domine-Regular.ttf#Domine Regular" iOS="Domine-Regular"/>
+                        </Label.FontFamily>
+                    </Label>
+                </Grid>
+                <Grid Grid.Row="2" Margin="0,15,0,0">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="1*"></ColumnDefinition>
+                        <ColumnDefinition Width="1*"></ColumnDefinition>
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                    </Grid.RowDefinitions>
+                    <BoxView x:Name="ToThrowBox" Grid.Column="0" BackgroundColor="#13CE66"></BoxView>
+                    <Button Clicked="onWhatToThrowClicked" x:Name="ToThrowButton" Grid.Column="0" Text="Wrzucamy" TextColor="White" BackgroundColor="Transparent" CornerRadius="0" BorderWidth="0" HeightRequest="0" Scale="1">
+                        <Button.FontFamily>
+                            <OnPlatform x:TypeArguments="x:String" Android="Domine-Regular.ttf#Domine Regular" iOS="Domine-Regular"/>
+                        </Button.FontFamily>
+                    </Button>
+                    <BoxView x:Name="ToNotThrowBox" Grid.Column="1" BackgroundColor="#D93437"></BoxView>
+                    <Button Clicked="onWhatNotToThrowClicked" x:Name="ToNotThrowButton" Grid.Column="1" Text="Nie wrzucamy" TextColor="White" BackgroundColor="Transparent">
+                        <Button.FontFamily>
+                            <OnPlatform x:TypeArguments="x:String" Android="Domine-Regular.ttf#Domine Regular" iOS="Domine-Regular"/>
+                        </Button.FontFamily>
+                    </Button>
+                </Grid>
+                <Grid Grid.Row="3">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="auto"></RowDefinition>
+                    </Grid.RowDefinitions>
+                    <Label x:Name="ThrowLabel" Text="Test123" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" FontSize="16" >
+                        <Label.FontFamily>
+                            <OnPlatform x:TypeArguments="x:String" Android="Domine-Regular.ttf#Domine Regular" iOS="Domine-Regular"/>
+                        </Label.FontFamily>
+                    </Label>
+                </Grid>
+                <Grid Grid.Row="4">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="60"></RowDefinition>
+                    </Grid.RowDefinitions>
+                    <BoxView BackgroundColor="#976DD0"></BoxView>
+                    <Button Text="Sprawdź czy tu wyrzucisz swój odpad" TextColor="White" BackgroundColor="Transparent">
+                        <Button.FontFamily>
+                            <OnPlatform x:TypeArguments="x:String" Android="Domine-Regular.ttf#Domine Regular" iOS="Domine-Regular"/>
+                        </Button.FontFamily>
+                    </Button>
+                </Grid>
+                <Grid Grid.Row="5">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="70"></RowDefinition>
+                    </Grid.RowDefinitions>
+                    <BoxView BackgroundColor="#FF9052"></BoxView>
+                    <Label Text="Wskazówki"  TextColor="White" BackgroundColor="Transparent" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" FontSize="16">
+                        <Label.FontFamily>
+                            <OnPlatform x:TypeArguments="x:String" Android="Domine-Regular.ttf#Domine Regular" iOS="Domine-Regular"/>
+                        </Label.FontFamily>
+                    </Label>
+                </Grid>
+                <Grid Grid.Row="6">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="auto"></RowDefinition>
+                    </Grid.RowDefinitions>
+                    <Label Margin="10"  Text="
+&#x0A;Wyrzucając pamiętaj, o akcjach polegajacych na zbieraniu zakrętek PET.
+&#x0A;&#x0A;Jeżeli do pojemników trafiają butelki w swoim naturalnym kształcie (niezgniecione), to pojemniki szybko ulegają zapełnieniu – transport takich butelek (w dodatku dobrze zakręconych) wiąże się z transportem powietrza, a nie samego surowca. Zgniatając i odkręcając butelki oszczędzamy zarówno na kosztach odbioru selektów (mniej kursów pomiędzy miastem a zakładem zagospodarowania odpadów) oraz mniejszej emisji spalin do atmosfery.
+&#x0A;&#x0A;Nakrętka wykonana jest z innego materiału niż butelka PET, dlatego zawsze muszą być one rozdzielone przed poddaniem ich procesom recyklingu – odkręcając je ułatwiamy w ten sposób pracę ludziom odpowiedzialnym za sortowanie odpadów.                           
+&#x0A;&#x0A;opakowania po żywności czy kosmetykach opróżniamy, ale nie musimy ich myć – o ile gmina wyraźnie tego nie zaleca
+&#x0A;&#x0A;jeśli opakowanie ma etykietę z folii termokurczliwej, o ile to możliwe, należy ją zdjąć
+&#x0A;&#x0A;z kopert z folią bąbelkową można – choć nie trzeba – odedrzeć papier i wyrzucić go do pojemnika na papier
+&#x0A;&#x0A;aluminiowe wieczka przed wyrzuceniem oddzielamy od pojemników
+&#x0A;
+" BackgroundColor="Transparent" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" FontSize="16">
+                        <Label.FontFamily>
+                            <OnPlatform x:TypeArguments="x:String" Android="Domine-Regular.ttf#Domine Regular" iOS="Domine-Regular"/>
+                        </Label.FontFamily>
+                    </Label>
+                </Grid>
+                <Grid Grid.Row="7">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="70"></RowDefinition>
+                    </Grid.RowDefinitions>
+                    <BoxView BackgroundColor="#FFBA5C"></BoxView>
+                    <Label Text="Dlaczego segregujemy szkło" TextColor="White" BackgroundColor="Transparent" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" FontSize="16">
+                        <Label.FontFamily>
+                            <OnPlatform x:TypeArguments="x:String" Android="Domine-Regular.ttf#Domine Regular" iOS="Domine-Regular"/>
+                        </Label.FontFamily>
+                    </Label>
+                </Grid>
+                <Grid Grid.Row="8" >
+                    <Grid.RowDefinitions>
+                        <RowDefinition  Height="auto"></RowDefinition>
+                    </Grid.RowDefinitions>
+                    <Label Margin="10"  Text="&#x0A;W polskich gospodarstwach produkuje się 1,5 mln ton odpadów tworzyw sztucznych rocznie (np. plastik) . Z czego aż 60 % z nich nie jest poddawanych ponownemu przetworzeniu (dane Fundacji Plastics Europe Polska). Tworzywa sztuczne, pozyskiwane z przerobu ropy naftowej są groźne dla środowiska naturalnego, gdyż proces ich rozkładu wynosi nawet kilka tysięcy lat. Porzucone, niezagospodarowane odpady uwalniają toksyczne substancje, które następnie przenikają do gleb i wód gruntowych. Niebezpieczne jest również samodzielne spalanie tworzyw sztucznych, z uwagi na uwalniane substancje trujące. Dlatego ważne jest przetwarzanie plastiku. Opakowania PET można przetwarzać na włókna i przędze, folie, oleje opałowe, bluzy polar, a nawet meble. Poddając tworzywa sztuczne powtórnemu przerobowi oszczędzamy węgiel i ropę naftową.&#x0A;" BackgroundColor="Transparent" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" FontSize="16">
+                        <Label.FontFamily>
+                            <OnPlatform x:TypeArguments="x:String" Android="Domine-Regular.ttf#Domine Regular" iOS="Domine-Regular"/>
+                        </Label.FontFamily>
+                    </Label>
+                </Grid>
+                <Grid Grid.Row="9">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="70"></RowDefinition>
+                    </Grid.RowDefinitions>
+                    <BoxView BackgroundColor="#00A6FF"></BoxView>
+                    <Label Text="Ciekawostki" TextColor="White" BackgroundColor="Transparent" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" FontSize="16">
+                        <Label.FontFamily>
+                            <OnPlatform x:TypeArguments="x:String" Android="Domine-Regular.ttf#Domine Regular" iOS="Domine-Regular"/>
+                        </Label.FontFamily>
+                    </Label>
+                </Grid>
+                <Grid Grid.Row="10">
+                    <Grid.RowDefinitions>
+                        <RowDefinition  Height="auto"></RowDefinition>
+                    </Grid.RowDefinitions>
+                    <Label Margin="10"  Text="&#x0A;Każda butelka poddana do ponownego recyklingu oszczędza energię wielkości potrzebnej 100 watowej żarówce aby mogła świecić 4h.&#x0A;" BackgroundColor="Transparent" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" FontSize="16">
+                        <Label.FontFamily>
+                            <OnPlatform x:TypeArguments="x:String" Android="Domine-Regular.ttf#Domine Regular" iOS="Domine-Regular"/>
+                        </Label.FontFamily>
+                    </Label>
+                </Grid>
+                <Grid Grid.Row="11">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="60"></RowDefinition>
+                    </Grid.RowDefinitions>
+                    <BoxView BackgroundColor="#68BEED"></BoxView>
+                    <Button Text="Pokaż inną" TextColor="White" BackgroundColor="Transparent">
+                        <Button.FontFamily>
+                            <OnPlatform x:TypeArguments="x:String" Android="Domine-Regular.ttf#Domine Regular" iOS="Domine-Regular"/>
+                        </Button.FontFamily>
+                    </Button>
+                </Grid>
+            </Grid>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

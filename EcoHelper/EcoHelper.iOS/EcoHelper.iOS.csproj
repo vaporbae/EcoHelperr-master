@@ -290,4 +290,13 @@
   <ItemGroup>
     <BundleResource Include="Resources\icons8squirrel96.png" />
   </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\icons8kawaiisoda96.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\icons8shoppingbag96.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\icons8waterbottle96.png" />
+  </ItemGroup>
 </Project>

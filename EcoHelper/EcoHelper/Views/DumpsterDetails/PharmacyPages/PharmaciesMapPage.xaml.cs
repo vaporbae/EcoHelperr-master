@@ -1,4 +1,5 @@
 ﻿using EcoHelper.Models.Map;
+using EcoHelper.Models.Map.CustomPin;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -45,13 +46,15 @@ namespace EcoHelper.Views.DumpsterDetails.PharmacyPages
 
             foreach(AddressInfo addressInfo in Addresses)
             {
-                var pinn = new Pin
+                var pinn = new CustomPin
                 {
                     Type = PinType.Place,
                     Position = new Position(addressInfo.Latitude, addressInfo.Longitude),
                     Label = "Apteka",
                     Address = addressInfo.Address
                 };
+
+                
 
 
                 map.Pins.Add(pinn);

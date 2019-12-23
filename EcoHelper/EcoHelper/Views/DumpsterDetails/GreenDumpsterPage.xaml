@@ -16,6 +16,9 @@
                 <RowDefinition Height="auto"></RowDefinition>
                 <RowDefinition Height="auto"></RowDefinition>
                 <RowDefinition Height="auto"></RowDefinition>
+                <RowDefinition Height="auto"></RowDefinition>
+                <RowDefinition Height="auto"></RowDefinition>
+                <RowDefinition Height="auto"></RowDefinition>
                 </Grid.RowDefinitions>
             <Grid Grid.Row="0">
                 <Grid.RowDefinitions>
@@ -29,7 +32,7 @@
                     <ColumnDefinition Width="8*"></ColumnDefinition>
                     <ColumnDefinition Width="3*"></ColumnDefinition>
                 </Grid.ColumnDefinitions>
-                <BoxView Color="#76BB5B" Grid.Row="0" Grid.ColumnSpan="3"/>
+                <BoxView Color="#76BB5B" Grid.Row="0" Grid.ColumnSpan="3" Margin="0,0,0,5"/>
                 <Label Text="Zielony kontener" TextColor="White" Grid.Column="1" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" FontSize="16" >
                     <Label.FontFamily>
                         <OnPlatform x:TypeArguments="x:String" Android="Domine-Regular.ttf#Domine Regular" iOS="Domine-Regular"/>
@@ -55,21 +58,30 @@
                 </Grid.ColumnDefinitions>
                 <Grid.RowDefinitions>
                 </Grid.RowDefinitions>
-                <BoxView Grid.Column="0" BackgroundColor="#13CE66"></BoxView>
-                <Button Grid.Column="0" Text="Wrzucamy" TextColor="White" BackgroundColor="Transparent" CornerRadius="0" BorderWidth="0" HeightRequest="0" Scale="1">
+                <BoxView x:Name="ToThrowBox" Grid.Column="0" BackgroundColor="#13CE66"></BoxView>
+                <Button Clicked="onWhatToThrowClicked" x:Name="ToThrowButton" Grid.Column="0" Text="Wrzucamy" TextColor="White" BackgroundColor="Transparent" CornerRadius="0" BorderWidth="0" HeightRequest="0" Scale="1">
                     <Button.FontFamily>
                         <OnPlatform x:TypeArguments="x:String" Android="Domine-Regular.ttf#Domine Regular" iOS="Domine-Regular"/>
                     </Button.FontFamily>
                 </Button>
-                <BoxView Grid.Column="1" BackgroundColor="#D93437"></BoxView>
-                <Button Grid.Column="1" Text="Nie wrzucamy" TextColor="White" BackgroundColor="Transparent">
+                <BoxView x:Name="ToNotThrowBox" Grid.Column="1" BackgroundColor="#D93437"></BoxView>
+                <Button Clicked="onWhatNotToThrowClicked" x:Name="ToNotThrowButton" Grid.Column="1" Text="Nie wrzucamy" TextColor="White" BackgroundColor="Transparent">
                     <Button.FontFamily>
                         <OnPlatform x:TypeArguments="x:String" Android="Domine-Regular.ttf#Domine Regular" iOS="Domine-Regular"/>
                     </Button.FontFamily>
                 </Button>
             </Grid>
-            <!--TU LISTA TYCH RZECZY-->
-            <Grid Grid.Row="3">
+                <Grid Grid.Row="3">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="auto"></RowDefinition>
+                    </Grid.RowDefinitions>
+                    <Label x:Name="ThrowLabel" Text="Test123" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" FontSize="16" >
+                        <Label.FontFamily>
+                            <OnPlatform x:TypeArguments="x:String" Android="Domine-Regular.ttf#Domine Regular" iOS="Domine-Regular"/>
+                        </Label.FontFamily>
+                    </Label>
+                </Grid>
+                <Grid Grid.Row="4">
                 <Grid.RowDefinitions>
                     <RowDefinition Height="60"></RowDefinition>
                 </Grid.RowDefinitions>
@@ -80,7 +92,7 @@
                     </Button.FontFamily>
                 </Button>
             </Grid>
-            <Grid Grid.Row="4">
+            <Grid Grid.Row="5">
                 <Grid.RowDefinitions>
                     <RowDefinition Height="70"></RowDefinition>
                 </Grid.RowDefinitions>
@@ -91,20 +103,20 @@
                     </Label.FontFamily>
                 </Label>
             </Grid>
-            <Grid Grid.Row="5">
+            <Grid Grid.Row="6">
                 <Grid.RowDefinitions>
                     <RowDefinition Height="auto"></RowDefinition>
                 </Grid.RowDefinitions>
             <Label Margin="10"  Text="
-Wyrzucając pamiętaj, że szkło nie może zawierać dodatkowych elementów takich jak zakrętki, plastikowe elementy, kapsle, korki. Ze względu na to, że szkło jest czyszczone w fabrykach przed recyklingiem nie musisz zrywać papierowych etykiet. Mycie nie jest wymagane.
-
+&#x0A;Wyrzucając pamiętaj, że szkło nie może zawierać dodatkowych elementów takich jak zakrętki, plastikowe elementy, kapsle, korki. Ze względu na to, że szkło jest czyszczone w fabrykach przed recyklingiem nie musisz zrywać papierowych etykiet. Mycie nie jest wymagane.
+&#x0A;
 " BackgroundColor="Transparent" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" FontSize="16">
                 <Label.FontFamily>
                     <OnPlatform x:TypeArguments="x:String" Android="Domine-Regular.ttf#Domine Regular" iOS="Domine-Regular"/>
                 </Label.FontFamily>
             </Label>
             </Grid>
-            <Grid Grid.Row="6">
+            <Grid Grid.Row="7">
                 <Grid.RowDefinitions>
                     <RowDefinition Height="70"></RowDefinition>
                 </Grid.RowDefinitions>
@@ -115,22 +127,11 @@ Wyrzucając pamiętaj, że szkło nie może zawierać dodatkowych elementów tak
                     </Label.FontFamily>
                 </Label>
             </Grid>
-            <Grid Grid.Row="7" >
+            <Grid Grid.Row="8" >
                 <Grid.RowDefinitions>
                     <RowDefinition  Height="auto"></RowDefinition>
                 </Grid.RowDefinitions>
-                <Label Margin="10"  Text="Szkło jest materiałem, które może zostać w całości poddane recyklingowi i może być przetapiane w nieskończoność bez pogorszenia jakości przy równoczesnym oszczędzeniu energii i zasobów naturalnych. " BackgroundColor="Transparent" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" FontSize="16">
-                    <Label.FontFamily>
-                        <OnPlatform x:TypeArguments="x:String" Android="Domine-Regular.ttf#Domine Regular" iOS="Domine-Regular"/>
-                    </Label.FontFamily>
-                </Label>
-            </Grid>
-            <Grid Grid.Row="8">
-                <Grid.RowDefinitions>
-                    <RowDefinition Height="70"></RowDefinition>
-                </Grid.RowDefinitions>
-                <BoxView BackgroundColor="#00A6FF"></BoxView>
-                <Label Text="Ciekawostki" TextColor="White" BackgroundColor="Transparent" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" FontSize="16">
+                    <Label Margin="10"  Text="&#x0A;Szkło jest materiałem, które może zostać w całości poddane recyklingowi i może być przetapiane w nieskończoność bez pogorszenia jakości przy równoczesnym oszczędzeniu energii i zasobów naturalnych.&#x0A;" BackgroundColor="Transparent" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" FontSize="16">
                     <Label.FontFamily>
                         <OnPlatform x:TypeArguments="x:String" Android="Domine-Regular.ttf#Domine Regular" iOS="Domine-Regular"/>
                     </Label.FontFamily>
@@ -138,15 +139,47 @@ Wyrzucając pamiętaj, że szkło nie może zawierać dodatkowych elementów tak
             </Grid>
             <Grid Grid.Row="9">
                 <Grid.RowDefinitions>
-                    <RowDefinition  Height="auto"></RowDefinition>
+                    <RowDefinition Height="70"></RowDefinition>
                 </Grid.RowDefinitions>
-                <Label Margin="10"  Text="Każda butelka poddana do ponownego recyklingu oszczędza energię wielkości potrzebnej 100 watowej żarówce aby mogła świecić 4h." BackgroundColor="Transparent" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" FontSize="16">
+                <BoxView BackgroundColor="#00A6FF"></BoxView>
+                <Label Text="Uwaga!" TextColor="PaleVioletRed" BackgroundColor="Transparent" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" FontSize="16">
                     <Label.FontFamily>
                         <OnPlatform x:TypeArguments="x:String" Android="Domine-Regular.ttf#Domine Regular" iOS="Domine-Regular"/>
                     </Label.FontFamily>
                 </Label>
             </Grid>
             <Grid Grid.Row="10">
+                <Grid.RowDefinitions>
+                    <RowDefinition  Height="auto"></RowDefinition>
+                </Grid.RowDefinitions>
+                    <Label Margin="10"  Text="&#x0A;Niektóre gminy zapewniają osobne pojemniki na szkło bezbarwne i kolorowe.&#x0A;" BackgroundColor="Transparent" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" FontSize="16">
+                    <Label.FontFamily>
+                        <OnPlatform x:TypeArguments="x:String" Android="Domine-Regular.ttf#Domine Regular" iOS="Domine-Regular"/>
+                    </Label.FontFamily>
+                </Label>
+            </Grid>
+                <Grid Grid.Row="11">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="70"></RowDefinition>
+                    </Grid.RowDefinitions>
+                    <BoxView BackgroundColor="#00A6FF"></BoxView>
+                    <Label Text="Ciekawostki" TextColor="White" BackgroundColor="Transparent" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" FontSize="16">
+                        <Label.FontFamily>
+                            <OnPlatform x:TypeArguments="x:String" Android="Domine-Regular.ttf#Domine Regular" iOS="Domine-Regular"/>
+                        </Label.FontFamily>
+                    </Label>
+                </Grid>
+                <Grid Grid.Row="12">
+                    <Grid.RowDefinitions>
+                        <RowDefinition  Height="auto"></RowDefinition>
+                    </Grid.RowDefinitions>
+                    <Label Margin="10"  Text="&#x0A;Każda butelka poddana do ponownego recyklingu oszczędza energię wielkości potrzebnej 100 watowej żarówce aby mogła świecić 4h.&#x0A;" BackgroundColor="Transparent" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" FontSize="16">
+                        <Label.FontFamily>
+                            <OnPlatform x:TypeArguments="x:String" Android="Domine-Regular.ttf#Domine Regular" iOS="Domine-Regular"/>
+                        </Label.FontFamily>
+                    </Label>
+                </Grid>
+                <Grid Grid.Row="13">
                 <Grid.RowDefinitions>
                     <RowDefinition Height="60"></RowDefinition>
                 </Grid.RowDefinitions>

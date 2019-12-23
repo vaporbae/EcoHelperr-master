@@ -13,6 +13,7 @@ C:\Git\EcoHelperr-master\EcoHelper\EcoHelper\obj\Debug\netstandard2.0\Views\Dump
 C:\Git\EcoHelperr-master\EcoHelper\EcoHelper\obj\Debug\netstandard2.0\Views\DumpsterDetails\PharmacyPage.xaml.g.cs
 C:\Git\EcoHelperr-master\EcoHelper\EcoHelper\obj\Debug\netstandard2.0\Views\DumpsterDetails\PharmacyPages\PharmaciesAddressPage.xaml.g.cs
 C:\Git\EcoHelperr-master\EcoHelper\EcoHelper\obj\Debug\netstandard2.0\Views\DumpsterDetails\PharmacyPages\PharmaciesMapPage.xaml.g.cs
+C:\Git\EcoHelperr-master\EcoHelper\EcoHelper\obj\Debug\netstandard2.0\Views\DumpsterDetails\YellowDumpsterPage.xaml.g.cs
 C:\Git\EcoHelperr-master\EcoHelper\EcoHelper\obj\Debug\netstandard2.0\Views\DumpsterListViewPage.xaml.g.cs
 C:\Git\EcoHelperr-master\EcoHelper\EcoHelper\obj\Debug\netstandard2.0\Views\InterestingFacts\InterestingFactsView.xaml.g.cs
 C:\Git\EcoHelperr-master\EcoHelper\EcoHelper\obj\Debug\netstandard2.0\Views\ItemDetailPage.xaml.g.cs
@@ -33,7 +34,7 @@ C:\Git\EcoHelperr-master\EcoHelper\EcoHelper\obj\Debug\netstandard2.0\Views\Wher
 C:\Git\EcoHelperr-master\EcoHelper\EcoHelper\obj\Debug\netstandard2.0\Views\WhySegregate\WhySegregateView.xaml.g.cs
 C:\Git\EcoHelperr-master\EcoHelper\EcoHelper\obj\Debug\netstandard2.0\EcoHelper.AssemblyInfoInputs.cache
 C:\Git\EcoHelperr-master\EcoHelper\EcoHelper\obj\Debug\netstandard2.0\EcoHelper.AssemblyInfo.cs
+C:\Git\EcoHelperr-master\EcoHelper\EcoHelper\obj\Debug\netstandard2.0\XamlC.stamp
 C:\Git\EcoHelperr-master\EcoHelper\EcoHelper\obj\Debug\netstandard2.0\EcoHelper.csproj.CopyComplete
 C:\Git\EcoHelperr-master\EcoHelper\EcoHelper\obj\Debug\netstandard2.0\EcoHelper.dll
 C:\Git\EcoHelperr-master\EcoHelper\EcoHelper\obj\Debug\netstandard2.0\EcoHelper.pdb
-C:\Git\EcoHelperr-master\EcoHelper\EcoHelper\obj\Debug\netstandard2.0\XamlC.stamp

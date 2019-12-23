@@ -19,6 +19,7 @@
                     <RowDefinition Height="auto"></RowDefinition>
                     <RowDefinition Height="auto"></RowDefinition>
                     <RowDefinition Height="auto"></RowDefinition>
+                    <RowDefinition Height="auto"></RowDefinition>
                 </Grid.RowDefinitions>
                 <Grid Grid.Row="0">
                     <Grid.RowDefinitions>
@@ -33,7 +34,7 @@
                         <ColumnDefinition Width="3*"></ColumnDefinition>
                     </Grid.ColumnDefinitions>
                     <BoxView Color="#5A6978" Grid.Row="0" Grid.ColumnSpan="3"/>
-                    <Label Text="Zielony kontener" TextColor="White" Grid.Column="1" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" FontSize="16" >
+                    <Label Text="Apteka" TextColor="White" Grid.Column="1" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" FontSize="16" >
                         <Label.FontFamily>
                             <OnPlatform x:TypeArguments="x:String" Android="Domine-Regular.ttf#Domine Regular" iOS="Domine-Regular"/>
                         </Label.FontFamily>
@@ -45,7 +46,7 @@
                     <Image Source="icons8doctorsbag96.png" Grid.Column="0" Grid.Row="3" Scale="1.3"></Image>
                 </Grid>
                 <Grid Grid.Row="1">
-                    <Label Text="Szkło" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" FontSize="18" >
+                    <Label Text="Leki i termometry" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" FontSize="18" >
                         <Label.FontFamily>
                             <OnPlatform x:TypeArguments="x:String" Android="Domine-Regular.ttf#Domine Regular" iOS="Domine-Regular"/>
                         </Label.FontFamily>
@@ -58,21 +59,30 @@
                     </Grid.ColumnDefinitions>
                     <Grid.RowDefinitions>
                     </Grid.RowDefinitions>
-                    <BoxView Grid.Column="0" BackgroundColor="#13CE66"></BoxView>
-                    <Button Grid.Column="0" Text="Wrzucamy" TextColor="White" BackgroundColor="Transparent" CornerRadius="0" BorderWidth="0" HeightRequest="0" Scale="1">
+                    <BoxView x:Name="ToThrowBox" Grid.Column="0" BackgroundColor="#13CE66" Margin="0,0,0,5"></BoxView>
+                    <Button Clicked="onWhatToThrowClicked" x:Name="ToThrowButton" Grid.Column="0" Text="Oddajemy" TextColor="White" BackgroundColor="Transparent" CornerRadius="0" BorderWidth="0" HeightRequest="0" Scale="1">
                         <Button.FontFamily>
                             <OnPlatform x:TypeArguments="x:String" Android="Domine-Regular.ttf#Domine Regular" iOS="Domine-Regular"/>
                         </Button.FontFamily>
                     </Button>
-                    <BoxView Grid.Column="1" BackgroundColor="#D93437"></BoxView>
-                    <Button Grid.Column="1" Text="Nie wrzucamy" TextColor="White" BackgroundColor="Transparent">
+                    <BoxView x:Name="ToNotThrowBox" Grid.Column="1" BackgroundColor="#D93437"></BoxView>
+                    <Button Clicked="onWhatNotToThrowClicked" x:Name="ToNotThrowButton" Grid.Column="1" Text="Nie oddajemy" TextColor="White" BackgroundColor="Transparent">
                         <Button.FontFamily>
                             <OnPlatform x:TypeArguments="x:String" Android="Domine-Regular.ttf#Domine Regular" iOS="Domine-Regular"/>
                         </Button.FontFamily>
                     </Button>
                 </Grid>
-                <!--TU LISTA TYCH RZECZY-->
                 <Grid Grid.Row="3">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="auto"></RowDefinition>
+                    </Grid.RowDefinitions>
+                    <Label x:Name="ThrowLabel" Text="Test123" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" FontSize="16" >
+                        <Label.FontFamily>
+                            <OnPlatform x:TypeArguments="x:String" Android="Domine-Regular.ttf#Domine Regular" iOS="Domine-Regular"/>
+                        </Label.FontFamily>
+                    </Label>
+                </Grid>
+                <Grid Grid.Row="4">
                     <Grid.RowDefinitions>
                         <RowDefinition Height="60"></RowDefinition>
                     </Grid.RowDefinitions>
@@ -83,7 +93,7 @@
                         </Button.FontFamily>
                     </Button>
                 </Grid>
-                <Grid Grid.Row="4">
+                <Grid Grid.Row="5">
                     <Grid.RowDefinitions>
                         <RowDefinition Height="70"></RowDefinition>
                     </Grid.RowDefinitions>
@@ -94,20 +104,27 @@
                         </Label.FontFamily>
                     </Label>
                 </Grid>
-                <Grid Grid.Row="5">
+                <Grid Grid.Row="6">
                     <Grid.RowDefinitions>
                         <RowDefinition Height="auto"></RowDefinition>
                     </Grid.RowDefinitions>
                     <Label Margin="10"  Text="
-Wyrzucając pamiętaj, że szkło nie może zawierać dodatkowych elementów takich jak zakrętki, plastikowe elementy, kapsle, korki. Ze względu na to, że szkło jest czyszczone w fabrykach przed recyklingiem nie musisz zrywać papierowych etykiet. Mycie nie jest wymagane.
-
+&#x0A;Do pojemnika w aptece możemy wrzucać leki w różnej formie:
+&#x0A;&#x0A;tabletki lub kapsułki w wielu gminach można wrzucić do pojemnika w blistrach lub pojemniczkach zbiorczych, chociaż np. w Lublinie należy wyrzucić je luzem,
+&#x0A;&#x0A;syropy wyrzucamy w buteleczkach, ale należy zachować ostrożność aby opakowanie nie stłukło się podczas umieszczania w pojemniku,
+&#x0A;&#x0A;maści i kremy wyrzucamy w tubkach,
+&#x0A;&#x0A;aerozole w nieuszkodzonych opakowaniach,
+&#x0A;&#x0A;zastrzyki w ampułkach.
+&#x0A;&#x0A;Leki wyrzucamy bez tekturowych opakowań i ulotek – te wrzucamy do kosza na odpady suche albo oddajemy do punktów zbiórki makulatury.
+&#x0A;&#x0A;Jeśli pojemnik jest pełny zapytaj farmaceutę, czy mógłby przyjąć od Ciebie przeterminowane leki i przekazać firmie opróżniającej pojemnik. Farmaceuta nie ma obowiązku wyrazić zgody na takie postępowanie, ale może spełnić Twoją prośbę z uprzejmości, żeby ułatwić Ci pozbycie się leku.
+&#x0A;
 " BackgroundColor="Transparent" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" FontSize="16">
                         <Label.FontFamily>
                             <OnPlatform x:TypeArguments="x:String" Android="Domine-Regular.ttf#Domine Regular" iOS="Domine-Regular"/>
                         </Label.FontFamily>
                     </Label>
                 </Grid>
-                <Grid Grid.Row="6">
+                <Grid Grid.Row="7">
                     <Grid.RowDefinitions>
                         <RowDefinition Height="70"></RowDefinition>
                     </Grid.RowDefinitions>
@@ -118,19 +135,17 @@ Wyrzucając pamiętaj, że szkło nie może zawierać dodatkowych elementów tak
                         </Label.FontFamily>
                     </Label>
                 </Grid>
-                <Grid Grid.Row="7" >
+                <Grid Grid.Row="8" >
                     <Grid.RowDefinitions>
                         <RowDefinition  Height="auto"></RowDefinition>
                     </Grid.RowDefinitions>
-                    <Label Margin="10"  Text="Substancje, z których są produkowane leki po upływie terminu ważności lub przy nieodpowiedniej temperaturze czy wilgoci zaczynają zmieniać swój skład chemiczny w taki sposób, że stają się nie tylko toksyczne ale również radioaktywne. Są to również często substancje, które mogą rozkładać się przez wiele lat.
-
-Wyrzucenie termometru rtęciowego jest niezgodne z prawem, ponieważ rtęć należy do odpadów niebezpiecznych. Złamanie go grozi do kilku tysięcy złotych grzywny. Rtęć jest silnie trująca i groźna dla środowiska, gdyż jej opary wywołują zatrucie wywołujące zapalenie płuc i oskrzeli mogące zakończyć się śmierci. Ponad to uszkadzają też układ nerwowy" BackgroundColor="Transparent" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" FontSize="16">
+                    <Label Margin="10"  Text="&#x0A;Substancje, z których są produkowane leki po upływie terminu ważności lub przy nieodpowiedniej temperaturze czy wilgoci zaczynają zmieniać swój skład chemiczny w taki sposób, że stają się nie tylko toksyczne ale również radioaktywne. Są to również często substancje, które mogą rozkładać się przez wiele lat.&#x0A;&#x0A;Wyrzucenie termometru rtęciowego jest niezgodne z prawem, ponieważ rtęć należy do odpadów niebezpiecznych. Złamanie go grozi do kilku tysięcy złotych grzywny. Rtęć jest silnie trująca i groźna dla środowiska, gdyż jej opary wywołują zatrucie wywołujące zapalenie płuc i oskrzeli mogące zakończyć się śmierci. Ponad to uszkadzają też układ nerwowy&#x0A;" BackgroundColor="Transparent" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" FontSize="16">
                         <Label.FontFamily>
                             <OnPlatform x:TypeArguments="x:String" Android="Domine-Regular.ttf#Domine Regular" iOS="Domine-Regular"/>
                         </Label.FontFamily>
                     </Label>
                 </Grid>
-                <Grid Grid.Row="8">
+                <Grid Grid.Row="9">
                     <Grid.RowDefinitions>
                         <RowDefinition Height="70"></RowDefinition>
                     </Grid.RowDefinitions>
@@ -141,17 +156,17 @@ Wyrzucenie termometru rtęciowego jest niezgodne z prawem, ponieważ rtęć nale
                         </Label.FontFamily>
                     </Label>
                 </Grid>
-                <Grid Grid.Row="9">
+                <Grid Grid.Row="10">
                     <Grid.RowDefinitions>
                         <RowDefinition  Height="auto"></RowDefinition>
                     </Grid.RowDefinitions>
-                    <Label Margin="10"  Text="Każda butelka poddana do ponownego recyklingu oszczędza energię wielkości potrzebnej 100 watowej żarówce aby mogła świecić 4h." BackgroundColor="Transparent" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" FontSize="16">
+                    <Label Margin="10"  Text="&#x0A;Każda butelka poddana do ponownego recyklingu oszczędza energię wielkości potrzebnej 100 watowej żarówce aby mogła świecić 4h.&#x0A;" BackgroundColor="Transparent" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" FontSize="16">
                         <Label.FontFamily>
                             <OnPlatform x:TypeArguments="x:String" Android="Domine-Regular.ttf#Domine Regular" iOS="Domine-Regular"/>
                         </Label.FontFamily>
                     </Label>
                 </Grid>
-                <Grid Grid.Row="10">
+                <Grid Grid.Row="11">
                     <Grid.RowDefinitions>
                         <RowDefinition Height="60"></RowDefinition>
                     </Grid.RowDefinitions>

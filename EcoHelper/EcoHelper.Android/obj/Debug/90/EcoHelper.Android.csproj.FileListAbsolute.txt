@@ -1339,4 +1339,8 @@ C:\Git\EcoHelperr-master\EcoHelper\EcoHelper.Android\obj\Debug\90\flata\91555F19
 C:\Git\EcoHelperr-master\EcoHelper\EcoHelper.Android\obj\Debug\90\android\assets\Plugin.CurrentActivity.dll
 C:\Git\EcoHelperr-master\EcoHelper\EcoHelper.Android\obj\Debug\90\android\assets\Plugin.Permissions.dll
 C:\Git\EcoHelperr-master\EcoHelper\EcoHelper.Android\obj\Debug\90\android\src\crc64435a5ac349fa9fda\ActivityLifecycleContextListener.java
+C:\Git\EcoHelperr-master\EcoHelper\EcoHelper.Android\obj\Debug\90\res\drawable\icons8kawaiisoda96.png
+C:\Git\EcoHelperr-master\EcoHelper\EcoHelper.Android\obj\Debug\90\res\drawable\icons8shoppingbag96.png
+C:\Git\EcoHelperr-master\EcoHelper\EcoHelper.Android\obj\Debug\90\res\drawable\icons8waterbottle96.png
+C:\Git\EcoHelperr-master\EcoHelper\EcoHelper.Android\obj\Debug\90\stamp\SetupDependenciesForDesigner.stamp
 C:\Git\EcoHelperr-master\EcoHelper\EcoHelper.Android\bin\Debug\EcoHelper.dll.mdb
