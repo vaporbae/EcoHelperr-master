@@ -10,6 +10,7 @@
       "EcoHelper/1.0.0": {
         "dependencies": {
           "NETStandard.Library": "2.0.3",
+          "Plugin.Permissions": "3.0.0.12",
           "SQLiteNetExtensions": "2.1.0",
           "Xamarin.Essentials": "1.0.1",
           "Xamarin.Forms": "3.6.0.264807",
@@ -85,6 +86,14 @@
           "lib/netstandard1.0/Newtonsoft.Json.dll": {
             "assemblyVersion": "9.0.0.0",
             "fileVersion": "9.0.1.19813"
+          }
+        }
+      },
+      "Plugin.Permissions/3.0.0.12": {
+        "runtime": {
+          "lib/netstandard2.0/Plugin.Permissions.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
           }
         }
       },
@@ -632,6 +641,13 @@
       "sha512": "sha512-U82mHQSKaIk+lpSVCbWYKNavmNH1i5xrExDEquU1i6I5pV6UMOqRnJRSlKO3cMPfcpp0RgDY+8jUXHdQ4IfXvw==",
       "path": "newtonsoft.json/9.0.1",
       "hashPath": "newtonsoft.json.9.0.1.nupkg.sha512"
+    },
+    "Plugin.Permissions/3.0.0.12": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-VrYqI/ufk3bH6gTP1JJlLByjhS0CHu3riKmdozhX9/qXA9hlvLolmcqKJdyAqpzmrVC74m3ZtirUBIrBxvT1Lw==",
+      "path": "plugin.permissions/3.0.0.12",
+      "hashPath": "plugin.permissions.3.0.0.12.nupkg.sha512"
     },
     "sqlite-net-pcl/1.5.231": {
       "type": "package",

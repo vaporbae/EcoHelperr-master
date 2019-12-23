@@ -95,6 +95,15 @@
           "lib/netstandard1.0/Newtonsoft.Json.dll": {}
         }
       },
+      "Plugin.Permissions/3.0.0.12": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/Plugin.Permissions.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Plugin.Permissions.dll": {}
+        }
+      },
       "sqlite-net-pcl/1.5.231": {
         "type": "package",
         "dependencies": {
@@ -930,6 +939,29 @@
         "newtonsoft.json.9.0.1.nupkg.sha512",
         "newtonsoft.json.nuspec",
         "tools/install.ps1"
+      ]
+    },
+    "Plugin.Permissions/3.0.0.12": {
+      "sha512": "VrYqI/ufk3bH6gTP1JJlLByjhS0CHu3riKmdozhX9/qXA9hlvLolmcqKJdyAqpzmrVC74m3ZtirUBIrBxvT1Lw==",
+      "type": "package",
+      "path": "plugin.permissions/3.0.0.12",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/monoandroid71/Plugin.Permissions.dll",
+        "lib/monoandroid71/Plugin.Permissions.xml",
+        "lib/netstandard1.0/Plugin.Permissions.dll",
+        "lib/netstandard1.0/Plugin.Permissions.xml",
+        "lib/netstandard2.0/Plugin.Permissions.dll",
+        "lib/netstandard2.0/Plugin.Permissions.xml",
+        "lib/uap10.0.10240/Plugin.Permissions.dll",
+        "lib/uap10.0.10240/Plugin.Permissions.pri",
+        "lib/uap10.0.10240/Plugin.Permissions.xml",
+        "lib/xamarinios10/Plugin.Permissions.dll",
+        "lib/xamarinios10/Plugin.Permissions.xml",
+        "plugin.permissions.3.0.0.12.nupkg.sha512",
+        "plugin.permissions.nuspec",
+        "readme.txt"
       ]
     },
     "sqlite-net-pcl/1.5.231": {
@@ -3104,6 +3136,7 @@
         "lib/monoandroid80/Xamarin.Essentials.pdb",
         "lib/monoandroid80/Xamarin.Essentials.xml",
         "lib/monoandroid81/Xamarin.Essentials.dll",
+        "lib/monoandroid81/Xamarin.Essentials.dll.mdb",
         "lib/monoandroid81/Xamarin.Essentials.pdb",
         "lib/monoandroid81/Xamarin.Essentials.xml",
         "lib/netstandard1.0/Xamarin.Essentials.dll",
@@ -3367,6 +3400,7 @@
   "projectFileDependencyGroups": {
     ".NETStandard,Version=v2.0": [
       "NETStandard.Library >= 2.0.3",
+      "Plugin.Permissions >= 3.0.0.12",
       "SQLiteNetExtensions >= 2.1.0",
       "Xamarin.Essentials >= 1.0.1",
       "Xamarin.Forms >= 3.6.0.264807",
@@ -3425,6 +3459,10 @@
             "target": "Package",
             "version": "[2.0.3, )",
             "autoReferenced": true
+          },
+          "Plugin.Permissions": {
+            "target": "Package",
+            "version": "[3.0.0.12, )"
           },
           "SQLiteNetExtensions": {
             "target": "Package",

@@ -6,6 +6,8 @@ public class MonoPackageManager_Resources {
 		"EcoHelper.dll",
 		"FormsViewGroup.dll",
 		"Newtonsoft.Json.dll",
+		"Plugin.CurrentActivity.dll",
+		"Plugin.Permissions.dll",
 		"SQLite-net.dll",
 		"SQLiteNetExtensions.dll",
 		"SQLitePCLRaw.batteries_green.dll",

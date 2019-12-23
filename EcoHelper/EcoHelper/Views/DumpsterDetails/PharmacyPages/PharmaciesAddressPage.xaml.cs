@@ -9,6 +9,7 @@ using System.Windows.Input;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 using Xamarin.Essentials;
+using Plugin.Permissions;
 
 namespace EcoHelper.Views.DumpsterDetails.PharmacyPages
 {

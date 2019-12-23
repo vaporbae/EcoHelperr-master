@@ -1,67 +1,39 @@
-C:\Users\m.kalisz\Documents\Visual Studio 2019\EcoHelperr-master\EcoHelper\EcoHelper\bin\Debug\netstandard2.0\EcoHelper.deps.json
-C:\Users\m.kalisz\Documents\Visual Studio 2019\EcoHelperr-master\EcoHelper\EcoHelper\bin\Debug\netstandard2.0\EcoHelper.dll
-C:\Users\m.kalisz\Documents\Visual Studio 2019\EcoHelperr-master\EcoHelper\EcoHelper\bin\Debug\netstandard2.0\EcoHelper.pdb
-C:\Users\m.kalisz\Documents\Visual Studio 2019\EcoHelperr-master\EcoHelper\EcoHelper\bin\Debug\netstandard2.0\Mono.Android.dll
-C:\Users\m.kalisz\Documents\Visual Studio 2019\EcoHelperr-master\EcoHelper\EcoHelper\bin\Debug\netstandard2.0\Mono.Android.pdb
-C:\Users\m.kalisz\Documents\Visual Studio 2019\EcoHelperr-master\EcoHelper\EcoHelper\bin\Debug\netstandard2.0\Mono.Android.xml
-C:\Users\m.kalisz\Documents\Visual Studio 2019\EcoHelperr-master\EcoHelper\EcoHelper\obj\Debug\netstandard2.0\EcoHelper.csprojAssemblyReference.cache
-C:\Users\m.kalisz\Documents\Visual Studio 2019\EcoHelperr-master\EcoHelper\EcoHelper\obj\Debug\netstandard2.0\App.xaml.g.cs
-C:\Users\m.kalisz\Documents\Visual Studio 2019\EcoHelperr-master\EcoHelper\EcoHelper\obj\Debug\netstandard2.0\Views\AboutPage.xaml.g.cs
-C:\Users\m.kalisz\Documents\Visual Studio 2019\EcoHelperr-master\EcoHelper\EcoHelper\obj\Debug\netstandard2.0\Views\CalculateResourcesView.xaml.g.cs
-C:\Users\m.kalisz\Documents\Visual Studio 2019\EcoHelperr-master\EcoHelper\EcoHelper\obj\Debug\netstandard2.0\Views\DumpsterDetails\GreenDumpsterPage.xaml.g.cs
-C:\Users\m.kalisz\Documents\Visual Studio 2019\EcoHelperr-master\EcoHelper\EcoHelper\obj\Debug\netstandard2.0\Views\DumpsterDetails\PharmacyPage.xaml.g.cs
-C:\Users\m.kalisz\Documents\Visual Studio 2019\EcoHelperr-master\EcoHelper\EcoHelper\obj\Debug\netstandard2.0\Views\DumpsterDetails\PharmacyPages\PharmaciesAddressPage.xaml.g.cs
-C:\Users\m.kalisz\Documents\Visual Studio 2019\EcoHelperr-master\EcoHelper\EcoHelper\obj\Debug\netstandard2.0\Views\DumpsterDetails\PharmacyPages\PharmaciesMapPage.xaml.g.cs
-C:\Users\m.kalisz\Documents\Visual Studio 2019\EcoHelperr-master\EcoHelper\EcoHelper\obj\Debug\netstandard2.0\Views\DumpsterListViewPage.xaml.g.cs
-C:\Users\m.kalisz\Documents\Visual Studio 2019\EcoHelperr-master\EcoHelper\EcoHelper\obj\Debug\netstandard2.0\Views\ItemDetailPage.xaml.g.cs
-C:\Users\m.kalisz\Documents\Visual Studio 2019\EcoHelperr-master\EcoHelper\EcoHelper\obj\Debug\netstandard2.0\Views\ItemsPage.xaml.g.cs
-C:\Users\m.kalisz\Documents\Visual Studio 2019\EcoHelperr-master\EcoHelper\EcoHelper\obj\Debug\netstandard2.0\Views\MainPage.xaml.g.cs
-C:\Users\m.kalisz\Documents\Visual Studio 2019\EcoHelperr-master\EcoHelper\EcoHelper\obj\Debug\netstandard2.0\Views\MenuPage.xaml.g.cs
-C:\Users\m.kalisz\Documents\Visual Studio 2019\EcoHelperr-master\EcoHelper\EcoHelper\obj\Debug\netstandard2.0\Views\NewItemPage.xaml.g.cs
-C:\Users\m.kalisz\Documents\Visual Studio 2019\EcoHelperr-master\EcoHelper\EcoHelper\obj\Debug\netstandard2.0\EcoHelper.AssemblyInfoInputs.cache
-C:\Users\m.kalisz\Documents\Visual Studio 2019\EcoHelperr-master\EcoHelper\EcoHelper\obj\Debug\netstandard2.0\EcoHelper.AssemblyInfo.cs
-C:\Users\m.kalisz\Documents\Visual Studio 2019\EcoHelperr-master\EcoHelper\EcoHelper\obj\Debug\netstandard2.0\XamlC.stamp
-C:\Users\m.kalisz\Documents\Visual Studio 2019\EcoHelperr-master\EcoHelper\EcoHelper\obj\Debug\netstandard2.0\EcoHelper.csproj.CopyComplete
-C:\Users\m.kalisz\Documents\Visual Studio 2019\EcoHelperr-master\EcoHelper\EcoHelper\obj\Debug\netstandard2.0\EcoHelper.dll
-C:\Users\m.kalisz\Documents\Visual Studio 2019\EcoHelperr-master\EcoHelper\EcoHelper\obj\Debug\netstandard2.0\EcoHelper.pdb
-C:\Users\m.kalisz\Documents\Visual Studio 2019\EcoHelperr-master\EcoHelper\EcoHelper\obj\Debug\netstandard2.0\Views\WhereToThrow\WhereToThrowResult.xaml.g.cs
-C:\Users\m.kalisz\Documents\Visual Studio 2019\EcoHelperr-master\EcoHelper\EcoHelper\obj\Debug\netstandard2.0\Views\WhereToThrow\WhereToThrowSearch.xaml.g.cs
-C:\Git\EcoHelperr-master\EcoHelper\EcoHelper\obj\Debug\netstandard2.0\EcoHelper.dll
-C:\Git\EcoHelperr-master\EcoHelper\EcoHelper\obj\Debug\netstandard2.0\EcoHelper.csprojAssemblyReference.cache
-C:\Git\EcoHelperr-master\EcoHelper\EcoHelper\obj\Debug\netstandard2.0\App.xaml.g.cs
-C:\Git\EcoHelperr-master\EcoHelper\EcoHelper\obj\Debug\netstandard2.0\Views\AboutPage.xaml.g.cs
-C:\Git\EcoHelperr-master\EcoHelper\EcoHelper\obj\Debug\netstandard2.0\Views\CalculateResourcesView.xaml.g.cs
-C:\Git\EcoHelperr-master\EcoHelper\EcoHelper\obj\Debug\netstandard2.0\Views\DumpsterDetails\GreenDumpsterPage.xaml.g.cs
-C:\Git\EcoHelperr-master\EcoHelper\EcoHelper\obj\Debug\netstandard2.0\Views\DumpsterDetails\PharmacyPages\PharmaciesMapPage.xaml.g.cs
-C:\Git\EcoHelperr-master\EcoHelper\EcoHelper\obj\Debug\netstandard2.0\Views\DumpsterListViewPage.xaml.g.cs
-C:\Git\EcoHelperr-master\EcoHelper\EcoHelper\obj\Debug\netstandard2.0\Views\ItemDetailPage.xaml.g.cs
-C:\Git\EcoHelperr-master\EcoHelper\EcoHelper\obj\Debug\netstandard2.0\Views\MainPage.xaml.g.cs
-C:\Git\EcoHelperr-master\EcoHelper\EcoHelper\obj\Debug\netstandard2.0\Views\MenuPage.xaml.g.cs
-C:\Git\EcoHelperr-master\EcoHelper\EcoHelper\obj\Debug\netstandard2.0\Views\NewItemPage.xaml.g.cs
-C:\Git\EcoHelperr-master\EcoHelper\EcoHelper\obj\Debug\netstandard2.0\Views\WhereToThrow\WhereToThrowSearch.xaml.g.cs
-C:\Git\EcoHelperr-master\EcoHelper\EcoHelper\obj\Debug\netstandard2.0\EcoHelper.AssemblyInfoInputs.cache
-C:\Git\EcoHelperr-master\EcoHelper\EcoHelper\obj\Debug\netstandard2.0\EcoHelper.AssemblyInfo.cs
-C:\Git\EcoHelperr-master\EcoHelper\EcoHelper\obj\Debug\netstandard2.0\Views\DumpsterDetails\PharmacyPage.xaml.g.cs
-C:\Git\EcoHelperr-master\EcoHelper\EcoHelper\obj\Debug\netstandard2.0\Views\DumpsterDetails\PharmacyPages\PharmaciesAddressPage.xaml.g.cs
-C:\Git\EcoHelperr-master\EcoHelper\EcoHelper\obj\Debug\netstandard2.0\Views\ItemsPage.xaml.g.cs
 C:\Git\EcoHelperr-master\EcoHelper\EcoHelper\bin\Debug\netstandard2.0\EcoHelper.deps.json
 C:\Git\EcoHelperr-master\EcoHelper\EcoHelper\bin\Debug\netstandard2.0\EcoHelper.dll
 C:\Git\EcoHelperr-master\EcoHelper\EcoHelper\bin\Debug\netstandard2.0\EcoHelper.pdb
 C:\Git\EcoHelperr-master\EcoHelper\EcoHelper\bin\Debug\netstandard2.0\Mono.Android.dll
 C:\Git\EcoHelperr-master\EcoHelper\EcoHelper\bin\Debug\netstandard2.0\Mono.Android.pdb
 C:\Git\EcoHelperr-master\EcoHelper\EcoHelper\bin\Debug\netstandard2.0\Mono.Android.xml
+C:\Git\EcoHelperr-master\EcoHelper\EcoHelper\obj\Debug\netstandard2.0\EcoHelper.csprojAssemblyReference.cache
+C:\Git\EcoHelperr-master\EcoHelper\EcoHelper\obj\Debug\netstandard2.0\App.xaml.g.cs
+C:\Git\EcoHelperr-master\EcoHelper\EcoHelper\obj\Debug\netstandard2.0\Views\AboutPage.xaml.g.cs
+C:\Git\EcoHelperr-master\EcoHelper\EcoHelper\obj\Debug\netstandard2.0\Views\CalculateResourcesView.xaml.g.cs
+C:\Git\EcoHelperr-master\EcoHelper\EcoHelper\obj\Debug\netstandard2.0\Views\DoNotBurnWaste\DoNotBurnWasteView.xaml.g.cs
+C:\Git\EcoHelperr-master\EcoHelper\EcoHelper\obj\Debug\netstandard2.0\Views\DumpsterDetails\GreenDumpsterPage.xaml.g.cs
+C:\Git\EcoHelperr-master\EcoHelper\EcoHelper\obj\Debug\netstandard2.0\Views\DumpsterDetails\PharmacyPage.xaml.g.cs
+C:\Git\EcoHelperr-master\EcoHelper\EcoHelper\obj\Debug\netstandard2.0\Views\DumpsterDetails\PharmacyPages\PharmaciesAddressPage.xaml.g.cs
+C:\Git\EcoHelperr-master\EcoHelper\EcoHelper\obj\Debug\netstandard2.0\Views\DumpsterDetails\PharmacyPages\PharmaciesMapPage.xaml.g.cs
+C:\Git\EcoHelperr-master\EcoHelper\EcoHelper\obj\Debug\netstandard2.0\Views\DumpsterListViewPage.xaml.g.cs
+C:\Git\EcoHelperr-master\EcoHelper\EcoHelper\obj\Debug\netstandard2.0\Views\InterestingFacts\InterestingFactsView.xaml.g.cs
+C:\Git\EcoHelperr-master\EcoHelper\EcoHelper\obj\Debug\netstandard2.0\Views\ItemDetailPage.xaml.g.cs
+C:\Git\EcoHelperr-master\EcoHelper\EcoHelper\obj\Debug\netstandard2.0\Views\ItemsPage.xaml.g.cs
+C:\Git\EcoHelperr-master\EcoHelper\EcoHelper\obj\Debug\netstandard2.0\Views\MainPage.xaml.g.cs
 C:\Git\EcoHelperr-master\EcoHelper\EcoHelper\obj\Debug\netstandard2.0\Views\MainPageDetail.xaml.g.cs
 C:\Git\EcoHelperr-master\EcoHelper\EcoHelper\obj\Debug\netstandard2.0\Views\MainPageMaster.xaml.g.cs
-C:\Git\EcoHelperr-master\EcoHelper\EcoHelper\obj\Debug\netstandard2.0\Views\WhereToThrow\WhereToThrowResult.xaml.g.cs
-C:\Git\EcoHelperr-master\EcoHelper\EcoHelper\obj\Debug\netstandard2.0\XamlC.stamp
-C:\Git\EcoHelperr-master\EcoHelper\EcoHelper\obj\Debug\netstandard2.0\EcoHelper.csproj.CopyComplete
-C:\Git\EcoHelperr-master\EcoHelper\EcoHelper\obj\Debug\netstandard2.0\EcoHelper.pdb
+C:\Git\EcoHelperr-master\EcoHelper\EcoHelper\obj\Debug\netstandard2.0\Views\MenuPage.xaml.g.cs
+C:\Git\EcoHelperr-master\EcoHelper\EcoHelper\obj\Debug\netstandard2.0\Views\NewItemPage.xaml.g.cs
+C:\Git\EcoHelperr-master\EcoHelper\EcoHelper\obj\Debug\netstandard2.0\Views\Test\TestEndResult.xaml.g.cs
 C:\Git\EcoHelperr-master\EcoHelper\EcoHelper\obj\Debug\netstandard2.0\Views\Test\TestMainView.xaml.g.cs
 C:\Git\EcoHelperr-master\EcoHelper\EcoHelper\obj\Debug\netstandard2.0\Views\Test\TestQuestion.xaml.g.cs
 C:\Git\EcoHelperr-master\EcoHelper\EcoHelper\obj\Debug\netstandard2.0\Views\Test\TestResultsView.xaml.g.cs
 C:\Git\EcoHelperr-master\EcoHelper\EcoHelper\obj\Debug\netstandard2.0\Views\Test\TestUserName.xaml.g.cs
-C:\Git\EcoHelperr-master\EcoHelper\EcoHelper\obj\Debug\netstandard2.0\Views\Test\TestEndResult.xaml.g.cs
-C:\Git\EcoHelperr-master\EcoHelper\EcoHelper\obj\Debug\netstandard2.0\Views\DoNotBurnWaste\DoNotBurnWasteView.xaml.g.cs
-C:\Git\EcoHelperr-master\EcoHelper\EcoHelper\obj\Debug\netstandard2.0\Views\InterestingFacts\InterestingFactsView.xaml.g.cs
 C:\Git\EcoHelperr-master\EcoHelper\EcoHelper\obj\Debug\netstandard2.0\Views\Tips\TipsView.xaml.g.cs
+C:\Git\EcoHelperr-master\EcoHelper\EcoHelper\obj\Debug\netstandard2.0\Views\WhereToThrow\WhereToThrowResult.xaml.g.cs
+C:\Git\EcoHelperr-master\EcoHelper\EcoHelper\obj\Debug\netstandard2.0\Views\WhereToThrow\WhereToThrowSearch.xaml.g.cs
 C:\Git\EcoHelperr-master\EcoHelper\EcoHelper\obj\Debug\netstandard2.0\Views\WhySegregate\WhySegregateView.xaml.g.cs
+C:\Git\EcoHelperr-master\EcoHelper\EcoHelper\obj\Debug\netstandard2.0\EcoHelper.AssemblyInfoInputs.cache
+C:\Git\EcoHelperr-master\EcoHelper\EcoHelper\obj\Debug\netstandard2.0\EcoHelper.AssemblyInfo.cs
+C:\Git\EcoHelperr-master\EcoHelper\EcoHelper\obj\Debug\netstandard2.0\EcoHelper.csproj.CopyComplete
+C:\Git\EcoHelperr-master\EcoHelper\EcoHelper\obj\Debug\netstandard2.0\EcoHelper.dll
+C:\Git\EcoHelperr-master\EcoHelper\EcoHelper\obj\Debug\netstandard2.0\EcoHelper.pdb
+C:\Git\EcoHelperr-master\EcoHelper\EcoHelper\obj\Debug\netstandard2.0\XamlC.stamp

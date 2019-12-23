@@ -16,10 +16,12 @@ namespace EcoHelper.Views.DumpsterDetails
         public PharmacyPage()
         {
             InitializeComponent();
+            
         }
         private void onSearchForPharmaciesClick(object sender, EventArgs e)
         {
             Navigation.PushAsync(new PharmaciesAddressPage());
         }
+
     }
 }
