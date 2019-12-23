@@ -33,7 +33,7 @@
                         <ColumnDefinition Width="8*"></ColumnDefinition>
                         <ColumnDefinition Width="3*"></ColumnDefinition>
                     </Grid.ColumnDefinitions>
-                    <BoxView Color="#5A6978" Grid.Row="0" Grid.ColumnSpan="3"/>
+                    <BoxView Color="#5A6978" Grid.Row="0" Grid.ColumnSpan="3" Margin="0,0,0,5"/>
                     <Label Text="Apteka" TextColor="White" Grid.Column="1" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" FontSize="16" >
                         <Label.FontFamily>
                             <OnPlatform x:TypeArguments="x:String" Android="Domine-Regular.ttf#Domine Regular" iOS="Domine-Regular"/>
@@ -59,7 +59,7 @@
                     </Grid.ColumnDefinitions>
                     <Grid.RowDefinitions>
                     </Grid.RowDefinitions>
-                    <BoxView x:Name="ToThrowBox" Grid.Column="0" BackgroundColor="#13CE66" Margin="0,0,0,5"></BoxView>
+                    <BoxView x:Name="ToThrowBox" Grid.Column="0" BackgroundColor="#13CE66" ></BoxView>
                     <Button Clicked="onWhatToThrowClicked" x:Name="ToThrowButton" Grid.Column="0" Text="Oddajemy" TextColor="White" BackgroundColor="Transparent" CornerRadius="0" BorderWidth="0" HeightRequest="0" Scale="1">
                         <Button.FontFamily>
                             <OnPlatform x:TypeArguments="x:String" Android="Domine-Regular.ttf#Domine Regular" iOS="Domine-Regular"/>
