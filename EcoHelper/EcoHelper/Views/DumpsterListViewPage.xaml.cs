@@ -93,9 +93,12 @@ namespace EcoHelper.Views
                     case (int)DumpsterItemType.GreenWaste:
                         await this._navigation.PushAsync(new GreenWastePage(), true);
                         break;
+                    case (int)DumpsterItemType.ElectronicWaste:
+                        await this._navigation.PushAsync(new ElectronicWastePage(), true);
+                        break;
                     case (int)DumpsterItemType.MedicinesAndThermometrWaste:
-                                await this._navigation.PushAsync(new PharmacyPage(), true);
-                                break;
+                        await this._navigation.PushAsync(new PharmacyPage(), true);
+                        break;
             }
         }
     }
