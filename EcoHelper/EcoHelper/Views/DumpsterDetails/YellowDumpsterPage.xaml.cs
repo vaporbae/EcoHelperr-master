@@ -1,4 +1,5 @@
-﻿using System;
+﻿using EcoHelper.Views.WhereToThrow;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -30,6 +31,11 @@ namespace EcoHelper.Views.DumpsterDetails
             ToNotThrowBox.BackgroundColor = Color.DarkRed;
             ThrowLabel.Text = "\nButelek i pojemników z zawartości\nZużyty sprzęt elektroniczny i AGD\nPuszki i pojemniki po farbach i lakierach\nCzęści samochodowe\nOpakowania po olejach silnikowych\nZużyte artykuły medyczne\nPłyty CD i DVD\nAmunicja\n";
             ToThrowBox.BackgroundColor = Color.FromHex("#13CE66");
+        }
+
+        private void onWhereToThrowAwayClicked(object sender, EventArgs e)
+        {
+            Navigation.PushAsync(new WhereToThrowSearch());
         }
     }
 }

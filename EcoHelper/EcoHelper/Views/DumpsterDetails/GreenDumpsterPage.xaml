@@ -86,7 +86,7 @@
                     <RowDefinition Height="60"></RowDefinition>
                 </Grid.RowDefinitions>
                 <BoxView BackgroundColor="#976DD0"></BoxView>
-                <Button Text="Sprawdź czy tu wyrzucisz swój odpad" TextColor="White" BackgroundColor="Transparent">
+                <Button Clicked="onWhereToThrowAwayClicked" Text="Sprawdź czy tu wyrzucisz swój odpad" TextColor="White" BackgroundColor="Transparent">
                     <Button.FontFamily>
                         <OnPlatform x:TypeArguments="x:String" Android="Domine-Regular.ttf#Domine Regular" iOS="Domine-Regular"/>
                     </Button.FontFamily>
@@ -141,8 +141,8 @@
                 <Grid.RowDefinitions>
                     <RowDefinition Height="70"></RowDefinition>
                 </Grid.RowDefinitions>
-                <BoxView BackgroundColor="#00A6FF"></BoxView>
-                <Label Text="Uwaga!" TextColor="PaleVioletRed" BackgroundColor="Transparent" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" FontSize="16">
+                <BoxView BackgroundColor="PaleVioletRed"></BoxView>
+                <Label Text="Uwaga!" TextColor="White" BackgroundColor="Transparent" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" FontSize="16">
                     <Label.FontFamily>
                         <OnPlatform x:TypeArguments="x:String" Android="Domine-Regular.ttf#Domine Regular" iOS="Domine-Regular"/>
                     </Label.FontFamily>

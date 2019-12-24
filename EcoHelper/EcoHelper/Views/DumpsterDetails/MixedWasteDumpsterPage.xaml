@@ -1,0 +1,178 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="EcoHelper.Views.DumpsterDetails.MixedWasteDumpsterPage">
+    <ContentPage.Content>
+        <ScrollView>
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="300"></RowDefinition>
+                    <RowDefinition Height="auto"></RowDefinition>
+                    <RowDefinition Height="auto"></RowDefinition>
+                    <RowDefinition Height="auto"></RowDefinition>
+                    <RowDefinition Height="auto"></RowDefinition>
+                    <RowDefinition Height="auto"></RowDefinition>
+                    <RowDefinition Height="auto"></RowDefinition>
+                    <RowDefinition Height="auto"></RowDefinition>
+                    <RowDefinition Height="auto"></RowDefinition>
+                    <RowDefinition Height="auto"></RowDefinition>
+                    <RowDefinition Height="auto"></RowDefinition>
+                </Grid.RowDefinitions>
+                <Grid Grid.Row="0">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="2*"></RowDefinition>
+                        <RowDefinition Height="1*"></RowDefinition>
+                        <RowDefinition Height="3*"></RowDefinition>
+                        <RowDefinition Height="1*"></RowDefinition>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="3*"></ColumnDefinition>
+                        <ColumnDefinition Width="8*"></ColumnDefinition>
+                        <ColumnDefinition Width="3*"></ColumnDefinition>
+                    </Grid.ColumnDefinitions>
+                    <BoxView Color="#5A6978" Grid.Row="0" Grid.ColumnSpan="3" Margin="0,0,0,5"/>
+                    <Label Text="Odpady zmieszane" TextColor="White" Grid.Column="1" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" FontSize="16" >
+                        <Label.FontFamily>
+                            <OnPlatform x:TypeArguments="x:String" Android="Domine-Regular.ttf#Domine Regular" iOS="Domine-Regular"/>
+                        </Label.FontFamily>
+                    </Label>
+                    <Image Source="icons8leather96.png" Grid.Column="0" Grid.Row="1" Scale="1.3" ></Image>
+                    <Image Source="icons8pockettissue96.png" Grid.Column="2" Grid.Row="1" Scale="1.3"></Image>
+                    <Image Source="blackcontainerr.png" Grid.Column="1" Grid.Row="2" Scale="1.2"></Image>
+                    <Image Source="icons8smoking96.png" Grid.Column="2" Grid.Row="3" Scale="1.3"></Image>
+                    <Image Source="icons8oliveoil96.png" Grid.Column="0" Grid.Row="3" Scale="1.3"></Image>
+                </Grid>
+                <Grid Grid.Row="1">
+                    <Label Text="" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" FontSize="18" >
+                        <Label.FontFamily>
+                            <OnPlatform x:TypeArguments="x:String" Android="Domine-Regular.ttf#Domine Regular" iOS="Domine-Regular"/>
+                        </Label.FontFamily>
+                    </Label>
+                </Grid>
+                <Grid Grid.Row="2" Margin="0,15,0,0">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="1*"></ColumnDefinition>
+                        <ColumnDefinition Width="1*"></ColumnDefinition>
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                    </Grid.RowDefinitions>
+                    <BoxView x:Name="ToThrowBox" Grid.Column="0" BackgroundColor="#13CE66"></BoxView>
+                    <Button Clicked="onWhatToThrowClicked" x:Name="ToThrowButton" Grid.Column="0" Text="Wrzucamy" TextColor="White" BackgroundColor="Transparent" CornerRadius="0" BorderWidth="0" HeightRequest="0" Scale="1">
+                        <Button.FontFamily>
+                            <OnPlatform x:TypeArguments="x:String" Android="Domine-Regular.ttf#Domine Regular" iOS="Domine-Regular"/>
+                        </Button.FontFamily>
+                    </Button>
+                    <BoxView x:Name="ToNotThrowBox" Grid.Column="1" BackgroundColor="#D93437"></BoxView>
+                    <Button Clicked="onWhatNotToThrowClicked" x:Name="ToNotThrowButton" Grid.Column="1" Text="Nie wrzucamy" TextColor="White" BackgroundColor="Transparent">
+                        <Button.FontFamily>
+                            <OnPlatform x:TypeArguments="x:String" Android="Domine-Regular.ttf#Domine Regular" iOS="Domine-Regular"/>
+                        </Button.FontFamily>
+                    </Button>
+                </Grid>
+                <Grid Grid.Row="3">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="auto"></RowDefinition>
+                    </Grid.RowDefinitions>
+                    <Label x:Name="ThrowLabel" Text="Test123" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" FontSize="16" >
+                        <Label.FontFamily>
+                            <OnPlatform x:TypeArguments="x:String" Android="Domine-Regular.ttf#Domine Regular" iOS="Domine-Regular"/>
+                        </Label.FontFamily>
+                    </Label>
+                </Grid>
+                <Grid Grid.Row="4">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="60"></RowDefinition>
+                    </Grid.RowDefinitions>
+                    <BoxView BackgroundColor="#976DD0"></BoxView>
+                    <Button Clicked="onWhereToThrowAwayClicked" Text="Sprawdź czy tu wyrzucisz swój odpad" TextColor="White" BackgroundColor="Transparent">
+                        <Button.FontFamily>
+                            <OnPlatform x:TypeArguments="x:String" Android="Domine-Regular.ttf#Domine Regular" iOS="Domine-Regular"/>
+                        </Button.FontFamily>
+                    </Button>
+                </Grid>
+                <Grid Grid.Row="5">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="70"></RowDefinition>
+                    </Grid.RowDefinitions>
+                    <BoxView BackgroundColor="#FF9052"></BoxView>
+                    <Label Text="Wskazówki"  TextColor="White" BackgroundColor="Transparent" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" FontSize="16">
+                        <Label.FontFamily>
+                            <OnPlatform x:TypeArguments="x:String" Android="Domine-Regular.ttf#Domine Regular" iOS="Domine-Regular"/>
+                        </Label.FontFamily>
+                    </Label>
+                </Grid>
+                <Grid Grid.Row="6">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="auto"></RowDefinition>
+                    </Grid.RowDefinitions>
+                    <Label Margin="10"  Text="
+&#x0A;Do pojemnika z odpadami zmieszanymi należy wrzucać wszystko to, czego nie można odzyskać w procesie recyklingu, z wyłączeniem odpadów niebezpiecznych
+&#x0A;&#x0A;Zużytą torebkę z herbatą wyrzucamy do pojemnika na odpady zmieszane. Można też jednak z torebki oddzielić herbatę i wrzucić ją do pojemnika na odpady biodegradowalne, a papierową torebkę do pojemnika na odpady zmieszane. Rozwiązanie zależy od gminy
+&#x0A;&#x0A;W niektórych gminach jest możliwe – choć niewskazane – wyrzucanie nabiału, sera, jaj do pojemnika na odpady BIO
+&#x0A;
+" BackgroundColor="Transparent" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" FontSize="16">
+                        <Label.FontFamily>
+                            <OnPlatform x:TypeArguments="x:String" Android="Domine-Regular.ttf#Domine Regular" iOS="Domine-Regular"/>
+                        </Label.FontFamily>
+                    </Label>
+                </Grid>
+                <Grid Grid.Row="7">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="70"></RowDefinition>
+                    </Grid.RowDefinitions>
+                    <BoxView BackgroundColor="PaleVioletRed"></BoxView>
+                    <Label Text="Co się dzieje z odpadami komunalnymi po zbiórce?" TextColor="White" BackgroundColor="Transparent" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" FontSize="16">
+                        <Label.FontFamily>
+                            <OnPlatform x:TypeArguments="x:String" Android="Domine-Regular.ttf#Domine Regular" iOS="Domine-Regular"/>
+                        </Label.FontFamily>
+                    </Label>
+                </Grid>
+                <Grid Grid.Row="8" >
+                    <Grid.RowDefinitions>
+                        <RowDefinition  Height="auto"></RowDefinition>
+                    </Grid.RowDefinitions>
+                    <Label Margin="10"  Text="&#x0A;Odpady zmieszane z czarnych pojemników trafią do zakładów, w których będą najpierw sortowane w celu odzyskania wartościowych energetycznie składników, a następnie poddane kompostowaniu, by nie wydzielał się z nich metan i żeby były obojętne dla środowiska naturalnego. Na koniec to, czego nie uda się odzyskać, trafi na składowiska.&#x0A;" BackgroundColor="Transparent" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" FontSize="16">
+                        <Label.FontFamily>
+                            <OnPlatform x:TypeArguments="x:String" Android="Domine-Regular.ttf#Domine Regular" iOS="Domine-Regular"/>
+                        </Label.FontFamily>
+                    </Label>
+                </Grid>
+                <Grid Grid.Row="9">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="70"></RowDefinition>
+                    </Grid.RowDefinitions>
+                    <BoxView BackgroundColor="#00A6FF"></BoxView>
+                    <Label Text="Ciekawostki" TextColor="White" BackgroundColor="Transparent" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" FontSize="16">
+                        <Label.FontFamily>
+                            <OnPlatform x:TypeArguments="x:String" Android="Domine-Regular.ttf#Domine Regular" iOS="Domine-Regular"/>
+                        </Label.FontFamily>
+                    </Label>
+                </Grid>
+                <Grid Grid.Row="10">
+                    <Grid.RowDefinitions>
+                        <RowDefinition  Height="auto"></RowDefinition>
+                    </Grid.RowDefinitions>
+                    <Label Margin="10"  Text="&#x0A;Każda butelka poddana do ponownego recyklingu oszczędza energię wielkości potrzebnej 100 watowej żarówce aby mogła świecić 4h.&#x0A;" BackgroundColor="Transparent" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" FontSize="16">
+                        <Label.FontFamily>
+                            <OnPlatform x:TypeArguments="x:String" Android="Domine-Regular.ttf#Domine Regular" iOS="Domine-Regular"/>
+                        </Label.FontFamily>
+                    </Label>
+                </Grid>
+                <Grid Grid.Row="11">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="60"></RowDefinition>
+                    </Grid.RowDefinitions>
+                    <BoxView BackgroundColor="#68BEED"></BoxView>
+                    <Button Text="Pokaż inną" TextColor="White" BackgroundColor="Transparent">
+                        <Button.FontFamily>
+                            <OnPlatform x:TypeArguments="x:String" Android="Domine-Regular.ttf#Domine Regular" iOS="Domine-Regular"/>
+                        </Button.FontFamily>
+                    </Button>
+                </Grid>
+            </Grid>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

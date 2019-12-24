@@ -1,0 +1,182 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="EcoHelper.Views.DumpsterDetails.GreenWastePage">
+    <ContentPage.Content>
+        <ScrollView>
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="300"></RowDefinition>
+                    <RowDefinition Height="auto"></RowDefinition>
+                    <RowDefinition Height="auto"></RowDefinition>
+                    <RowDefinition Height="auto"></RowDefinition>
+                    <RowDefinition Height="auto"></RowDefinition>
+                    <RowDefinition Height="auto"></RowDefinition>
+                    <RowDefinition Height="auto"></RowDefinition>
+                    <RowDefinition Height="auto"></RowDefinition>
+                    <RowDefinition Height="auto"></RowDefinition>
+                    <RowDefinition Height="auto"></RowDefinition>
+                    <RowDefinition Height="auto"></RowDefinition>
+                </Grid.RowDefinitions>
+                <Grid Grid.Row="0">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="2*"></RowDefinition>
+                        <RowDefinition Height="1*"></RowDefinition>
+                        <RowDefinition Height="3*"></RowDefinition>
+                        <RowDefinition Height="1*"></RowDefinition>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="3*"></ColumnDefinition>
+                        <ColumnDefinition Width="8*"></ColumnDefinition>
+                        <ColumnDefinition Width="3*"></ColumnDefinition>
+                    </Grid.ColumnDefinitions>
+                    <BoxView Color="#886D59" Grid.Row="0" Grid.ColumnSpan="3" Margin="0,0,0,5"/>
+                    <Label Text="Odpady zielone" TextColor="White" Grid.Column="1" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" FontSize="16" >
+                        <Label.FontFamily>
+                            <OnPlatform x:TypeArguments="x:String" Android="Domine-Regular.ttf#Domine Regular" iOS="Domine-Regular"/>
+                        </Label.FontFamily>
+                    </Label>
+                    <Image Source="icons8mapleleaf96.png" Grid.Column="0" Grid.Row="1" Scale="1.3" ></Image>
+                    <Image Source="icons8barley96.png" Grid.Column="2" Grid.Row="1" Scale="1.3"></Image>
+                    <Image Source="icons8capital96.png" Grid.Column="1" Grid.Row="2" Scale="1.2"></Image>
+                    <Image Source="icons8leaf96.png" Grid.Column="1" Grid.Row="2" Scale="0.8" Margin="0,36,0,0"></Image>
+                    <Image Source="icons8asparagus96.png" Grid.Column="2" Grid.Row="3" Scale="1.3"></Image>
+                    <Image Source="icons8grass96.png" Grid.Column="0" Grid.Row="3" Scale="1.3"></Image>
+                </Grid>
+                <Grid Grid.Row="1">
+                    <Label Text="" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" FontSize="18" >
+                        <Label.FontFamily>
+                            <OnPlatform x:TypeArguments="x:String" Android="Domine-Regular.ttf#Domine Regular" iOS="Domine-Regular"/>
+                        </Label.FontFamily>
+                    </Label>
+                </Grid>
+                <Grid Grid.Row="2" Margin="0,15,0,0">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="1*"></ColumnDefinition>
+                        <ColumnDefinition Width="1*"></ColumnDefinition>
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                    </Grid.RowDefinitions>
+                    <BoxView x:Name="ToThrowBox" Grid.Column="0" BackgroundColor="#13CE66"></BoxView>
+                    <Button Clicked="onWhatToThrowClicked" x:Name="ToThrowButton" Grid.Column="0" Text="Wrzucamy" TextColor="White" BackgroundColor="Transparent" CornerRadius="0" BorderWidth="0" HeightRequest="0" Scale="1">
+                        <Button.FontFamily>
+                            <OnPlatform x:TypeArguments="x:String" Android="Domine-Regular.ttf#Domine Regular" iOS="Domine-Regular"/>
+                        </Button.FontFamily>
+                    </Button>
+                    <BoxView x:Name="ToNotThrowBox" Grid.Column="1" BackgroundColor="#D93437"></BoxView>
+                    <Button Clicked="onWhatNotToThrowClicked" x:Name="ToNotThrowButton" Grid.Column="1" Text="Nie wrzucamy" TextColor="White" BackgroundColor="Transparent">
+                        <Button.FontFamily>
+                            <OnPlatform x:TypeArguments="x:String" Android="Domine-Regular.ttf#Domine Regular" iOS="Domine-Regular"/>
+                        </Button.FontFamily>
+                    </Button>
+                </Grid>
+                <Grid Grid.Row="3">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="auto"></RowDefinition>
+                    </Grid.RowDefinitions>
+                    <Label x:Name="ThrowLabel" Text="Test123" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" FontSize="16" >
+                        <Label.FontFamily>
+                            <OnPlatform x:TypeArguments="x:String" Android="Domine-Regular.ttf#Domine Regular" iOS="Domine-Regular"/>
+                        </Label.FontFamily>
+                    </Label>
+                </Grid>
+                <Grid Grid.Row="4">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="60"></RowDefinition>
+                    </Grid.RowDefinitions>
+                    <BoxView BackgroundColor="#976DD0"></BoxView>
+                    <Button Clicked="onWhereToThrowAwayClicked" Text="Sprawdź czy tu wyrzucisz swój odpad" TextColor="White" BackgroundColor="Transparent">
+                        <Button.FontFamily>
+                            <OnPlatform x:TypeArguments="x:String" Android="Domine-Regular.ttf#Domine Regular" iOS="Domine-Regular"/>
+                        </Button.FontFamily>
+                    </Button>
+                </Grid>
+                <Grid Grid.Row="5">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="70"></RowDefinition>
+                    </Grid.RowDefinitions>
+                    <BoxView BackgroundColor="#FF9052"></BoxView>
+                    <Label Text="Wskazówki"  TextColor="White" BackgroundColor="Transparent" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" FontSize="16">
+                        <Label.FontFamily>
+                            <OnPlatform x:TypeArguments="x:String" Android="Domine-Regular.ttf#Domine Regular" iOS="Domine-Regular"/>
+                        </Label.FontFamily>
+                    </Label>
+                </Grid>
+                <Grid Grid.Row="6">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="auto"></RowDefinition>
+                    </Grid.RowDefinitions>
+                    <Label Margin="10"  Text="
+&#x0A;Paląc liście, gałęzie czy skoszoną trawę uwalniasz do atmosfery szkodliwe substancje, rakotwórcze węglowodory aromatyczne, szkodząc w ten sposób nie tylko sobie, lecz wszystkim mieszkańcom miasta
+&#x0A;&#x0A;Odpadami zielonymi nie są resztki jedzenia ani inne odpady kuchenne, popiół czy niedopałki po papierosach
+&#x0A;&#x0A;Przy zbieraniu liści warto pamiętać, by uważnie wrzucać zawartość do worka, a pozostałe śmieci segregować w przeznaczonych do tego pojemnikach
+&#x0A;&#x0A;Swoje odpady zielone możesz też samodzielnie przywieźć do jednego z Punktów Selektywnej Zbiórki Odpadów Komunalnych
+&#x0A;&#x0A;Pamiętaj, do Punktu Selektywnej Zbiórki Odpadów Komunalnych możesz jednorazowo przywieźć maksymalnie sześć worków z odpadami zielonymi, każdy o pojemności o 60 do 120 litrów
+&#x0A;                          
+                           " BackgroundColor="Transparent" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" FontSize="16">
+ 
+                        <Label.FontFamily>
+                            <OnPlatform x:TypeArguments="x:String" Android="Domine-Regular.ttf#Domine Regular" iOS="Domine-Regular"/>
+                        </Label.FontFamily>
+                    </Label>
+                </Grid>
+                <Grid Grid.Row="7">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="70"></RowDefinition>
+                    </Grid.RowDefinitions>
+                    <BoxView BackgroundColor="PaleVioletRed"></BoxView>
+                    <Label Text="Co się dzieje z odpadami zielonymi po zbiórce?" TextColor="White" BackgroundColor="Transparent" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" FontSize="16">
+                        <Label.FontFamily>
+                            <OnPlatform x:TypeArguments="x:String" Android="Domine-Regular.ttf#Domine Regular" iOS="Domine-Regular"/>
+                        </Label.FontFamily>
+                    </Label>
+                </Grid>
+                <Grid Grid.Row="8" >
+                    <Grid.RowDefinitions>
+                        <RowDefinition  Height="auto"></RowDefinition>
+                    </Grid.RowDefinitions>
+                    <Label Margin="10"  Text="&#x0A;Wiele gmin organizuje również odbiory odpadów zielonych – są one prowadzone cyklicznie, a szczegółowe informacje znajdują się na stronach internetowych urzędów miast i gmin. Odpady przed odbiorem należy odpowiednio przygotować, tj. zapakować w worki. Wywozem i utylizacją odpadów zielonych zajmują się także wyspecjalizowane firmy, które przyjeżdżają bezpośrednio na wskazane miejsce i odbierają je od klienta. W pracach działkowych i ogrodowych, poza odpadami zielonymi, często zostaje również wiele zbędnej ziemi. Wywóz takich odpadów również można oddać w ręce profesjonalistów.&#x0A;&#x0A;Kolejnym sposobem utylizacji odpadów zielonych jest ich kompostowanie, czyli metoda unieszkodliwiania i zagospodarowania odpadów. Dzięki kompostowaniu możliwe jest uzyskanie wysokiej jakości nawozu organicznego. Zabronione jest natomiast przewożenie odpadów zielonych do lasu – wbrew pozorom takie działanie może mieć bardzo szkodliwe skutki dla ekosystemu. Pomimo że liście, łodygi lub trawa wydaje się być bezpieczne z punktu widzenia środowiska naturalnego, to wysypane na ściółkę mogą po prostu ją zniszczyć, a także zahamować rozwój grzybni. Odpady zielone powinny być zatem zutylizowane przez wyspecjalizowane podmioty lub poddane kompostowaniu.&#x0A;" BackgroundColor="Transparent" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" FontSize="16">
+                        <Label.FontFamily>
+                            <OnPlatform x:TypeArguments="x:String" Android="Domine-Regular.ttf#Domine Regular" iOS="Domine-Regular"/>
+                        </Label.FontFamily>
+                    </Label>
+                </Grid>
+                <Grid Grid.Row="9">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="70"></RowDefinition>
+                    </Grid.RowDefinitions>
+                    <BoxView BackgroundColor="#00A6FF"></BoxView>
+                    <Label Text="Ciekawostki" TextColor="White" BackgroundColor="Transparent" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" FontSize="16">
+                        <Label.FontFamily>
+                            <OnPlatform x:TypeArguments="x:String" Android="Domine-Regular.ttf#Domine Regular" iOS="Domine-Regular"/>
+                        </Label.FontFamily>
+                    </Label>
+                </Grid>
+                <Grid Grid.Row="10">
+                    <Grid.RowDefinitions>
+                        <RowDefinition  Height="auto"></RowDefinition>
+                    </Grid.RowDefinitions>
+                    <Label Margin="10"  Text="&#x0A;Każda butelka poddana do ponownego recyklingu oszczędza energię wielkości potrzebnej 100 watowej żarówce aby mogła świecić 4h.&#x0A;" BackgroundColor="Transparent" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" FontSize="16">
+                        <Label.FontFamily>
+                            <OnPlatform x:TypeArguments="x:String" Android="Domine-Regular.ttf#Domine Regular" iOS="Domine-Regular"/>
+                        </Label.FontFamily>
+                    </Label>
+                </Grid>
+                <Grid Grid.Row="11">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="60"></RowDefinition>
+                    </Grid.RowDefinitions>
+                    <BoxView BackgroundColor="#68BEED"></BoxView>
+                    <Button Text="Pokaż inną" TextColor="White" BackgroundColor="Transparent">
+                        <Button.FontFamily>
+                            <OnPlatform x:TypeArguments="x:String" Android="Domine-Regular.ttf#Domine Regular" iOS="Domine-Regular"/>
+                        </Button.FontFamily>
+                    </Button>
+                </Grid>
+            </Grid>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

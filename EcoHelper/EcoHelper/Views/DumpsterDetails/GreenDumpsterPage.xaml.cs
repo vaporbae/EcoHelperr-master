@@ -1,4 +1,5 @@
-﻿using System;
+﻿using EcoHelper.Views.WhereToThrow;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -30,6 +31,11 @@ namespace EcoHelper.Views.DumpsterDetails
             ToNotThrowBox.BackgroundColor = Color.DarkRed;
             ThrowLabel.Text = "\nCeramika\nDoniczki\nPorcelana\nKryształy\nSzkło okularowe\nSzkło żaroodporne\nZnicze z woskiem\nŻarówki, świetlówki, reflektory\nLustra\nSzyby\nMonitory i telewizory\nTermometry i strzykawki\n";
             ToThrowBox.BackgroundColor = Color.FromHex("#13CE66");
+        }
+
+        private void onWhereToThrowAwayClicked(object sender, EventArgs e)
+        {
+            Navigation.PushAsync(new WhereToThrowSearch());
         }
     }
 }
