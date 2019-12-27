@@ -1368,3 +1368,10 @@ C:\Git\EcoHelperr-master\EcoHelper\EcoHelper.Android\obj\Debug\90\res\drawable\i
 C:\Git\EcoHelperr-master\EcoHelper\EcoHelper.Android\obj\Debug\90\res\drawable\icons8electronics96.png
 C:\Git\EcoHelperr-master\EcoHelper\EcoHelper.Android\obj\Debug\90\res\drawable\icons8cellphone96.png
 C:\Git\EcoHelperr-master\EcoHelper\EcoHelper.Android\obj\Debug\90\res\drawable\icons8washingmachine96.png
+C:\Git\EcoHelperr-master\EcoHelper\EcoHelper.Android\obj\Debug\90\res\drawable\icons8construction96.png
+C:\Git\EcoHelperr-master\EcoHelper\EcoHelper.Android\obj\Debug\90\res\drawable\icons8maintenance96.png
+C:\Git\EcoHelperr-master\EcoHelper\EcoHelper.Android\obj\Debug\90\res\drawable\icons8wideshpatel96.png
+C:\Git\EcoHelperr-master\EcoHelper\EcoHelper.Android\obj\Debug\90\res\drawable\icons8buffet96.png
+C:\Git\EcoHelperr-master\EcoHelper\EcoHelper.Android\obj\Debug\90\res\drawable\icons8wardrobe96.png
+C:\Git\EcoHelperr-master\EcoHelper\EcoHelper.Android\obj\Debug\90\res\drawable\icons8wingchair96.png
+C:\Git\EcoHelperr-master\EcoHelper\EcoHelper.Android\obj\Debug\90\res\drawable\icons8table96.png

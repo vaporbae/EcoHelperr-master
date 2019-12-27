@@ -1,0 +1,179 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="EcoHelper.Views.DumpsterDetails.BatteriesWastePage">
+    <ContentPage.Content>
+        <ScrollView>
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="300"></RowDefinition>
+                    <RowDefinition Height="auto"></RowDefinition>
+                    <RowDefinition Height="auto"></RowDefinition>
+                    <RowDefinition Height="auto"></RowDefinition>
+                    <RowDefinition Height="auto"></RowDefinition>
+                    <RowDefinition Height="auto"></RowDefinition>
+                    <RowDefinition Height="auto"></RowDefinition>
+                    <RowDefinition Height="auto"></RowDefinition>
+                    <RowDefinition Height="auto"></RowDefinition>
+                    <RowDefinition Height="auto"></RowDefinition>
+                    <RowDefinition Height="auto"></RowDefinition>
+                </Grid.RowDefinitions>
+                <Grid Grid.Row="0">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="2*"></RowDefinition>
+                        <RowDefinition Height="1*"></RowDefinition>
+                        <RowDefinition Height="3*"></RowDefinition>
+                        <RowDefinition Height="1*"></RowDefinition>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="3*"></ColumnDefinition>
+                        <ColumnDefinition Width="8*"></ColumnDefinition>
+                        <ColumnDefinition Width="3*"></ColumnDefinition>
+                    </Grid.ColumnDefinitions>
+                    <BoxView Color="#976DD0" Grid.Row="0" Grid.ColumnSpan="3" Margin="0,0,0,5"/>
+                    <Label Text="Baterie i akumulatory" TextColor="White" Grid.Column="1" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" FontSize="16" >
+                        <Label.FontFamily>
+                            <OnPlatform x:TypeArguments="x:String" Android="Domine-Regular.ttf#Domine Regular" iOS="Domine-Regular"/>
+                        </Label.FontFamily>
+                    </Label>
+                    <Image Source="" Grid.Column="0" Grid.Row="1" Scale="1.3" ></Image>
+                    <Image Source="" Grid.Column="2" Grid.Row="1" Scale="1.3"></Image>
+                    <Image Source="icons8chargingbattery96.png" Grid.Column="1" Grid.Row="2" Scale="1.2"></Image>
+                    <Image Source="" Grid.Column="2" Grid.Row="3" Scale="1.3"></Image>
+                    <Image Source="" Grid.Column="0" Grid.Row="3" Scale="1.3"></Image>
+                </Grid>
+                <Grid Grid.Row="1" Margin="0,15,0,0">
+                    <Label Text="PSZOK&#x0A;Specjalne kontenery na zużyte baterie" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" FontSize="18" >
+                        <Label.FontFamily>
+                            <OnPlatform x:TypeArguments="x:String" Android="Domine-Regular.ttf#Domine Regular" iOS="Domine-Regular"/>
+                        </Label.FontFamily>
+                    </Label>
+                </Grid>
+                <Grid Grid.Row="2">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="60"></RowDefinition>
+                    </Grid.RowDefinitions>
+                    <BoxView BackgroundColor="#976DD0"></BoxView>
+                    <Button Clicked="onWhereToThrowAwayClicked" Text="Sprawdź czy tu wyrzucisz swój odpad" TextColor="White" BackgroundColor="Transparent">
+                        <Button.FontFamily>
+                            <OnPlatform x:TypeArguments="x:String" Android="Domine-Regular.ttf#Domine Regular" iOS="Domine-Regular"/>
+                        </Button.FontFamily>
+                    </Button>
+                </Grid>
+                <Grid Grid.Row="3">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="70"></RowDefinition>
+                    </Grid.RowDefinitions>
+                    <BoxView BackgroundColor="#FF9052"></BoxView>
+                    <Label Text="Wskazówki"  TextColor="White" BackgroundColor="Transparent" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" FontSize="16">
+                        <Label.FontFamily>
+                            <OnPlatform x:TypeArguments="x:String" Android="Domine-Regular.ttf#Domine Regular" iOS="Domine-Regular"/>
+                        </Label.FontFamily>
+                    </Label>
+                </Grid>
+                <Grid Grid.Row="4">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="auto"></RowDefinition>
+                    </Grid.RowDefinitions>
+                    <Label Margin="10"  Text="
+&#x0A;Oddzielaj wszystkie baterie od pozostałych odpadów
+&#x0A;&#x0A;Pamiętaj o bateriach ukrytych w różnych przedmiotach
+&#x0A;&#x0A;Regularnie odnoś zużyte baterie do punktów zbiórki zużytych baterii
+&#x0A;&#x0A;Baterii i akumulatorów małogabarytowych nie trzeba oddawać do punktów zbiórki bezpośrednio po ich zużyciu. Można je zbierać w sposób selektywny w domu, w woreczku bądź pudełku kartonowym. Ważne aby baterie nie trafiały do kosza na śmieci wraz z innymi odpadami. Regularnie zanoś zebrane przez siebie baterie i akumulatory do wyznaczonych w Twoim mieście czy gminie punktów zbiórki
+&#x0A;" BackgroundColor="Transparent" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" FontSize="16">
+
+                        <Label.FontFamily>
+                            <OnPlatform x:TypeArguments="x:String" Android="Domine-Regular.ttf#Domine Regular" iOS="Domine-Regular"/>
+                        </Label.FontFamily>
+                    </Label>
+                </Grid>
+                <Grid Grid.Row="5">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="70"></RowDefinition>
+                    </Grid.RowDefinitions>
+                    <BoxView BackgroundColor="MediumVioletRed"></BoxView>
+                    <Label Text="W jaki sposób baterie są utylizowane?"  TextColor="White" BackgroundColor="Transparent" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" FontSize="16">
+                        <Label.FontFamily>
+                            <OnPlatform x:TypeArguments="x:String" Android="Domine-Regular.ttf#Domine Regular" iOS="Domine-Regular"/>
+                        </Label.FontFamily>
+                    </Label>
+                </Grid>
+                <Grid Grid.Row="6">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="auto"></RowDefinition>
+                    </Grid.RowDefinitions>
+                    <Label Margin="10"  Text="
+&#x0A;Metoda mechaniczna - rozdrabniamy i rozdzielamy na poszczególne frakcje:&#x0A;Ferromagnetyka - stal i inne metale&#x0A;Diamagnetyka - papier i tworzywa sztuczne&#x0A;Paramagnetyka - pozostałe zanieczyszczenia
+&#x0A;&#x0A;Metoda hydrometalurgiczna - polega na odzyskaniu materiałów w wyniku rozpuszczenia odpadów w kwasach lub zasadach.
+&#x0A;&#x0A;Metoda termiczna- polega na odzyskaniu materiałów dzięki wytopom metalu w piecach w temp. ok. 1400°C. Ze względu na możliwość wydzielania się z odpadów toksycznych substancji, proces jest prowadzony w taki sposób, aby wykluczyć bezpośredni kontakt ze skórą, drogami oddechowymi i błonami śluzowymi.
+&#x0A;" BackgroundColor="Transparent" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" FontSize="16">
+
+                        <Label.FontFamily>
+                            <OnPlatform x:TypeArguments="x:String" Android="Domine-Regular.ttf#Domine Regular" iOS="Domine-Regular"/>
+                        </Label.FontFamily>
+                    </Label>
+                </Grid>
+                <Grid Grid.Row="7">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="70"></RowDefinition>
+                    </Grid.RowDefinitions>
+                    <BoxView BackgroundColor="PaleVioletRed"></BoxView>
+                    <Label Text="Dlaczego segregujemy?" TextColor="White" BackgroundColor="Transparent" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" FontSize="16">
+                        <Label.FontFamily>
+                            <OnPlatform x:TypeArguments="x:String" Android="Domine-Regular.ttf#Domine Regular" iOS="Domine-Regular"/>
+                        </Label.FontFamily>
+                    </Label>
+                </Grid>
+                <Grid Grid.Row="8" >
+                    <Grid.RowDefinitions>
+                        <RowDefinition  Height="auto"></RowDefinition>
+                    </Grid.RowDefinitions>
+                    <Label Margin="10"  Text="
+&#x0A;&#x0A;Przez cały rok zużywamy średnio około 290 milionów baterii. Każda, nawet najmniejsza bateria, ma w składzie metale ciężkie, w tym ołów, kadm, nikiel czy rtęć. Wyrzucenie ich do zwykłego kosza na śmieci może spowodować uwalnianie się z nich tych szkodliwych substancji. Ołów jest trującym pierwiastkiem, który ma negatywny wpływ na żywe organizmy. Szkodzi również roślinom. W bezpośrednim kontakcie z organizmem może spowodować uszkodzenie komórek.
+&#x0A;&#x0A;Rtęć, inny składnik baterii, jest z kolei silnie trująca. Łatwo spowodować dostanie się jej do układu pokarmowego. Z kolei kadm to pierwiastek toksyczny, który – jeśli ma kontakt z organizmem – magazynuje się w wątrobie i nerkach. Może być przyczyną anemii lub chorób układu kostnego.
+&#x0A;" BackgroundColor="Transparent" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" FontSize="16">
+                        <Label.FontFamily>
+                            <OnPlatform x:TypeArguments="x:String" Android="Domine-Regular.ttf#Domine Regular" iOS="Domine-Regular"/>
+                        </Label.FontFamily>
+                    </Label>
+                </Grid>
+                <Grid Grid.Row="9">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="70"></RowDefinition>
+                    </Grid.RowDefinitions>
+                    <BoxView BackgroundColor="#00A6FF"></BoxView>
+                    <Label Text="Ciekawostki" TextColor="White" BackgroundColor="Transparent" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" FontSize="16">
+                        <Label.FontFamily>
+                            <OnPlatform x:TypeArguments="x:String" Android="Domine-Regular.ttf#Domine Regular" iOS="Domine-Regular"/>
+                        </Label.FontFamily>
+                    </Label>
+                </Grid>
+                <Grid Grid.Row="10">
+                    <Grid.RowDefinitions>
+                        <RowDefinition  Height="auto"></RowDefinition>
+                    </Grid.RowDefinitions>
+                    <Label Margin="10"  Text="&#x0A;Każda butelka poddana do ponownego recyklingu oszczędza energię wielkości potrzebnej 100 watowej żarówce aby mogła świecić 4h.&#x0A;" BackgroundColor="Transparent" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" FontSize="16">
+                        <Label.FontFamily>
+                            <OnPlatform x:TypeArguments="x:String" Android="Domine-Regular.ttf#Domine Regular" iOS="Domine-Regular"/>
+                        </Label.FontFamily>
+                    </Label>
+                </Grid>
+                <Grid Grid.Row="11">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="60"></RowDefinition>
+                    </Grid.RowDefinitions>
+                    <BoxView BackgroundColor="#68BEED"></BoxView>
+                    <Button Text="Pokaż inną" TextColor="White" BackgroundColor="Transparent">
+                        <Button.FontFamily>
+                            <OnPlatform x:TypeArguments="x:String" Android="Domine-Regular.ttf#Domine Regular" iOS="Domine-Regular"/>
+                        </Button.FontFamily>
+                    </Button>
+                </Grid>
+            </Grid>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>
+

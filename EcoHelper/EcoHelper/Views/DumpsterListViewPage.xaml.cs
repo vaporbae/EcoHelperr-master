@@ -42,6 +42,7 @@ namespace EcoHelper.Views
                 new DumpsterListItem {Id = DumpsterItemType.ConstructionWaste, Title="Odpady budowlane", Color="#FFBA5C", IconName="icons8brickwall96.png" },
                 new DumpsterListItem {Id = DumpsterItemType.TireWaste, Title="Opony", Color="#FFBA5C", IconName="icons8wheel96.png" },
                 new DumpsterListItem {Id = DumpsterItemType.BatteriesWaste, Title="Baterie i akumulatory", Color="#976DD0", IconName="icons8chargingbattery96.png" },
+                new DumpsterListItem {Id = DumpsterItemType.BulkyWaste, Title="Odpady wielkogabarytowe", Color="#EB6A97", IconName="icons8sofa96.png" },
                 new DumpsterListItem {Id = DumpsterItemType.DangerousWaste, Title="Odpady niebezpieczne", Color="#FF9052", IconName="icons8error96.png" },
                 new DumpsterListItem {Id = DumpsterItemType.Grey, Title="Szary worek", Color="#5A6978", IconName="icons8compostheapfilled100.png" },
                 new DumpsterListItem {Id = DumpsterItemType.ComposterWaste, Title="Kompostownik", Color="#886D59", IconName="icons8compostheap96.png" },
@@ -98,6 +99,18 @@ namespace EcoHelper.Views
                         break;
                     case (int)DumpsterItemType.MedicinesAndThermometrWaste:
                         await this._navigation.PushAsync(new PharmacyPage(), true);
+                        break;
+                    case (int)DumpsterItemType.ConstructionWaste:
+                        await this._navigation.PushAsync(new ConstructionWastePage(), true);
+                        break;
+                    case (int)DumpsterItemType.TireWaste:
+                        await this._navigation.PushAsync(new TireWastePage(), true);
+                        break;
+                    case (int)DumpsterItemType.BatteriesWaste:
+                        await this._navigation.PushAsync(new BatteriesWastePage(), true);
+                        break;
+                    case (int)DumpsterItemType.BulkyWaste:
+                        await this._navigation.PushAsync(new BulkyWastePage(), true);
                         break;
             }
         }

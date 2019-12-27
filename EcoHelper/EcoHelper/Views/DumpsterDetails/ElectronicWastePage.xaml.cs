@@ -22,7 +22,7 @@ namespace EcoHelper.Views.DumpsterDetails
         private void onWhatToThrowClicked(object sender, EventArgs e)
         {
             ToThrowBox.BackgroundColor = Color.DarkGreen;
-            ThrowLabel.Text = "\nPralki\nLodówki\nSuszarki do ubrań\nZmywarki\nKuchnia elektryczne lub gazowe\nZamrażarki\nTelefony\nKalkulatory\nroutery\nOdkurzacze\n";
+            ThrowLabel.Text = "\nPralki\nLodówki\nSuszarki do ubrań\nZmywarki\nKuchnia elektryczne lub gazowe\nZamrażarki\nTelefony\nKalkulatory\nRoutery\nOdkurzacze\n";
             ToNotThrowBox.BackgroundColor = Color.FromHex("#D93437");
         }
 

@@ -17,6 +17,7 @@ namespace EcoHelper.Models
         ConstructionWaste,
         TireWaste,
         BatteriesWaste,
+        BulkyWaste,
         DangerousWaste,
         Grey,
         ComposterWaste,

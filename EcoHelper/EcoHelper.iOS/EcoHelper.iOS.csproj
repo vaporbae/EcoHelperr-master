@@ -371,4 +371,25 @@
   <ItemGroup>
     <BundleResource Include="Resources\icons8washingmachine96.png" />
   </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\icons8construction96.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\icons8maintenance96.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\icons8wideshpatel96.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\icons8buffet96.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\icons8wardrobe96.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\icons8wingchair96.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\icons8table96.png" />
+  </ItemGroup>
 </Project>
