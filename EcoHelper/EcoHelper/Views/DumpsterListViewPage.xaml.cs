@@ -112,6 +112,18 @@ namespace EcoHelper.Views
                     case (int)DumpsterItemType.BulkyWaste:
                         await this._navigation.PushAsync(new BulkyWastePage(), true);
                         break;
+                    case (int)DumpsterItemType.DangerousWaste:
+                        await this._navigation.PushAsync(new DangerousWastePage(), true);
+                        break;
+                    case (int)DumpsterItemType.Grey:
+                        await this._navigation.PushAsync(new GreyWastePage(), true);
+                        break;
+                    case (int)DumpsterItemType.ComposterWaste:
+                        await this._navigation.PushAsync(new ComposterWastePage(), true);
+                        break;
+                    case (int)DumpsterItemType.AuthorisedEntity:
+                        await this._navigation.PushAsync(new AuthorisedEntityPage(), true);
+                        break;
             }
         }
     }
