@@ -37,6 +37,7 @@ namespace EcoHelper.Views.Test
             if(d!=null)
                 InitializeComponent();
 
+            if(ScoresList.Count==0)
             ScoresListView.ItemsSource = ScoresList;
 
         }

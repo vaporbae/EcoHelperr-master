@@ -123,7 +123,7 @@
                         <RowDefinition Height="70"></RowDefinition>
                     </Grid.RowDefinitions>
                     <BoxView BackgroundColor="PaleVioletRed"></BoxView>
-                    <Label Text="Dlaczego kompostować?" TextColor="White" BackgroundColor="Transparent" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" FontSize="16">
+                    <Label Text="Po co kompostować?" TextColor="White" BackgroundColor="Transparent" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" FontSize="16">
                         <Label.FontFamily>
                             <OnPlatform x:TypeArguments="x:String" Android="Domine-Regular.ttf#Domine Regular" iOS="Domine-Regular"/>
                         </Label.FontFamily>
