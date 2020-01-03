@@ -1,0 +1,61 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="EcoHelper.Views.WhereToThrow.ProposeWhereToThrowView">
+    <ContentPage.Content>
+        <StackLayout>
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="auto"></RowDefinition>
+                    <RowDefinition Height="377*"></RowDefinition>
+                    <RowDefinition Height="610*"></RowDefinition>
+                </Grid.RowDefinitions>
+                <Grid Grid.Row="0">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="80"></RowDefinition>
+                    </Grid.RowDefinitions>
+                    <BoxView Color="#76BB5B" Grid.Row="0" />
+                    <Label Text="Zaproponuj nową pozycję" TextColor="White" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" FontSize="16" >
+                        <Label.FontFamily>
+                            <OnPlatform x:TypeArguments="x:String" Android="Domine-Regular.ttf#Domine Regular" iOS="Domine-Regular"/>
+                        </Label.FontFamily>
+                    </Label>
+                </Grid>
+                <BoxView Grid.Row="1" Grid.RowSpan="3" HeightRequest="1" Color="White"></BoxView>
+                <Grid Grid.Row="1" Margin="0,10">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="auto"></RowDefinition>
+                        <RowDefinition Height="auto"></RowDefinition>
+                        <RowDefinition Height="auto"></RowDefinition>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="3*"></ColumnDefinition>
+                        <ColumnDefinition Width="5*"></ColumnDefinition>
+                    </Grid.ColumnDefinitions>
+                    <Label Text="Nazwa odpadu:"  HorizontalTextAlignment="Center" VerticalTextAlignment="Center" FontSize="14" >
+                        <Label.FontFamily>
+                            <OnPlatform x:TypeArguments="x:String" Android="Domine-Regular.ttf#Domine Regular" iOS="Domine-Regular"/>
+                        </Label.FontFamily>
+                    </Label>
+                    <Entry x:Name="GarbageEntry" Margin="-15,0,15,-8" Grid.Row="0" Grid.Column="1" Text="" />
+
+                    <Label Text="Kontener:" Grid.Row="1" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" FontSize="14" >
+                        <Label.FontFamily>
+                            <OnPlatform x:TypeArguments="x:String" Android="Domine-Regular.ttf#Domine Regular" iOS="Domine-Regular"/>
+                        </Label.FontFamily>
+                    </Label>
+                    <Entry x:Name="DumpsterEntry" Margin="-15,0,15,-8" Grid.Row="1" Grid.Column="1" Text=""/>
+                    <BoxView Margin="0,25,0,0" Grid.ColumnSpan="2" Grid.Row="2" BackgroundColor="#77D353"></BoxView>
+                    <Button Margin="0,25,0,0" Text="Wyślij" Grid.ColumnSpan="2" Grid.Row="2" Clicked="Button_Clicked" TextColor="White" BackgroundColor="Transparent">
+                        <Button.FontFamily>
+                            <OnPlatform x:TypeArguments="x:String" Android="Domine-Regular.ttf#Domine Regular" iOS="Domine-Regular"/>
+                        </Button.FontFamily>
+                    </Button>
+                </Grid>
+            </Grid>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

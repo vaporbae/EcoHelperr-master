@@ -19,9 +19,6 @@ namespace EcoHelper.Views.WhereToThrow
         List<Dumpster> DBDumpsters;
         Garbage SearchedGarbage;
         Dumpster SearchedDumpster;
-        string SearchedDumpsterImg;
-        string SearchedDumpsterName;
-        string SearchedGarbageName;
 
         public WhereToThrowResult(Garbage searchedGarbage)
         {
@@ -31,12 +28,12 @@ namespace EcoHelper.Views.WhereToThrow
             DBDumpsters = dbDumpster.GetDumpsters();
             SearchedGarbage = searchedGarbage;
             SearchedDumpster = dbDumpster.GetDumpster(searchedGarbage.DumpsterId);
-            SearchedDumpsterImg = Dumpsters[SearchedGarbage.DumpsterId - 1];
-            SearchedDumpsterName = DBDumpsters[SearchedGarbage.DumpsterId].Name;
-            SearchedGarbageName = SearchedGarbage.Name;
-
 
             InitializeComponent();
+
+            DumpsterImage.Source = Dumpsters[SearchedGarbage.DumpsterId - 1];
+            DumpsterLabel.Text = DBDumpsters[SearchedGarbage.DumpsterId].Name;
+            GarbageLabel.Text = SearchedGarbage.Name;
         }
 
         private void SetIcons()

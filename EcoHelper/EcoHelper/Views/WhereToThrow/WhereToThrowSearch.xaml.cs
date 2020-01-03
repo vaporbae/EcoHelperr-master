@@ -50,6 +50,11 @@ namespace EcoHelper.Views.WhereToThrow
             Navigation.PushAsync(new WhereToThrowResult(SelectedGarbage));
         }
 
+        private void OnSuggestClicked(object sender, EventArgs e)
+        {
+            Navigation.PushAsync(new ProposeWhereToThrowView());
+        }
+
         private void OnTextChanged(object sender, EventArgs eventArgs)
         {
             AbsoluteLayout.IsVisible = true;

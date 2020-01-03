@@ -92,7 +92,7 @@
                         <RowDefinition Height="70"></RowDefinition>
                     </Grid.RowDefinitions>
                     <BoxView BackgroundColor="#77D353"></BoxView>
-                    <Button Text="Nie możesz znaleźć szukanego odpadu? Zaproponuj nową pozycję!" TextColor="White" BackgroundColor="Transparent" >
+                    <Button Text="Nie możesz znaleźć szukanego odpadu? Zaproponuj nową pozycję!" Clicked="OnSuggestClicked"  TextColor="White" BackgroundColor="Transparent" >
                         <Button.FontFamily>
                             <OnPlatform x:TypeArguments="x:String" Android="Domine-Regular.ttf#Domine Regular" iOS="Domine-Regular"/>
                         </Button.FontFamily>

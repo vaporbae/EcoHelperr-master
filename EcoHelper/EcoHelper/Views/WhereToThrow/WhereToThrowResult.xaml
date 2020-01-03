@@ -7,9 +7,50 @@
              x:Class="EcoHelper.Views.WhereToThrow.WhereToThrowResult">
     <ContentPage.Content>
         <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="auto"></RowDefinition>
+                    <RowDefinition Height="610*"></RowDefinition>
+                    <RowDefinition Height="377*"></RowDefinition>
+                </Grid.RowDefinitions>
+                <Grid Grid.Row="0">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="80"></RowDefinition>
+                    </Grid.RowDefinitions>
+                    <BoxView Color="#976DD0" Grid.Row="0" />
+                    <Label Text="Gdzie wyrzucić odpad" TextColor="White" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" FontSize="16" >
+                        <Label.FontFamily>
+                            <OnPlatform x:TypeArguments="x:String" Android="Domine-Regular.ttf#Domine Regular" iOS="Domine-Regular"/>
+                        </Label.FontFamily>
+                    </Label>
+                </Grid>
+                <BoxView Grid.Row="1" Grid.RowSpan="2" HeightRequest="1" Color="White"></BoxView>
+                <Grid Grid.Row="1">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="610*"></RowDefinition>
+                        <RowDefinition Height="377*"></RowDefinition>
+                    </Grid.RowDefinitions>
+                    <Image x:Name="DumpsterImage" Scale="1.3" Grid.Row="0" Margin="0,50,0,0" Source=""></Image>
+                    <Label x:Name="DumpsterLabel" Grid.Row="1" Text="Kontener" TextColor="Black" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" FontSize="22" >
+                        <Label.FontFamily>
+                            <OnPlatform x:TypeArguments="x:String" Android="Domine-Regular.ttf#Domine Regular" iOS="Domine-Regular"/>
+                        </Label.FontFamily>
+                    </Label>
+                </Grid>
+                <Grid Grid.Row="2" >
+                    <Label Text="Tu wyrzucisz odpad o nazwie:" TextColor="Black" HorizontalTextAlignment="Center" VerticalTextAlignment="Start" FontSize="20" >
+                        <Label.FontFamily>
+                            <OnPlatform x:TypeArguments="x:String" Android="Domine-Regular.ttf#Domine Regular" iOS="Domine-Regular"/>
+                        </Label.FontFamily>
+                    </Label>
+                    <Label x:Name="GarbageLabel" Text="odpad" TextColor="Black" HorizontalTextAlignment="Center" VerticalTextAlignment="Start" Margin="0,40,0,0"  FontSize="20" >
+                        <Label.FontFamily>
+                            <OnPlatform x:TypeArguments="x:String" Android="Domine-Regular.ttf#Domine Regular" iOS="Domine-Regular"/>
+                        </Label.FontFamily>
+                    </Label>
+                </Grid>
+              
+            </Grid>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
