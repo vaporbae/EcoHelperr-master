@@ -42,14 +42,17 @@ namespace EcoHelper.Services
                 dbDumpster.ResetTable();
                 dbAnswer.ResetTable();
                 dbQuestion.ResetTable();
+                dbInterestingFacts.ResetTable();
 
                 webInterface = new WebInterface(new System.Net.Http.HttpClient());
 
                 var dumpsterReqString = await webInterface.MakeGetRequest(BasicURL + "/dumpsters");
                 var garbageReqString = await webInterface.MakeGetRequest(BasicURL + "/garbages");
+                var interestingFactsReqString = await webInterface.MakeGetRequest(BasicURL + "/interestingfacts");
 
                 var dumpsters = JsonConvert.DeserializeObject<DumpstersList>(dumpsterReqString.ToString()) ;
                 var garbages = JsonConvert.DeserializeObject<GarbageList>(garbageReqString);
+                var interestingFacts = JsonConvert.DeserializeObject<InterestingFactsList>(interestingFactsReqString);
 
                 foreach (Dumpster dumpster in dumpsters.Dumpsters)
                 {
@@ -60,6 +63,13 @@ namespace EcoHelper.Services
                 {
                     var g = dbGarbage.CreateGarbage(garbage.Name, garbage.DumpsterId);
                     dbDumpster.AddGarbage(g, g.DumpsterId);
+                }
+
+                foreach (InterestingFact interestingFact in interestingFacts.InterestingFacts)
+                {
+                    var iF = dbInterestingFacts.CreateInterestingFact("", interestingFact.Description, interestingFact.DumpsterId);
+                    var DumpsterId = interestingFact.DumpsterId == null ? -1 : interestingFact.DumpsterId;
+                    if (DumpsterId != -1) dbDumpster.AddInterestingFact(iF, DumpsterId);
                 }
 
                 var questionReqString = await webInterface.MakeGetRequest(BasicURL + "/questions");
@@ -81,14 +91,6 @@ namespace EcoHelper.Services
                     dbQuestion.AddAnswer(g, g.QuestionId-1);
                 }
 
-
-                //RootObject m = JsonConvert.DeserializeObject<RootObject>(yourstring);
-
-                //zrobic request
-                //z jsona bezposrednio na grupe ta dac tabele
-                //pobrac grupe dumpsterow
-                //pobrac grupe garbage
-                //w kazdym garbage dodac do dumpstera o odpowiednim id
                 return true;
             }
             catch (Exception e)

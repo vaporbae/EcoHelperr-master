@@ -7,6 +7,7 @@ namespace EcoHelper.Models
     public enum MenuItemType
     {
         Browse,
+        MainMenu,
         CalculateResources,
         DoNotBurnWaste,
         InterestingFacts,

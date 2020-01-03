@@ -404,4 +404,7 @@
   <ItemGroup>
     <BundleResource Include="Resources\icons8poisonbottle96.png" />
   </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\icons8oaktree96.png" />
+  </ItemGroup>
 </Project>

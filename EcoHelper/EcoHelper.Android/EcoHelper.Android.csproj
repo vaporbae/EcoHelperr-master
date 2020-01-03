@@ -407,5 +407,8 @@
   <ItemGroup>
     <AndroidResource Include="Resources\drawable\icons8poisonbottle96.png" />
   </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\icons8oaktree96.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
 </Project>

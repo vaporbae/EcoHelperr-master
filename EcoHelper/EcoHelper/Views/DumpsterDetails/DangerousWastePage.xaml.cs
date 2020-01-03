@@ -1,4 +1,6 @@
-﻿using EcoHelper.Views.DumpsterDetails.PSZOKPages;
+﻿using EcoHelper.Data;
+using EcoHelper.Models;
+using EcoHelper.Views.DumpsterDetails.PSZOKPages;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -13,9 +15,27 @@ namespace EcoHelper.Views.DumpsterDetails
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class DangerousWastePage : ContentPage
     {
+        int DisplayedTips;
+        List<InterestingFact> interestingFacts;
+        DumpsterDatabaseController dumpsterDatabaseController;
+        Dumpster dumpster;
+        Dumpster dumpster2;
+        InterestingFact displayedInterestingFact;
         public DangerousWastePage()
         {
+            DisplayedTips = 0;
+            interestingFacts = new List<InterestingFact>();
+            dumpsterDatabaseController = new DumpsterDatabaseController();
+
+            dumpster = dumpsterDatabaseController.SearchDumpster("chemikalia");
+            dumpster2 = dumpsterDatabaseController.SearchDumpster("punkt selektywnego");
+            interestingFacts = dumpster.InterestingFacts;
+            interestingFacts.AddRange(dumpster2.InterestingFacts);
+
+            displayedInterestingFact = GetRandomTip();
+
             InitializeComponent();
+            DisplayTip();
             onWhatToThrowClicked(new Xamarin.Forms.Button(), new System.EventArgs());
         }
 
@@ -37,6 +57,47 @@ namespace EcoHelper.Views.DumpsterDetails
         {
             Navigation.PushAsync(new PSZOKAddressPage());
         }
+        private void onShowOtherTipClicked(object sender, EventArgs e)
+        {
+            displayedInterestingFact = GetRandomTip();
+            DisplayTip();
+        }
 
+        private InterestingFact GetRandomTip()
+        {
+            var interestingFact = interestingFacts.FirstOrDefault();
+            if (interestingFact != default)
+            {
+                interestingFacts.Remove(interestingFact);
+                DisplayedTips++;
+                return interestingFact;
+            }
+            else
+                return null;
+        }
+
+        private void DisplayTip()
+        {
+            if (displayedInterestingFact != null)
+            {
+                TipLabelTitleGrid.IsVisible = true;
+                TipLabelGrid.IsVisible = true;
+                TipLabel.Text = displayedInterestingFact.Description;
+                OtherTipGrid.IsVisible = true;
+            }
+            else if (displayedInterestingFact == null && DisplayedTips > 0)
+            {
+                TipLabelTitleGrid.IsVisible = true;
+                TipLabelGrid.IsVisible = true;
+                TipLabel.Text = "Nie posiadam więcej ciekawostek na ten temat";
+                OtherTipGrid.IsVisible = false;
+            }
+            else
+            {
+                TipLabelTitleGrid.IsVisible = false;
+                TipLabelGrid.IsVisible = false;
+                OtherTipGrid.IsVisible = false;
+            }
+        }
     }
 }

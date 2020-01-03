@@ -37,6 +37,9 @@ namespace EcoHelper.Views
                     case (int)MenuItemType.Browse:
                         MenuPages.Add(id, new NavigationPage(new ItemsPage()));
                         break;
+                    case (int)MenuItemType.MainMenu:
+                        MenuPages.Add(id, new NavigationPage(new ItemsPage()));
+                        break;
                     case (int)MenuItemType.CalculateResources:
                         MenuPages.Add(id, new NavigationPage(new CalculateResourcesView()));
                         break;

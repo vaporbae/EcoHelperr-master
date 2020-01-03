@@ -37,7 +37,7 @@ namespace EcoHelper.Data
             }
         }
 
-        public void AddInterestingFact(InterestingFact interestingFact, int id)
+        public void AddInterestingFact(InterestingFact interestingFact, int? id)
         {
             lock (locker)
             {
@@ -53,6 +53,15 @@ namespace EcoHelper.Data
             {
                 if (database.Table<Dumpster>().Count() == 0) return null;
                 else return database.GetWithChildren<Dumpster>(id);
+            }
+        }
+
+        public Dumpster SearchDumpster(string phrase)
+        {
+            lock (locker)
+            {
+                if (database.Table<Dumpster>().Count() == 0) return null;
+                else return database.GetAllWithChildren<Dumpster>(x => x.Name.ToLower().Contains(phrase.ToLower())).FirstOrDefault();
             }
         }
 

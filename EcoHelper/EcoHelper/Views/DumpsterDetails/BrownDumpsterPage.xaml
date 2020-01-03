@@ -138,33 +138,33 @@
                         </Label.FontFamily>
                     </Label>
                 </Grid>
-                <Grid Grid.Row="9">
+                <Grid Grid.Row="9" x:Name="TipLabelTitleGrid">
                     <Grid.RowDefinitions>
                         <RowDefinition Height="70"></RowDefinition>
                     </Grid.RowDefinitions>
-                    <BoxView BackgroundColor="#00A6FF"></BoxView>
-                    <Label Text="Ciekawostki" TextColor="White" BackgroundColor="Transparent" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" FontSize="16">
+                    <BoxView x:Name="TipLabelTitleBox" BackgroundColor="#00A6FF"></BoxView>
+                    <Label x:Name="TipLabelTitle" Text="Ciekawostki" TextColor="White" BackgroundColor="Transparent" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" FontSize="16">
                         <Label.FontFamily>
                             <OnPlatform x:TypeArguments="x:String" Android="Domine-Regular.ttf#Domine Regular" iOS="Domine-Regular"/>
                         </Label.FontFamily>
                     </Label>
                 </Grid>
-                <Grid Grid.Row="10">
+                <Grid Grid.Row="10" x:Name="TipLabelGrid">
                     <Grid.RowDefinitions>
                         <RowDefinition  Height="auto"></RowDefinition>
                     </Grid.RowDefinitions>
-                    <Label Margin="10"  Text="&#x0A;Każda butelka poddana do ponownego recyklingu oszczędza energię wielkości potrzebnej 100 watowej żarówce aby mogła świecić 4h.&#x0A;" BackgroundColor="Transparent" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" FontSize="16">
+                    <Label x:Name="TipLabel" Margin="10"  Text="&#x0A;Każda butelka poddana do ponownego recyklingu oszczędza energię wielkości potrzebnej 100 watowej żarówce aby mogła świecić 4h.&#x0A;" BackgroundColor="Transparent" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" FontSize="16">
                         <Label.FontFamily>
                             <OnPlatform x:TypeArguments="x:String" Android="Domine-Regular.ttf#Domine Regular" iOS="Domine-Regular"/>
                         </Label.FontFamily>
                     </Label>
                 </Grid>
-                <Grid Grid.Row="11">
+                <Grid Grid.Row="11" x:Name="OtherTipGrid">
                     <Grid.RowDefinitions>
                         <RowDefinition Height="60"></RowDefinition>
                     </Grid.RowDefinitions>
-                    <BoxView BackgroundColor="#68BEED"></BoxView>
-                    <Button Text="Pokaż inną" TextColor="White" BackgroundColor="Transparent">
+                    <BoxView x:Name="ShowOtherTipBox" BackgroundColor="#68BEED"></BoxView>
+                    <Button x:Name="ShowOtherTipButton" Clicked="onShowOtherTipClicked" Text="Pokaż inną" TextColor="White" BackgroundColor="Transparent">
                         <Button.FontFamily>
                             <OnPlatform x:TypeArguments="x:String" Android="Domine-Regular.ttf#Domine Regular" iOS="Domine-Regular"/>
                         </Button.FontFamily>
