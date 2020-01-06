@@ -1380,3 +1380,12 @@ C:\Git\EcoHelperr-master\EcoHelper\EcoHelper.Android\obj\Debug\90\res\drawable\i
 C:\Git\EcoHelperr-master\EcoHelper\EcoHelper.Android\obj\Debug\90\res\drawable\icons8escapemask96.png
 C:\Git\EcoHelperr-master\EcoHelper\EcoHelper.Android\obj\Debug\90\res\drawable\icons8poisonbottle96.png
 C:\Git\EcoHelperr-master\EcoHelper\EcoHelper.Android\obj\Debug\90\res\drawable\icons8oaktree96.png
+C:\Git\EcoHelperr-master\EcoHelper\EcoHelper.Android\obj\Debug\90\res\drawable\icons8arrowpointingleft96.png
+C:\Git\EcoHelperr-master\EcoHelper\EcoHelper.Android\obj\Debug\90\res\drawable\icons8arrow96.png
+C:\Git\EcoHelperr-master\EcoHelper\EcoHelper.Android\obj\Debug\90\res\drawable\icons8dead96.png
+C:\Git\EcoHelperr-master\EcoHelper\EcoHelper.Android\obj\Debug\90\res\drawable\icons8waiter96.png
+C:\Git\EcoHelperr-master\EcoHelper\EcoHelper.Android\obj\Debug\90\res\drawable\icons8bacteria96.png
+C:\Git\EcoHelperr-master\EcoHelper\EcoHelper.Android\obj\Debug\90\res\drawable\icons8lungs96.png
+C:\Git\EcoHelperr-master\EcoHelper\EcoHelper.Android\obj\Debug\90\res\drawable\icons8sprout96.png
+C:\Git\EcoHelperr-master\EcoHelper\EcoHelper.Android\obj\Debug\90\res\drawable\icons8willow96.png
+C:\Git\EcoHelperr-master\EcoHelper\EcoHelper.Android\obj\Debug\90\res\drawable\icons8slugeating96.png

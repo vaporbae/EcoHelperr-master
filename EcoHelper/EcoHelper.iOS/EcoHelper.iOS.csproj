@@ -407,4 +407,31 @@
   <ItemGroup>
     <BundleResource Include="Resources\icons8oaktree96.png" />
   </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\icons8arrowpointingleft96.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\icons8arrow96.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\icons8dead96.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\icons8waiter96.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\icons8bacteria96.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\icons8lungs96.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\icons8sprout96.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\icons8willow96.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\icons8slugeating96.png" />
+  </ItemGroup>
 </Project>

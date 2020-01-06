@@ -22,20 +22,17 @@
                         <RowDefinition Height="8*"></RowDefinition>
                         <RowDefinition Height="5*"></RowDefinition>
                     </Grid.RowDefinitions>
-                    <Label x:Name="LabelText" Grid.Row="0" Text="Mniej śmieci oznacza również lepsze warunki do życia dla roślin i zwierząt.." TextColor="Black" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" FontSize="22" >
+                    <Label x:Name="LabelText" Grid.Row="0" Text="Mniej śmieci oznacza również lepsze warunki do życia dla roślin i zwierząt." TextColor="Black" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" FontSize="20" Margin="20,0">
                         <Label.FontFamily>
                             <OnPlatform x:TypeArguments="x:String" Android="Domine-Regular.ttf#Domine Regular" iOS="Domine-Regular"/>
                         </Label.FontFamily>
                     </Label>
                     <Grid Grid.Row="1">
                         <Grid.ColumnDefinitions>
-                            <ColumnDefinition Width="1*"></ColumnDefinition>
-                            <ColumnDefinition Width="2*"></ColumnDefinition>
-                            <ColumnDefinition Width="1*"></ColumnDefinition>
                         </Grid.ColumnDefinitions>
-                        <Button Image="icons8widelongleftarrow64.png" Scale="0.7" Grid.Column="0" Clicked="onGoLeftClicked" Grid.Row="0"  BackgroundColor="Transparent" TextColor="White" Text="Rozpocznij test" FontSize="22">
+                        <Button Image="icons8arrowpointingleft96.png" Scale="0.5"   Grid.Column="0" Clicked="onGoLeftClicked" Grid.Row="0"  BackgroundColor="Transparent" >
                         </Button>
-                        <Button Image="icons8widelongrightarrow64.png" Scale="0.7" Grid.Column="2" Clicked="onGoRightClicked" Grid.Row="0"  BackgroundColor="Transparent" TextColor="White" Text="Rozpocznij test" FontSize="22">
+                        <Button Image="icons8arrow96.png" Scale="0.5"  Grid.Column="2" Clicked="onGoRightClicked" Grid.Row="0"  BackgroundColor="Transparent"  >
                         </Button>
                     </Grid>
 
