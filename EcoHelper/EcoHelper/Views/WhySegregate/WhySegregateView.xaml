@@ -14,25 +14,27 @@
                 </Grid.RowDefinitions>
                 <BoxView Grid.RowSpan="2" HeightRequest="1" Color="White"></BoxView>
                 <Grid Grid.Row="0">
-                    <Image Scale="0.8" Grid.Row="0" Margin="0,50,0,0" Source="icons8squirrel96.png"></Image>
+                    <Image x:Name="Img" Scale="0.8" Grid.Row="0" Margin="0,50,0,0" Source="icons8squirrel96.png"></Image>
                 </Grid>
 
                 <Grid Grid.Row="1" Margin="10">
                     <Grid.RowDefinitions>
                         <RowDefinition Height="8*"></RowDefinition>
-                        <RowDefinition Height="5*"></RowDefinition>
+                        <RowDefinition Height="3*"></RowDefinition>
                     </Grid.RowDefinitions>
+                    <ScrollView>
                     <Label x:Name="LabelText" Grid.Row="0" Text="Mniej śmieci oznacza również lepsze warunki do życia dla roślin i zwierząt." TextColor="Black" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" FontSize="20" Margin="20,0">
                         <Label.FontFamily>
                             <OnPlatform x:TypeArguments="x:String" Android="Domine-Regular.ttf#Domine Regular" iOS="Domine-Regular"/>
                         </Label.FontFamily>
                     </Label>
+                    </ScrollView>
                     <Grid Grid.Row="1">
                         <Grid.ColumnDefinitions>
                         </Grid.ColumnDefinitions>
-                        <Button Image="icons8arrowpointingleft96.png" Scale="0.5"   Grid.Column="0" Clicked="onGoLeftClicked" Grid.Row="0"  BackgroundColor="Transparent" >
+                        <Button x:Name="LeftArrowButton" Image="icons8arrowpointingleft96.png" Scale="0.5"   Grid.Column="0" Clicked="onGoLeftClicked" Grid.Row="0"  BackgroundColor="Transparent" >
                         </Button>
-                        <Button Image="icons8arrow96.png" Scale="0.5"  Grid.Column="2" Clicked="onGoRightClicked" Grid.Row="0"  BackgroundColor="Transparent"  >
+                        <Button x:Name="RightArrowButton" Image="icons8arrow96.png" Scale="0.5"  Grid.Column="2" Clicked="onGoRightClicked" Grid.Row="0"  BackgroundColor="Transparent"  >
                         </Button>
                     </Grid>
 
