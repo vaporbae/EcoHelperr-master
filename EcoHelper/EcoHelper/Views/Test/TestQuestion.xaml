@@ -33,7 +33,7 @@
                         <RowDefinition Height="1*"></RowDefinition>
                         <RowDefinition Height="1*"></RowDefinition>
                     </Grid.RowDefinitions>
-                    <Button x:Name="answer1Button" Clicked="onAnswer1Clicked" Grid.Row="0"  BackgroundColor="MediumPurple" TextColor="White" Text="test" FontSize="14">
+                    <Button x:Name="answer1Button" Clicked="onAnswer1Clicked" Grid.Row="0"  TextColor="White" Text="test" FontSize="14">
                         <Button.FontFamily>
                             <OnPlatform x:TypeArguments="x:String" Android="Domine-Regular.ttf#Domine Regular" iOS="Domine-Regular" />
                         </Button.FontFamily>

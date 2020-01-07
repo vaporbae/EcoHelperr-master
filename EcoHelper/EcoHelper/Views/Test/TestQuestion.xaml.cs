@@ -41,6 +41,7 @@ namespace EcoHelper.Views.Test
             score = 0;
             id = 0;
             InitializeComponent();
+            answer1Button.BackgroundColor = Color.MediumPurple;
             UpdateStrings();
 
         }
@@ -58,7 +59,7 @@ namespace EcoHelper.Views.Test
             if (answers[0].IsCorrect == true)
             {
                 answer1Button.BackgroundColor = Color.ForestGreen;
-                Thread.Sleep(1000);
+                Task.Delay(1000).Wait();
                 answer1Button.BackgroundColor = Color.MediumPurple;
                 score++;
             }
@@ -67,7 +68,7 @@ namespace EcoHelper.Views.Test
                 for (int i = 0; i < 4; i++)
                 {
 
-                    answer2Button.BackgroundColor = Color.DarkRed;
+                    answer1Button.BackgroundColor = Color.DarkRed;
 
                     int correctId = 0;
                     foreach (Models.Answer a in answers)
@@ -80,26 +81,26 @@ namespace EcoHelper.Views.Test
                     {
                         case 1:
                             answer1Button.BackgroundColor = Color.ForestGreen;
-                            Thread.Sleep(250);
+                            Task.Delay(250).Wait();
                             answer1Button.BackgroundColor = Color.MediumPurple;
                             break;
                         case 2:
                             answer2Button.BackgroundColor = Color.ForestGreen;
-                            Thread.Sleep(250);
+                            Task.Delay(250).Wait();
                             answer2Button.BackgroundColor = Color.MediumPurple;
                             break;
                         case 3:
                             answer3Button.BackgroundColor = Color.ForestGreen;
-                            Thread.Sleep(250);
+                            Task.Delay(250).Wait();
                             answer3Button.BackgroundColor = Color.MediumPurple;
                             break;
                         case 4:
                             answer4Button.BackgroundColor = Color.ForestGreen;
-                            Thread.Sleep(250);
+                            Task.Delay(250).Wait();
                             answer4Button.BackgroundColor = Color.MediumPurple;
                             break;
                     }
-
+                    answer1Button.BackgroundColor = Color.MediumPurple;
                 }
                 answer1Button.BackgroundColor = Color.MediumPurple;
             }
@@ -123,7 +124,7 @@ namespace EcoHelper.Views.Test
             if (answers[1].IsCorrect == true)
             {
                 answer2Button.BackgroundColor = Color.ForestGreen;
-                Thread.Sleep(1000);
+                Task.Delay(1000).Wait();
                 answer2Button.BackgroundColor = Color.MediumPurple;
                 score++;
             }
@@ -145,22 +146,22 @@ namespace EcoHelper.Views.Test
                     {
                         case 1:
                             answer1Button.BackgroundColor = Color.ForestGreen;
-                            Thread.Sleep(250);
+                            Task.Delay(250).Wait();
                             answer1Button.BackgroundColor = Color.MediumPurple;
                             break;
                         case 2:
                             answer2Button.BackgroundColor = Color.ForestGreen;
-                            Thread.Sleep(250);
+                            Task.Delay(250).Wait();
                             answer2Button.BackgroundColor = Color.MediumPurple;
                             break;
                         case 3:
                             answer3Button.BackgroundColor = Color.ForestGreen;
-                            Thread.Sleep(250);
+                            Task.Delay(250).Wait();
                             answer3Button.BackgroundColor = Color.MediumPurple;
                             break;
                         case 4:
                             answer4Button.BackgroundColor = Color.ForestGreen;
-                            Thread.Sleep(250);
+                            Task.Delay(250).Wait();
                             answer4Button.BackgroundColor = Color.MediumPurple;
                             break;
                     }
@@ -189,7 +190,7 @@ namespace EcoHelper.Views.Test
             if (answers[2].IsCorrect == true)
             {
                 answer3Button.BackgroundColor = Color.ForestGreen;
-                Thread.Sleep(1000);
+                Task.Delay(1000).Wait();
                 answer3Button.BackgroundColor = Color.MediumPurple;
                 score++;
             }
@@ -211,22 +212,22 @@ namespace EcoHelper.Views.Test
                     {
                         case 1:
                             answer1Button.BackgroundColor = Color.ForestGreen;
-                            Thread.Sleep(250);
+                            Task.Delay(250).Wait();
                             answer1Button.BackgroundColor = Color.MediumPurple;
                             break;
                         case 2:
                             answer2Button.BackgroundColor = Color.ForestGreen;
-                            Thread.Sleep(250);
+                            Task.Delay(250).Wait();
                             answer2Button.BackgroundColor = Color.MediumPurple;
                             break;
                         case 3:
                             answer3Button.BackgroundColor = Color.ForestGreen;
-                            Thread.Sleep(250);
+                            Task.Delay(250).Wait();
                             answer3Button.BackgroundColor = Color.MediumPurple;
                             break;
                         case 4:
                             answer4Button.BackgroundColor = Color.ForestGreen;
-                            Thread.Sleep(250);
+                            Task.Delay(250).Wait();
                             answer4Button.BackgroundColor = Color.MediumPurple;
                             break;
                     }
@@ -254,7 +255,7 @@ namespace EcoHelper.Views.Test
             if (answers[3].IsCorrect == true)
             {
                 answer4Button.BackgroundColor = Color.ForestGreen;
-                Thread.Sleep(1000);
+                Task.Delay(1000).Wait();
                 answer4Button.BackgroundColor = Color.MediumPurple;
                 score++;
             }
@@ -276,22 +277,22 @@ namespace EcoHelper.Views.Test
                     {
                         case 1:
                             answer1Button.BackgroundColor = Color.ForestGreen;
-                            Thread.Sleep(250);
+                            Task.Delay(250).Wait();
                             answer1Button.BackgroundColor = Color.MediumPurple;
                             break;
                         case 2:
                             answer2Button.BackgroundColor = Color.ForestGreen;
-                            Thread.Sleep(250);
+                            Task.Delay(250).Wait();
                             answer2Button.BackgroundColor = Color.MediumPurple;
                             break;
                         case 3:
                             answer3Button.BackgroundColor = Color.ForestGreen;
-                            Thread.Sleep(250);
+                            Task.Delay(250).Wait();
                             answer3Button.BackgroundColor = Color.MediumPurple;
                             break;
                         case 4:
                             answer4Button.BackgroundColor = Color.ForestGreen;
-                            Thread.Sleep(250);
+                            Task.Delay(250).Wait();
                             answer4Button.BackgroundColor = Color.MediumPurple;
                             break;
                     }
