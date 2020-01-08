@@ -19,6 +19,9 @@ namespace EcoHelper.Services
         AnswerDatabaseController dbAnswer;
         InterestingFactDatabaseController dbInterestingFacts;
         TestDatabaseController dbTests;
+        BaseVersionDatabaseController dbBaseVersion;
+        DatabaseVersion dbVersionEntity;
+        double dbVersion;
 
         WebInterface webInterface;
         public UpdateDatabase() { }
@@ -36,7 +39,6 @@ namespace EcoHelper.Services
 
                 dbInterestingFacts = new InterestingFactDatabaseController();
 
-                
 
                 dbGarbage.ResetTable();
                 dbDumpster.ResetTable();
@@ -91,12 +93,47 @@ namespace EcoHelper.Services
                     dbQuestion.AddAnswer(g, g.QuestionId-1);
                 }
 
+                dbBaseVersion = new BaseVersionDatabaseController();
+                var BaseVersionReqString = await webInterface.MakeGetRequest(BasicURL + "/baseversion/details/1");
+                var baseVersion = JsonConvert.DeserializeObject<DatabaseVersion>(BaseVersionReqString.ToString());
+                dbBaseVersion.CreateDatabaseVersion(baseVersion.Ver);
+
                 return true;
             }
             catch (Exception e)
             {
                 var b = e.Message;
                 return false;
+            }
+        }
+
+        public async Task<int> CheckDatabaseVersionIsToOutdated()
+        {
+            try
+            {
+                dbBaseVersion = new BaseVersionDatabaseController();
+
+                dbVersionEntity = dbBaseVersion.GetLastDatabaseVersion();
+                if(dbVersionEntity == null || dbVersionEntity == default)
+                {
+                    return 1;
+                }
+
+                webInterface = new WebInterface(new System.Net.Http.HttpClient());
+
+                var BaseVersionReqString = await webInterface.MakeGetRequest(BasicURL + "/baseversion/details/1");
+
+                var baseVersion = JsonConvert.DeserializeObject<DatabaseVersion>(BaseVersionReqString.ToString());
+
+                if (baseVersion.Ver > dbVersionEntity.Ver)
+                    return 1;
+
+                return 0;
+            }
+            catch (Exception e)
+            {
+                var b = e.Message;
+                return -1;
             }
         }
     }

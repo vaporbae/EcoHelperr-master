@@ -8,5 +8,11 @@ namespace EcoHelper.Models
         [PrimaryKey, AutoIncrement]
         public int Id { get; set; }
         public double Ver { get; set; }
+
+        public DatabaseVersion() { }
+        public DatabaseVersion(double ver)
+        {
+            this.Ver = ver;
+        }
     }
 }

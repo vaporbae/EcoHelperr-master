@@ -452,4 +452,133 @@
   <ItemGroup>
     <BundleResource Include="Resources\icons8beach96.png" />
   </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\icons8emptytrash96.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\icons8disposal96.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\icons8addtag96.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\icons8nobeverages96.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\icons8package96.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\icons8fork96.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\icons8muscle96.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\icons8outgoingcall96.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\icons8fridge96.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\icons8champagne96.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\icons8bottlecap96.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\icons8bottleofwater96.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\icons8cheese96.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\icons8kawaiifrenchfries96.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\icons8loveletter96.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\icons8emptyjamjar96.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\icons8tape96.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\icons8nofood96.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\icons8copybook96.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\icons8calendar96.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\icons8glassjar96.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\icons9nobattery96.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\icons8naturalfood96.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\icons8tea96.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\icons8christmasgift96.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\icons8brownbagleaf100.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\browncontainerr.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\bluecontainerr.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\blackcontainerr.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\yellowcontainerr.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\whiterecycle.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\whitecontainerr.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\pszok.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\icons8trolley96.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\icons8poison96.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\icons8hangar80.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\icons8fluorescentbulb96.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\icons8lowbattery96.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\icons8lightbulb96.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\icons8pill96.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\icons8carbattery96.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\icons8dose96.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\icons8breakable96.png" />
+  </ItemGroup>
 </Project>

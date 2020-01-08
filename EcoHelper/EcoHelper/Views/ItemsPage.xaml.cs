@@ -14,6 +14,7 @@ using EcoHelper.ViewModels;
 using EcoHelper.Services;
 using EcoHelper.Views.WhereToThrow;
 using EcoHelper.Views.Test;
+using EcoHelper.Data;
 
 namespace EcoHelper.Views
 {
@@ -23,36 +24,52 @@ namespace EcoHelper.Views
     public partial class ItemsPage : ContentPage
     {
         ItemsViewModel viewModel;
-        string DatabaseVersion = "1.00";
+        int update;
 
         public ItemsPage()
         {
             InitializeComponent();
+
+            
             var database = new UpdateDatabase();
+
+            Device.BeginInvokeOnMainThread(async () =>
+            {
+                update = await database.CheckDatabaseVersionIsToOutdated();
+            });
 
             BindingContext = viewModel = new ItemsViewModel();
             bool answer = true;
 
             Device.BeginInvokeOnMainThread(async () =>
             {
-                answer = await Application.Current.MainPage.DisplayAlert("Aktualizacja bazy danych", "Czy chcesz zaktualizować bazę danych?", "Tak", "Nie");
-                if (answer == true)
+                update = await database.CheckDatabaseVersionIsToOutdated();
+                if (update == 1)
                 {
-                    bool answerx=false;
-                    var b = await database.UpdateAsync();
-                    while (b == false || answerx == true)
+                    answer = await Application.Current.MainPage.DisplayAlert("Aktualizacja bazy danych", "Czy chcesz zaktualizować bazę danych?", "Tak", "Nie");
+                    if (answer == true)
                     {
-                        answerx = await Application.Current.MainPage.DisplayAlert("Aktualizacja bazy", "Nie udało się zaktualizować bazy. Czy chcesz spróbować ponownie?", "Tak", "Nie");
-                        b = await database.UpdateAsync();
+                        bool answerx = false;
+                        var b = await database.UpdateAsync();
+                        while (b == false || answerx == true)
+                        {
+                            answerx = await Application.Current.MainPage.DisplayAlert("Aktualizacja bazy", "Nie udało się zaktualizować bazy. Czy chcesz spróbować ponownie?", "Tak", "Nie");
+                            b = await database.UpdateAsync();
+                        }
+                        Device.BeginInvokeOnMainThread(async () =>
+                        {
+                            await Application.Current.MainPage.DisplayAlert("Aktualizacja bazy", "Baza danych została zaktualizowana z powodzeniem", "Ok");
+                        });
                     }
+                }
+                if(update == -1)
+                {
                     Device.BeginInvokeOnMainThread(async () =>
                     {
-                        await Application.Current.MainPage.DisplayAlert("Aktualizacja bazy", "Baza danych została zaktualizowana z powodzeniem", "Ok");
+                        await Application.Current.MainPage.DisplayAlert("Aktualizacja bazy", "Nie udało się sprawdzić czy baza danych jest aktualna. Sprawdź połaczenie internetowe.", "Ok");
                     });
                 }
             });
-
-
         }
 
 
