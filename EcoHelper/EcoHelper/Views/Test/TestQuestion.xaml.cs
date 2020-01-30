@@ -331,7 +331,7 @@ namespace EcoHelper.Views.Test
 
             test = dbTest.GetTest(tId);
 
-            Navigation.PushAsync(new TestEndResult(test,user));
+            Navigation.PushModalAsync(new TestEndResult(test,user));
         }
     }
 }

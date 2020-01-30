@@ -100,10 +100,11 @@ namespace EcoHelper.ViewModels
                                     {
                                         results.Add(new AddressInfo
                                         {
-                                            Address = result.FormattedAddress,
-                                            PlaceId = result.PlaceId,
+                                            Address = result.Formatted_Address,
+                                            PlaceId = result.Place_Id,
                                             Latitude = Convert.ToDouble(result.Geometry.Location.Lat),
-                                            Longitude = Convert.ToDouble(result.Geometry.Location.Lng)
+                                            Longitude = Convert.ToDouble(result.Geometry.Location.Lng),
+                                            Name = result.Name
                                         });
                                     }
                                 }

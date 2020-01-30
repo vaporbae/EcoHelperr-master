@@ -67,7 +67,7 @@ namespace EcoHelper.Views
             double result;
             result = CalculateResult(resourceItems[id].UnitValue);
             ResultText.Text = result < 0 ? String.Format("%.2f", result) + " " + resourceItems[id].ResourceUnitText : ResultText.Text = "Wybierz jednostkę";
-            ResultText.Text = result.ToString() + " " + resourceItems[id].ResourceUnitText;
+            ResultText.Text = Math.Floor(result * 100) / 100 + " " + resourceItems[id].ResourceUnitText;
         }
 
         private double CalculateResult(double x)

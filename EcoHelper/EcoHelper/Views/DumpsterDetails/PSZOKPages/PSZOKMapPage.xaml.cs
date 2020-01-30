@@ -49,7 +49,7 @@ namespace EcoHelper.Views.DumpsterDetails.PSZOKPages
                 {
                     Type = PinType.Place,
                     Position = new Position(addressInfo.Latitude, addressInfo.Longitude),
-                    Label = "PSZOK",
+                    Label = addressInfo.Name,
                     Address = addressInfo.Address
                 };
 

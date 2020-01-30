@@ -6,8 +6,9 @@ namespace EcoHelper.Models.Map
 {
     public class Results
     {
-        public string FormattedAddress { get; set; }
-        public int PlaceId { get; set; }
+        public string Formatted_Address { get; set; }
+        public string Place_Id { get; set; }
+        public string Name { get; set; }
         public Geometry Geometry { get; set; }
     }
 }

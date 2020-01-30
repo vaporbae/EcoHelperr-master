@@ -7,7 +7,7 @@ namespace EcoHelper.Models.Map
     public class Prediction
     {
         public string Description { get; set; }
-        public int PlaceId { get; set; }
+        public string PlaceId { get; set; }
 
     }
 }

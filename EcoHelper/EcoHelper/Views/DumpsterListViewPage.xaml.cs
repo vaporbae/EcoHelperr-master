@@ -123,8 +123,9 @@ namespace EcoHelper.Views
                         break;
                     case (int)DumpsterItemType.AuthorisedEntity:
                         await this._navigation.PushAsync(new AuthorisedEntityPage(), true);
-                        break;
+                    break;
             }
+            this._navigation = Navigation;
         }
     }
 }

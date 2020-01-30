@@ -2,6 +2,7 @@
 using EcoHelper.Models.Map.CustomPin;
 using System;
 using System.Collections.Generic;
+using System.Globalization;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -37,7 +38,7 @@ namespace EcoHelper.Views.DumpsterDetails.PharmacyPages
             var pin = new Pin
             {
                 Type = PinType.Place,
-                Position = new Position(SelectedAddress.Latitude, SelectedAddress.Longitude),
+                Position = new Position(Convert.ToDouble(SelectedAddress.Latitude, CultureInfo.InvariantCulture), Convert.ToDouble(SelectedAddress.Longitude, CultureInfo.InvariantCulture)),
                 Label = "Tutaj jesteś",
                 Address = SelectedAddress.Address
             };
@@ -50,7 +51,7 @@ namespace EcoHelper.Views.DumpsterDetails.PharmacyPages
                 {
                     Type = PinType.Place,
                     Position = new Position(addressInfo.Latitude, addressInfo.Longitude),
-                    Label = "Apteka",
+                    Label = addressInfo.Name,
                     Address = addressInfo.Address
                 };
 

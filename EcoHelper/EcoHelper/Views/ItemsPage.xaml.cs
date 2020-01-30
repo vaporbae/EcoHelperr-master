@@ -49,6 +49,9 @@ namespace EcoHelper.Views
                     answer = await Application.Current.MainPage.DisplayAlert("Aktualizacja bazy danych", "Czy chcesz zaktualizować bazę danych?", "Tak", "Nie");
                     if (answer == true)
                     {
+                        WhereToThrowButton.IsEnabled = false;
+                        DumpsterDescriptionButton.IsEnabled = false;
+                        TestsButton.IsEnabled = false;
                         bool answerx = false;
                         var b = await database.UpdateAsync();
                         while (b == false || answerx == true)
@@ -69,6 +72,11 @@ namespace EcoHelper.Views
                         await Application.Current.MainPage.DisplayAlert("Aktualizacja bazy", "Nie udało się sprawdzić czy baza danych jest aktualna. Sprawdź połaczenie internetowe.", "Ok");
                     });
                 }
+
+                WhereToThrowButton.IsEnabled = true;
+                DumpsterDescriptionButton.IsEnabled = true;
+                TestsButton.IsEnabled = true;
+
             });
         }
 

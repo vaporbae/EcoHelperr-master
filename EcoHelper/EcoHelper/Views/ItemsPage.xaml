@@ -24,7 +24,7 @@
                                 <OnPlatform x:TypeArguments="x:String" Android="Domine-Regular.ttf#Domine Regular" iOS="Domine-Regular"/>
                             </Label.FontFamily>
                         </Label>
-                    <Button Grid.RowSpan="2" BackgroundColor="Transparent" Clicked="onWhereToThrowAwayClicked"></Button>
+                    <Button x:Name="WhereToThrowButton"  Grid.RowSpan="2" BackgroundColor="Transparent" Clicked="onWhereToThrowAwayClicked"></Button>
                 </Grid>
                 
                     <Grid Grid.Row="1">
@@ -44,7 +44,7 @@
                                 <OnPlatform x:TypeArguments="x:String" Android="Domine-Regular.ttf#Domine Regular" iOS="Domine-Regular"/>
                             </Label.FontFamily>
                         </Label>
-                        <Button Grid.RowSpan="2" BackgroundColor="Transparent" Clicked="onTestClicked"></Button>
+                        <Button x:Name="TestsButton" Grid.RowSpan="2" BackgroundColor="Transparent" Clicked="onTestClicked"></Button>
                     </Grid>
                     <BoxView Grid.Column="1" HeightRequest="1" Color="white"></BoxView>
                     <Grid Grid.Row="0" Grid.Column="1">
@@ -58,7 +58,7 @@
                                 <OnPlatform x:TypeArguments="x:String" Android="Domine-Regular.ttf#Domine Regular" iOS="Domine-Regular"/>
                             </Label.FontFamily>
                         </Label>
-                        <Button Grid.RowSpan="2" BackgroundColor="Transparent" Clicked="onDumpsterDescriptionClicked"></Button>
+                        <Button x:Name="DumpsterDescriptionButton" Grid.RowSpan="2" BackgroundColor="Transparent" Clicked="onDumpsterDescriptionClicked"></Button>
                     </Grid>
                 </Grid>
             </Grid>

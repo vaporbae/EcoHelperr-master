@@ -12,6 +12,7 @@ namespace EcoHelper.Views.Test
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class TestEndResult : ContentPage
     {
+        MainPage RootPage { get => Application.Current.MainPage as MainPage; }
         public TestEndResult(Models.Test test, Models.User user)
         {
             InitializeComponent();
@@ -22,7 +23,7 @@ namespace EcoHelper.Views.Test
 
         private void onGoBackClicked(object sender, EventArgs e)
         {
-            Navigation.PopToRootAsync();
+            RootPage.Navigation.PushModalAsync(new MainPage());
         }
 
         private void onResultsClicked(object sender, EventArgs e)
