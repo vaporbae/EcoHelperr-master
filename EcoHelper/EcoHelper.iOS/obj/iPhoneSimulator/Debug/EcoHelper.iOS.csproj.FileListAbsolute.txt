@@ -142,3 +142,4 @@ C:\Git\EcoHelperr-master\EcoHelper\EcoHelper.iOS\obj\iPhoneSimulator\Debug\XamlC
 C:\Git\EcoHelperr-master\EcoHelper\EcoHelper.iOS\obj\iPhoneSimulator\Debug\EcoHelper.iOS.csproj.CopyComplete
 C:\Git\EcoHelperr-master\EcoHelper\EcoHelper.iOS\obj\iPhoneSimulator\Debug\EcoHelper.iOS.exe
 C:\Git\EcoHelperr-master\EcoHelper\EcoHelper.iOS\obj\iPhoneSimulator\Debug\EcoHelper.iOS.pdb
+C:\Git\EcoHelperr-master\EcoHelper\EcoHelper.iOS\bin\iPhoneSimulator\Debug\Plugin.Permissions.dll

@@ -12,7 +12,8 @@ namespace EcoHelper.Models
         DoNotBurnWaste,
         InterestingFacts,
         Tips,
-        WhySegregate
+        WhySegregate,
+        About
     }
     public class HomeMenuItem
     {

@@ -55,6 +55,9 @@ namespace EcoHelper.Views
                     case (int)MenuItemType.Tips:
                         MenuPages.Add(id, new NavigationPage(new TipsView()));
                         break;
+                    case (int)MenuItemType.About:
+                        MenuPages.Add(id, new NavigationPage(new AboutPage()));
+                        break;
                 }
             }
 

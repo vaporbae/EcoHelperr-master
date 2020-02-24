@@ -13,7 +13,6 @@
             <ListView.ItemTemplate>
                 <DataTemplate>
                     <ViewCell>
-                        <!--<Frame BorderColor="{Binding Color}" Padding="5, -10" Margin="15">-->
                             <Grid >
                                 <Grid.ColumnDefinitions>
                                     <ColumnDefinition Width="1*" />
@@ -31,7 +30,6 @@
                             </Label>
                                 <Image Source="{Binding IconName}" Grid.Column="2" Scale="0.8"></Image>
                             </Grid>
-                        <!--</Frame>-->
                     </ViewCell>
                 </DataTemplate>
             </ListView.ItemTemplate>

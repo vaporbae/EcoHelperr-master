@@ -1342,8 +1342,6 @@ C:\Git\EcoHelperr-master\EcoHelper\EcoHelper.Android\obj\Debug\90\android\src\cr
 C:\Git\EcoHelperr-master\EcoHelper\EcoHelper.Android\obj\Debug\90\res\drawable\icons8kawaiisoda96.png
 C:\Git\EcoHelperr-master\EcoHelper\EcoHelper.Android\obj\Debug\90\res\drawable\icons8shoppingbag96.png
 C:\Git\EcoHelperr-master\EcoHelper\EcoHelper.Android\obj\Debug\90\res\drawable\icons8waterbottle96.png
-C:\Git\EcoHelperr-master\EcoHelper\EcoHelper.Android\obj\Debug\90\stamp\SetupDependenciesForDesigner.stamp
-C:\Git\EcoHelperr-master\EcoHelper\EcoHelper.Android\bin\Debug\EcoHelper.dll.mdb
 C:\Git\EcoHelperr-master\EcoHelper\EcoHelper.Android\obj\Debug\90\res\drawable\icons8paperplane96.png
 C:\Git\EcoHelperr-master\EcoHelper\EcoHelper.Android\obj\Debug\90\res\drawable\icons8book96.png
 C:\Git\EcoHelperr-master\EcoHelper\EcoHelper.Android\obj\Debug\90\res\drawable\icons8stackofpaper96.png
